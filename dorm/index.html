@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JOE หอพัก</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="โปรแกรมหอพักฟรี จดมิเตอร์ ออกบิล ส่ง LINE พร้อม QR พร้อมเพย์">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>/* qrcode-generator 1.4.4 (MIT, Kazuhiko Arase) */
+var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],f={},c=function(t,r){o=function(t){for(var r=new Array(t),e=0;e<t;e+=1){r[e]=new Array(t);for(var n=0;n<t;n+=1)r[e][n]=null}return r}(i=4*e+17),l(0,0),l(i-7,0),l(0,i-7),s(),h(),d(t,r),e>=7&&v(t),null==a&&(a=p(e,n,u)),w(a,r)},l=function(t,r){for(var e=-1;e<=7;e+=1)if(!(t+e<=-1||i<=t+e))for(var n=-1;n<=7;n+=1)r+n<=-1||i<=r+n||(o[t+e][r+n]=0<=e&&e<=6&&(0==n||6==n)||0<=n&&n<=6&&(0==e||6==e)||2<=e&&e<=4&&2<=n&&n<=4)},h=function(){for(var t=8;t<i-8;t+=1)null==o[t][6]&&(o[t][6]=t%2==0);for(var r=8;r<i-8;r+=1)null==o[6][r]&&(o[6][r]=r%2==0)},s=function(){for(var t=B.getPatternPosition(e),r=0;r<t.length;r+=1)for(var n=0;n<t.length;n+=1){var i=t[r],a=t[n];if(null==o[i][a])for(var u=-2;u<=2;u+=1)for(var f=-2;f<=2;f+=1)o[i+u][a+f]=-2==u||2==u||-2==f||2==f||0==u&&0==f}},v=function(t){for(var r=B.getBCHTypeNumber(e),n=0;n<18;n+=1){var a=!t&&1==(r>>n&1);o[Math.floor(n/3)][n%3+i-8-3]=a}for(n=0;n<18;n+=1){a=!t&&1==(r>>n&1);o[n%3+i-8-3][Math.floor(n/3)]=a}},d=function(t,r){for(var e=n<<3|r,a=B.getBCHTypeInfo(e),u=0;u<15;u+=1){var f=!t&&1==(a>>u&1);u<6?o[u][8]=f:u<8?o[u+1][8]=f:o[i-15+u][8]=f}for(u=0;u<15;u+=1){f=!t&&1==(a>>u&1);u<8?o[8][i-u-1]=f:u<9?o[8][15-u-1+1]=f:o[8][15-u-1]=f}o[i-8][8]=!t},w=function(t,r){for(var e=-1,n=i-1,a=7,u=0,f=B.getMaskFunction(r),c=i-1;c>0;c-=2)for(6==c&&(c-=1);;){for(var g=0;g<2;g+=1)if(null==o[n][c-g]){var l=!1;u<t.length&&(l=1==(t[u]>>>a&1)),f(n,c-g)&&(l=!l),o[n][c-g]=l,-1==(a-=1)&&(u+=1,a=7)}if((n+=e)<0||i<=n){n-=e,e=-e;break}}},p=function(t,r,e){for(var n=A.getRSBlocks(t,r),o=b(),i=0;i<e.length;i+=1){var a=e[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var u=0;for(i=0;i<n.length;i+=1)u+=n[i].dataCount;if(o.getLengthInBits()>8*u)throw"code length overflow. ("+o.getLengthInBits()+">"+8*u+")";for(o.getLengthInBits()+4<=8*u&&o.put(0,4);o.getLengthInBits()%8!=0;)o.putBit(!1);for(;!(o.getLengthInBits()>=8*u||(o.put(236,8),o.getLengthInBits()>=8*u));)o.put(17,8);return function(t,r){for(var e=0,n=0,o=0,i=new Array(r.length),a=new Array(r.length),u=0;u<r.length;u+=1){var f=r[u].dataCount,c=r[u].totalCount-f;n=Math.max(n,f),o=Math.max(o,c),i[u]=new Array(f);for(var g=0;g<i[u].length;g+=1)i[u][g]=255&t.getBuffer()[g+e];e+=f;var l=B.getErrorCorrectPolynomial(c),h=k(i[u],l.getLength()-1).mod(l);for(a[u]=new Array(l.getLength()-1),g=0;g<a[u].length;g+=1){var s=g+h.getLength()-a[u].length;a[u][g]=s>=0?h.getAt(s):0}}var v=0;for(g=0;g<r.length;g+=1)v+=r[g].totalCount;var d=new Array(v),w=0;for(g=0;g<n;g+=1)for(u=0;u<r.length;u+=1)g<i[u].length&&(d[w]=i[u][g],w+=1);for(g=0;g<o;g+=1)for(u=0;u<r.length;u+=1)g<a[u].length&&(d[w]=a[u][g],w+=1);return d}(o,n)};f.addData=function(t,r){var e=null;switch(r=r||"Byte"){case"Numeric":e=M(t);break;case"Alphanumeric":e=x(t);break;case"Byte":e=m(t);break;case"Kanji":e=L(t);break;default:throw"mode:"+r}u.push(e),a=null},f.isDark=function(t,r){if(t<0||i<=t||r<0||i<=r)throw t+","+r;return o[t][r]},f.getModuleCount=function(){return i},f.make=function(){if(e<1){for(var t=1;t<40;t++){for(var r=A.getRSBlocks(t,n),o=b(),i=0;i<u.length;i++){var a=u[i];o.put(a.getMode(),4),o.put(a.getLength(),B.getLengthInBits(a.getMode(),t)),a.write(o)}var g=0;for(i=0;i<r.length;i++)g+=r[i].dataCount;if(o.getLengthInBits()<=8*g)break}e=t}c(!1,function(){for(var t=0,r=0,e=0;e<8;e+=1){c(!0,e);var n=B.getLostPoint(f);(0==e||t>n)&&(t=n,r=e)}return r}())},f.createTableTag=function(t,r){t=t||2;var e="";e+='<table style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: "+(r=void 0===r?4*t:r)+"px;",e+='">',e+="<tbody>";for(var n=0;n<f.getModuleCount();n+=1){e+="<tr>";for(var o=0;o<f.getModuleCount();o+=1)e+='<td style="',e+=" border-width: 0px; border-style: none;",e+=" border-collapse: collapse;",e+=" padding: 0px; margin: 0px;",e+=" width: "+t+"px;",e+=" height: "+t+"px;",e+=" background-color: ",e+=f.isDark(n,o)?"#000000":"#ffffff",e+=";",e+='"/>';e+="</tr>"}return e+="</tbody>",e+="</table>"},f.createSvgTag=function(t,r,e,n){var o={};"object"==typeof arguments[0]&&(t=(o=arguments[0]).cellSize,r=o.margin,e=o.alt,n=o.title),t=t||2,r=void 0===r?4*t:r,(e="string"==typeof e?{text:e}:e||{}).text=e.text||null,e.id=e.text?e.id||"qrcode-description":null,(n="string"==typeof n?{text:n}:n||{}).text=n.text||null,n.id=n.text?n.id||"qrcode-title":null;var i,a,u,c,g=f.getModuleCount()*t+2*r,l="";for(c="l"+t+",0 0,"+t+" -"+t+",0 0,-"+t+"z ",l+='<svg version="1.1" xmlns="http://www.w3.org/2000/svg"',l+=o.scalable?"":' width="'+g+'px" height="'+g+'px"',l+=' viewBox="0 0 '+g+" "+g+'" ',l+=' preserveAspectRatio="xMinYMin meet"',l+=n.text||e.text?' role="img" aria-labelledby="'+y([n.id,e.id].join(" ").trim())+'"':"",l+=">",l+=n.text?'<title id="'+y(n.id)+'">'+y(n.text)+"</title>":"",l+=e.text?'<description id="'+y(e.id)+'">'+y(e.text)+"</description>":"",l+='<rect width="100%" height="100%" fill="white" cx="0" cy="0"/>',l+='<path d="',a=0;a<f.getModuleCount();a+=1)for(u=a*t+r,i=0;i<f.getModuleCount();i+=1)f.isDark(a,i)&&(l+="M"+(i*t+r)+","+u+c);return l+='" stroke="transparent" fill="black"/>',l+="</svg>"},f.createDataURL=function(t,r){t=t||2,r=void 0===r?4*t:r;var e=f.getModuleCount()*t+2*r,n=r,o=e-r;return I(e,e,function(r,e){if(n<=r&&r<o&&n<=e&&e<o){var i=Math.floor((r-n)/t),a=Math.floor((e-n)/t);return f.isDark(a,i)?0:1}return 1})},f.createImgTag=function(t,r,e){t=t||2,r=void 0===r?4*t:r;var n=f.getModuleCount()*t+2*r,o="";return o+="<img",o+=' src="',o+=f.createDataURL(t,r),o+='"',o+=' width="',o+=n,o+='"',o+=' height="',o+=n,o+='"',e&&(o+=' alt="',o+=y(e),o+='"'),o+="/>"};var y=function(t){for(var r="",e=0;e<t.length;e+=1){var n=t.charAt(e);switch(n){case"<":r+="&lt;";break;case">":r+="&gt;";break;case"&":r+="&amp;";break;case'"':r+="&quot;";break;default:r+=n}}return r};return f.createASCII=function(t,r){if((t=t||1)<2)return function(t){t=void 0===t?2:t;var r,e,n,o,i,a=1*f.getModuleCount()+2*t,u=t,c=a-t,g={"██":"█","█ ":"▀"," █":"▄","  ":" "},l={"██":"▀","█ ":"▀"," █":" ","  ":" "},h="";for(r=0;r<a;r+=2){for(n=Math.floor((r-u)/1),o=Math.floor((r+1-u)/1),e=0;e<a;e+=1)i="█",u<=e&&e<c&&u<=r&&r<c&&f.isDark(n,Math.floor((e-u)/1))&&(i=" "),u<=e&&e<c&&u<=r+1&&r+1<c&&f.isDark(o,Math.floor((e-u)/1))?i+=" ":i+="█",h+=t<1&&r+1>=c?l[i]:g[i];h+="\n"}return a%2&&t>0?h.substring(0,h.length-a-1)+Array(a+1).join("▀"):h.substring(0,h.length-1)}(r);t-=1,r=void 0===r?2*t:r;var e,n,o,i,a=f.getModuleCount()*t+2*r,u=r,c=a-r,g=Array(t+1).join("██"),l=Array(t+1).join("  "),h="",s="";for(e=0;e<a;e+=1){for(o=Math.floor((e-u)/t),s="",n=0;n<a;n+=1)i=1,u<=n&&n<c&&u<=e&&e<c&&f.isDark(o,Math.floor((n-u)/t))&&(i=0),s+=i?g:l;for(o=0;o<t;o+=1)h+=s+"\n"}return h.substring(0,h.length-1)},f.renderTo2dContext=function(t,r){r=r||2;for(var e=f.getModuleCount(),n=0;n<e;n++)for(var o=0;o<e;o++)t.fillStyle=f.isDark(n,o)?"black":"white",t.fillRect(n*r,o*r,r,r)},f};t.stringToBytes=(t.stringToBytesFuncs={default:function(t){for(var r=[],e=0;e<t.length;e+=1){var n=t.charCodeAt(e);r.push(255&n)}return r}}).default,t.createStringToBytes=function(t,r){var e=function(){for(var e=S(t),n=function(){var t=e.read();if(-1==t)throw"eof";return t},o=0,i={};;){var a=e.read();if(-1==a)break;var u=n(),f=n()<<8|n();i[String.fromCharCode(a<<8|u)]=f,o+=1}if(o!=r)throw o+" != "+r;return i}(),n="?".charCodeAt(0);return function(t){for(var r=[],o=0;o<t.length;o+=1){var i=t.charCodeAt(o);if(i<128)r.push(i);else{var a=e[t.charAt(o)];"number"==typeof a?(255&a)==a?r.push(a):(r.push(a>>>8),r.push(255&a)):r.push(n)}}return r}};var r,e,n,o,i,a=1,u=2,f=4,c=8,g={L:1,M:0,Q:3,H:2},l=0,h=1,s=2,v=3,d=4,w=5,p=6,y=7,B=(r=[[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],[6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],[6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90],[6,28,50,72,94],[6,26,50,74,98],[6,30,54,78,102],[6,28,54,80,106],[6,32,58,84,110],[6,30,58,86,114],[6,34,62,90,118],[6,26,50,74,98,122],[6,30,54,78,102,126],[6,26,52,78,104,130],[6,30,56,82,108,134],[6,34,60,86,112,138],[6,30,58,86,114,142],[6,34,62,90,118,146],[6,30,54,78,102,126,150],[6,24,50,76,102,128,154],[6,28,54,80,106,132,158],[6,32,58,84,110,136,162],[6,26,54,82,110,138,166],[6,30,58,86,114,142,170]],e=1335,n=7973,i=function(t){for(var r=0;0!=t;)r+=1,t>>>=1;return r},(o={}).getBCHTypeInfo=function(t){for(var r=t<<10;i(r)-i(e)>=0;)r^=e<<i(r)-i(e);return 21522^(t<<10|r)},o.getBCHTypeNumber=function(t){for(var r=t<<12;i(r)-i(n)>=0;)r^=n<<i(r)-i(n);return t<<12|r},o.getPatternPosition=function(t){return r[t-1]},o.getMaskFunction=function(t){switch(t){case l:return function(t,r){return(t+r)%2==0};case h:return function(t,r){return t%2==0};case s:return function(t,r){return r%3==0};case v:return function(t,r){return(t+r)%3==0};case d:return function(t,r){return(Math.floor(t/2)+Math.floor(r/3))%2==0};case w:return function(t,r){return t*r%2+t*r%3==0};case p:return function(t,r){return(t*r%2+t*r%3)%2==0};case y:return function(t,r){return(t*r%3+(t+r)%2)%2==0};default:throw"bad maskPattern:"+t}},o.getErrorCorrectPolynomial=function(t){for(var r=k([1],0),e=0;e<t;e+=1)r=r.multiply(k([1,C.gexp(e)],0));return r},o.getLengthInBits=function(t,r){if(1<=r&&r<10)switch(t){case a:return 10;case u:return 9;case f:case c:return 8;default:throw"mode:"+t}else if(r<27)switch(t){case a:return 12;case u:return 11;case f:return 16;case c:return 10;default:throw"mode:"+t}else{if(!(r<41))throw"type:"+r;switch(t){case a:return 14;case u:return 13;case f:return 16;case c:return 12;default:throw"mode:"+t}}},o.getLostPoint=function(t){for(var r=t.getModuleCount(),e=0,n=0;n<r;n+=1)for(var o=0;o<r;o+=1){for(var i=0,a=t.isDark(n,o),u=-1;u<=1;u+=1)if(!(n+u<0||r<=n+u))for(var f=-1;f<=1;f+=1)o+f<0||r<=o+f||0==u&&0==f||a==t.isDark(n+u,o+f)&&(i+=1);i>5&&(e+=3+i-5)}for(n=0;n<r-1;n+=1)for(o=0;o<r-1;o+=1){var c=0;t.isDark(n,o)&&(c+=1),t.isDark(n+1,o)&&(c+=1),t.isDark(n,o+1)&&(c+=1),t.isDark(n+1,o+1)&&(c+=1),0!=c&&4!=c||(e+=3)}for(n=0;n<r;n+=1)for(o=0;o<r-6;o+=1)t.isDark(n,o)&&!t.isDark(n,o+1)&&t.isDark(n,o+2)&&t.isDark(n,o+3)&&t.isDark(n,o+4)&&!t.isDark(n,o+5)&&t.isDark(n,o+6)&&(e+=40);for(o=0;o<r;o+=1)for(n=0;n<r-6;n+=1)t.isDark(n,o)&&!t.isDark(n+1,o)&&t.isDark(n+2,o)&&t.isDark(n+3,o)&&t.isDark(n+4,o)&&!t.isDark(n+5,o)&&t.isDark(n+6,o)&&(e+=40);var g=0;for(o=0;o<r;o+=1)for(n=0;n<r;n+=1)t.isDark(n,o)&&(g+=1);return e+=Math.abs(100*g/r/r-50)/5*10},o),C=function(){for(var t=new Array(256),r=new Array(256),e=0;e<8;e+=1)t[e]=1<<e;for(e=8;e<256;e+=1)t[e]=t[e-4]^t[e-5]^t[e-6]^t[e-8];for(e=0;e<255;e+=1)r[t[e]]=e;var n={glog:function(t){if(t<1)throw"glog("+t+")";return r[t]},gexp:function(r){for(;r<0;)r+=255;for(;r>=256;)r-=255;return t[r]}};return n}();function k(t,r){if(void 0===t.length)throw t.length+"/"+r;var e=function(){for(var e=0;e<t.length&&0==t[e];)e+=1;for(var n=new Array(t.length-e+r),o=0;o<t.length-e;o+=1)n[o]=t[o+e];return n}(),n={getAt:function(t){return e[t]},getLength:function(){return e.length},multiply:function(t){for(var r=new Array(n.getLength()+t.getLength()-1),e=0;e<n.getLength();e+=1)for(var o=0;o<t.getLength();o+=1)r[e+o]^=C.gexp(C.glog(n.getAt(e))+C.glog(t.getAt(o)));return k(r,0)},mod:function(t){if(n.getLength()-t.getLength()<0)return n;for(var r=C.glog(n.getAt(0))-C.glog(t.getAt(0)),e=new Array(n.getLength()),o=0;o<n.getLength();o+=1)e[o]=n.getAt(o);for(o=0;o<t.getLength();o+=1)e[o]^=C.gexp(C.glog(t.getAt(o))+r);return k(e,0).mod(t)}};return n}var A=function(){var t=[[1,26,19],[1,26,16],[1,26,13],[1,26,9],[1,44,34],[1,44,28],[1,44,22],[1,44,16],[1,70,55],[1,70,44],[2,35,17],[2,35,13],[1,100,80],[2,50,32],[2,50,24],[4,25,9],[1,134,108],[2,67,43],[2,33,15,2,34,16],[2,33,11,2,34,12],[2,86,68],[4,43,27],[4,43,19],[4,43,15],[2,98,78],[4,49,31],[2,32,14,4,33,15],[4,39,13,1,40,14],[2,121,97],[2,60,38,2,61,39],[4,40,18,2,41,19],[4,40,14,2,41,15],[2,146,116],[3,58,36,2,59,37],[4,36,16,4,37,17],[4,36,12,4,37,13],[2,86,68,2,87,69],[4,69,43,1,70,44],[6,43,19,2,44,20],[6,43,15,2,44,16],[4,101,81],[1,80,50,4,81,51],[4,50,22,4,51,23],[3,36,12,8,37,13],[2,116,92,2,117,93],[6,58,36,2,59,37],[4,46,20,6,47,21],[7,42,14,4,43,15],[4,133,107],[8,59,37,1,60,38],[8,44,20,4,45,21],[12,33,11,4,34,12],[3,145,115,1,146,116],[4,64,40,5,65,41],[11,36,16,5,37,17],[11,36,12,5,37,13],[5,109,87,1,110,88],[5,65,41,5,66,42],[5,54,24,7,55,25],[11,36,12,7,37,13],[5,122,98,1,123,99],[7,73,45,3,74,46],[15,43,19,2,44,20],[3,45,15,13,46,16],[1,135,107,5,136,108],[10,74,46,1,75,47],[1,50,22,15,51,23],[2,42,14,17,43,15],[5,150,120,1,151,121],[9,69,43,4,70,44],[17,50,22,1,51,23],[2,42,14,19,43,15],[3,141,113,4,142,114],[3,70,44,11,71,45],[17,47,21,4,48,22],[9,39,13,16,40,14],[3,135,107,5,136,108],[3,67,41,13,68,42],[15,54,24,5,55,25],[15,43,15,10,44,16],[4,144,116,4,145,117],[17,68,42],[17,50,22,6,51,23],[19,46,16,6,47,17],[2,139,111,7,140,112],[17,74,46],[7,54,24,16,55,25],[34,37,13],[4,151,121,5,152,122],[4,75,47,14,76,48],[11,54,24,14,55,25],[16,45,15,14,46,16],[6,147,117,4,148,118],[6,73,45,14,74,46],[11,54,24,16,55,25],[30,46,16,2,47,17],[8,132,106,4,133,107],[8,75,47,13,76,48],[7,54,24,22,55,25],[22,45,15,13,46,16],[10,142,114,2,143,115],[19,74,46,4,75,47],[28,50,22,6,51,23],[33,46,16,4,47,17],[8,152,122,4,153,123],[22,73,45,3,74,46],[8,53,23,26,54,24],[12,45,15,28,46,16],[3,147,117,10,148,118],[3,73,45,23,74,46],[4,54,24,31,55,25],[11,45,15,31,46,16],[7,146,116,7,147,117],[21,73,45,7,74,46],[1,53,23,37,54,24],[19,45,15,26,46,16],[5,145,115,10,146,116],[19,75,47,10,76,48],[15,54,24,25,55,25],[23,45,15,25,46,16],[13,145,115,3,146,116],[2,74,46,29,75,47],[42,54,24,1,55,25],[23,45,15,28,46,16],[17,145,115],[10,74,46,23,75,47],[10,54,24,35,55,25],[19,45,15,35,46,16],[17,145,115,1,146,116],[14,74,46,21,75,47],[29,54,24,19,55,25],[11,45,15,46,46,16],[13,145,115,6,146,116],[14,74,46,23,75,47],[44,54,24,7,55,25],[59,46,16,1,47,17],[12,151,121,7,152,122],[12,75,47,26,76,48],[39,54,24,14,55,25],[22,45,15,41,46,16],[6,151,121,14,152,122],[6,75,47,34,76,48],[46,54,24,10,55,25],[2,45,15,64,46,16],[17,152,122,4,153,123],[29,74,46,14,75,47],[49,54,24,10,55,25],[24,45,15,46,46,16],[4,152,122,18,153,123],[13,74,46,32,75,47],[48,54,24,14,55,25],[42,45,15,32,46,16],[20,147,117,4,148,118],[40,75,47,7,76,48],[43,54,24,22,55,25],[10,45,15,67,46,16],[19,148,118,6,149,119],[18,75,47,31,76,48],[34,54,24,34,55,25],[20,45,15,61,46,16]],r=function(t,r){var e={};return e.totalCount=t,e.dataCount=r,e},e={};return e.getRSBlocks=function(e,n){var o=function(r,e){switch(e){case g.L:return t[4*(r-1)+0];case g.M:return t[4*(r-1)+1];case g.Q:return t[4*(r-1)+2];case g.H:return t[4*(r-1)+3];default:return}}(e,n);if(void 0===o)throw"bad rs block @ typeNumber:"+e+"/errorCorrectionLevel:"+n;for(var i=o.length/3,a=[],u=0;u<i;u+=1)for(var f=o[3*u+0],c=o[3*u+1],l=o[3*u+2],h=0;h<f;h+=1)a.push(r(c,l));return a},e}(),b=function(){var t=[],r=0,e={getBuffer:function(){return t},getAt:function(r){var e=Math.floor(r/8);return 1==(t[e]>>>7-r%8&1)},put:function(t,r){for(var n=0;n<r;n+=1)e.putBit(1==(t>>>r-n-1&1))},getLengthInBits:function(){return r},putBit:function(e){var n=Math.floor(r/8);t.length<=n&&t.push(0),e&&(t[n]|=128>>>r%8),r+=1}};return e},M=function(t){var r=a,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+2<r.length;)t.put(o(r.substring(n,n+3)),10),n+=3;n<r.length&&(r.length-n==1?t.put(o(r.substring(n,n+1)),4):r.length-n==2&&t.put(o(r.substring(n,n+2)),7))}},o=function(t){for(var r=0,e=0;e<t.length;e+=1)r=10*r+i(t.charAt(e));return r},i=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);throw"illegal char :"+t};return n},x=function(t){var r=u,e=t,n={getMode:function(){return r},getLength:function(t){return e.length},write:function(t){for(var r=e,n=0;n+1<r.length;)t.put(45*o(r.charAt(n))+o(r.charAt(n+1)),11),n+=2;n<r.length&&t.put(o(r.charAt(n)),6)}},o=function(t){if("0"<=t&&t<="9")return t.charCodeAt(0)-"0".charCodeAt(0);if("A"<=t&&t<="Z")return t.charCodeAt(0)-"A".charCodeAt(0)+10;switch(t){case" ":return 36;case"$":return 37;case"%":return 38;case"*":return 39;case"+":return 40;case"-":return 41;case".":return 42;case"/":return 43;case":":return 44;default:throw"illegal char :"+t}};return n},m=function(r){var e=f,n=t.stringToBytes(r),o={getMode:function(){return e},getLength:function(t){return n.length},write:function(t){for(var r=0;r<n.length;r+=1)t.put(n[r],8)}};return o},L=function(r){var e=c,n=t.stringToBytesFuncs.SJIS;if(!n)throw"sjis not supported.";!function(){var t=n("友");if(2!=t.length||38726!=(t[0]<<8|t[1]))throw"sjis not supported."}();var o=n(r),i={getMode:function(){return e},getLength:function(t){return~~(o.length/2)},write:function(t){for(var r=o,e=0;e+1<r.length;){var n=(255&r[e])<<8|255&r[e+1];if(33088<=n&&n<=40956)n-=33088;else{if(!(57408<=n&&n<=60351))throw"illegal char at "+(e+1)+"/"+n;n-=49472}n=192*(n>>>8&255)+(255&n),t.put(n,13),e+=2}if(e<r.length)throw"illegal char at "+(e+1)}};return i},D=function(){var t=[],r={writeByte:function(r){t.push(255&r)},writeShort:function(t){r.writeByte(t),r.writeByte(t>>>8)},writeBytes:function(t,e,n){e=e||0,n=n||t.length;for(var o=0;o<n;o+=1)r.writeByte(t[o+e])},writeString:function(t){for(var e=0;e<t.length;e+=1)r.writeByte(t.charCodeAt(e))},toByteArray:function(){return t},toString:function(){var r="";r+="[";for(var e=0;e<t.length;e+=1)e>0&&(r+=","),r+=t[e];return r+="]"}};return r},S=function(t){var r=t,e=0,n=0,o=0,i={read:function(){for(;o<8;){if(e>=r.length){if(0==o)return-1;throw"unexpected end of file./"+o}var t=r.charAt(e);if(e+=1,"="==t)return o=0,-1;t.match(/^\s$/)||(n=n<<6|a(t.charCodeAt(0)),o+=6)}var i=n>>>o-8&255;return o-=8,i}},a=function(t){if(65<=t&&t<=90)return t-65;if(97<=t&&t<=122)return t-97+26;if(48<=t&&t<=57)return t-48+52;if(43==t)return 62;if(47==t)return 63;throw"c:"+t};return i},I=function(t,r,e){for(var n=function(t,r){var e=t,n=r,o=new Array(t*r),i={setPixel:function(t,r,n){o[r*e+t]=n},write:function(t){t.writeString("GIF87a"),t.writeShort(e),t.writeShort(n),t.writeByte(128),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(0),t.writeByte(255),t.writeByte(255),t.writeByte(255),t.writeString(","),t.writeShort(0),t.writeShort(0),t.writeShort(e),t.writeShort(n),t.writeByte(0);var r=a(2);t.writeByte(2);for(var o=0;r.length-o>255;)t.writeByte(255),t.writeBytes(r,o,255),o+=255;t.writeByte(r.length-o),t.writeBytes(r,o,r.length-o),t.writeByte(0),t.writeString(";")}},a=function(t){for(var r=1<<t,e=1+(1<<t),n=t+1,i=u(),a=0;a<r;a+=1)i.add(String.fromCharCode(a));i.add(String.fromCharCode(r)),i.add(String.fromCharCode(e));var f,c,g,l=D(),h=(f=l,c=0,g=0,{write:function(t,r){if(t>>>r!=0)throw"length over";for(;c+r>=8;)f.writeByte(255&(t<<c|g)),r-=8-c,t>>>=8-c,g=0,c=0;g|=t<<c,c+=r},flush:function(){c>0&&f.writeByte(g)}});h.write(r,n);var s=0,v=String.fromCharCode(o[s]);for(s+=1;s<o.length;){var d=String.fromCharCode(o[s]);s+=1,i.contains(v+d)?v+=d:(h.write(i.indexOf(v),n),i.size()<4095&&(i.size()==1<<n&&(n+=1),i.add(v+d)),v=d)}return h.write(i.indexOf(v),n),h.write(e,n),h.flush(),l.toByteArray()},u=function(){var t={},r=0,e={add:function(n){if(e.contains(n))throw"dup key:"+n;t[n]=r,r+=1},size:function(){return r},indexOf:function(r){return t[r]},contains:function(r){return void 0!==t[r]}};return e};return i}(t,r),o=0;o<r;o+=1)for(var i=0;i<t;i+=1)n.setPixel(i,o,e(i,o));var a=D();n.write(a);for(var u=function(){var t=0,r=0,e=0,n="",o={},i=function(t){n+=String.fromCharCode(a(63&t))},a=function(t){if(t<0);else{if(t<26)return 65+t;if(t<52)return t-26+97;if(t<62)return t-52+48;if(62==t)return 43;if(63==t)return 47}throw"n:"+t};return o.writeByte=function(n){for(t=t<<8|255&n,r+=8,e+=1;r>=6;)i(t>>>r-6),r-=6},o.flush=function(){if(r>0&&(i(t<<6-r),t=0,r=0),e%3!=0)for(var o=3-e%3,a=0;a<o;a+=1)n+="="},o.toString=function(){return n},o}(),f=a.toByteArray(),c=0;c<f.length;c+=1)u.writeByte(f[c]);return u.flush(),"data:image/gif;base64,"+u};return t}();qrcode.stringToBytesFuncs["UTF-8"]=function(t){return function(t){for(var r=[],e=0;e<t.length;e++){var n=t.charCodeAt(e);n<128?r.push(n):n<2048?r.push(192|n>>6,128|63&n):n<55296||n>=57344?r.push(224|n>>12,128|n>>6&63,128|63&n):(e++,n=65536+((1023&n)<<10|1023&t.charCodeAt(e)),r.push(240|n>>18,128|n>>12&63,128|n>>6&63,128|63&n))}return r}(t)},function(t){"function"==typeof define&&define.amd?define([],t):"object"==typeof exports&&(module.exports=t())}(function(){return qrcode});
+</script>
+<style>
+:root{--bg:#f5f3ee;--card:#fff;--ink:#1f2a2e;--mut:#6b7478;--line:#e5e1d8;--pri:#0f766e;--pri2:#e3f2ef;--warn:#b45309;--warn2:#fdf1e3;--bad:#b91c1c;--bad2:#fdeaea;--ok:#15803d;--ok2:#e7f5ec}
+*{box-sizing:border-box}
+body{margin:0;font-family:'IBM Plex Sans Thai',system-ui,sans-serif;background:var(--bg);color:var(--ink);padding-bottom:86px;font-size:15px;line-height:1.5}
+header.top{position:sticky;top:0;z-index:5;background:var(--pri);color:#fff;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dorm{font-weight:700;font-size:17px}.sub{font-size:12px;opacity:.85}
+header select{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:10px;padding:7px 8px;font:inherit;font-size:14px}
+header select option{color:#000}
+main{padding:14px;max-width:720px;margin:0 auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.h{font-weight:700;font-size:16px}.mut{color:var(--mut)}.sm{font-size:13px}.bad{color:var(--bad)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px}
+.stat .l{font-size:12px;color:var(--mut)}.stat .v{font-size:19px;font-weight:700}
+.stat.ok{background:var(--ok2);border-color:#cfe9d7}.stat.bad{background:var(--bad2);border-color:#f5cccc}.stat.pri{background:var(--pri2);border-color:#c9e6e0}
+.item{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-top:1px solid var(--line);cursor:pointer}
+.item:first-of-type{border-top:0}
+.rno{font-weight:700;font-size:17px;min-width:52px}
+.grow{flex:1;min-width:0}.right{text-align:right}
+.chip{display:inline-block;padding:2px 10px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
+.chip.ok{background:var(--ok2);color:var(--ok)}.chip.bad{background:var(--bad2);color:var(--bad)}.chip.mut{background:#efede8;color:var(--mut)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:11px;padding:10px 14px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none}
+.btn.pri{background:var(--pri);border-color:var(--pri);color:#fff}
+.btn.line{background:#06c755;border-color:#06c755;color:#fff}
+.btn.bad{color:var(--bad);border-color:#f0c4c4}
+.btn.block{display:flex;width:100%;margin-top:10px}.btn.big{padding:13px;font-size:16px}
+.btn.sm{padding:6px 10px;font-size:13px}
+label{display:block;font-size:13px;color:var(--mut);margin-top:10px}
+input,textarea,select.f{display:block;width:100%;margin-top:4px;padding:10px 11px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:16px;color:var(--ink);background:#fff}
+input:focus,textarea:focus{outline:2px solid var(--pri2);border-color:var(--pri)}
+textarea{min-height:90px;font-size:12px;font-family:monospace}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.mhead{display:flex;justify-content:space-between;align-items:baseline}
+.mres{margin-top:8px;font-size:13px;background:#faf9f6;border-radius:9px;padding:7px 9px}
+nav.tabs{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);padding:6px 4px calc(6px + env(safe-area-inset-bottom));z-index:6}
+nav.tabs button{background:none;border:0;font:inherit;font-size:11px;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:1px;padding:4px 0;cursor:pointer}
+nav.tabs button span{font-size:20px;filter:grayscale(1);opacity:.6}
+nav.tabs button.on{color:var(--pri);font-weight:700}nav.tabs button.on span{filter:none;opacity:1}
+.modal{position:fixed;inset:0;background:rgba(20,25,28,.45);z-index:10;display:flex;align-items:flex-end;justify-content:center}
+.modal.hidden{display:none}
+.sheet{background:#fff;width:100%;max-width:720px;max-height:92vh;overflow:auto;border-radius:18px 18px 0 0;padding:16px 16px calc(20px + env(safe-area-inset-bottom))}
+.sh-h{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
+.x{border:0;background:#f0eee9;border-radius:99px;width:34px;height:34px;font-size:16px;cursor:pointer}
+table.bill{width:100%;border-collapse:collapse;margin:6px 0}
+table.bill td{padding:7px 0;border-bottom:1px dashed var(--line);vertical-align:top}
+table.bill td:last-child{text-align:right;white-space:nowrap}
+table.bill tr.tot td{font-weight:700;font-size:18px;border-bottom:0;color:var(--pri)}
+.qr{text-align:center;margin:10px 0;padding:10px;border:1px solid var(--line);border-radius:12px}
+.qr svg{width:200px;height:200px}
+.act{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.paidbox{background:var(--ok2);color:var(--ok);border-radius:11px;padding:11px;text-align:center;font-weight:600;margin-top:12px}
+.hint{background:var(--warn2);color:var(--warn);border-radius:10px;padding:9px 11px;margin:10px 0}
+.banner{background:var(--pri2);border:1px solid #c9e6e0;border-radius:12px;padding:11px 13px;margin-bottom:12px;font-size:13px}
+.empty{text-align:center;color:var(--mut);padding:26px 14px}
+#toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:#1f2a2e;color:#fff;padding:10px 16px;border-radius:99px;font-size:14px;opacity:0;transition:.25s;pointer-events:none;z-index:20}
+#toast.show{opacity:1}
+.sec{font-weight:700;margin:16px 0 4px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.pill{border:1px solid #e0dbd0;background:linear-gradient(180deg,#fff,#f3f1eb);border-radius:999px;padding:9px 14px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 3px 0 #d6d0c4;color:var(--ink)}
+.pill.on{background:linear-gradient(180deg,#22b3a2,#0f766e);color:#fff;border-color:#0d6b64;box-shadow:0 3px 0 #09524d}
+.pill:active{transform:translateY(2px);box-shadow:0 1px 0 #d6d0c4}
+.paylog{font-size:14px;border-top:1px dashed var(--line);padding:7px 0;display:flex;justify-content:space-between;gap:8px}
+.chip.warn{background:linear-gradient(180deg,#fff7e8,#fde7c2);color:var(--warn)}
+.doc{white-space:pre-wrap;font-size:14px;line-height:1.7;background:#fbfaf7;border:1px solid var(--line);border-radius:12px;padding:14px;max-height:50vh;overflow:auto}
+.poster{border:2px solid var(--pri);border-radius:16px;padding:16px;text-align:center;background:linear-gradient(#fff,#f3faf8)}
+.poster .big{font-size:24px;font-weight:700;color:var(--pri)}
+.poster .rm{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:6px 4px;text-align:left}
+.poster svg{width:170px;height:170px}
+.btn3{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.neg{color:var(--bad)}.pos{color:var(--ok)}
+/* ---- desktop / tablet ---- */
+.item:hover{background:#faf9f6}
+.cardgrid{display:grid;grid-template-columns:1fr;gap:0 12px}
+@media(min-width:900px){
+  body{padding:0 0 0 230px;font-size:15.5px}
+  header.top{margin-left:-230px;padding:14px 24px;z-index:7}
+  .dorm{font-size:19px}
+  nav.tabs{top:0;bottom:0;right:auto;width:230px;grid-template-columns:1fr;align-content:start;gap:4px;border-top:0;border-right:1px solid var(--line);padding:84px 12px 12px}
+  nav.tabs button{flex-direction:row;justify-content:flex-start;gap:12px;font-size:15px;padding:11px 14px;border-radius:11px}
+  nav.tabs button span{font-size:19px}
+  nav.tabs button.on{background:var(--pri2)}
+  nav.tabs button:hover{background:#f4f2ed}
+  main{max-width:1100px;padding:22px 28px}
+  .cardgrid{grid-template-columns:1fr 1fr}
+  .stat .v{font-size:24px}
+  .modal{align-items:center;padding:20px}
+  .sheet{border-radius:18px;max-width:640px;max-height:88vh;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+  #toast{bottom:32px}
+  .home-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;align-items:start}
+}
+@media(min-width:1300px){.cardgrid{grid-template-columns:1fr 1fr 1fr}}
+
+/* (old 3D theme — disabled)
+body{background:radial-gradient(1200px 600px at 10% -10%,#dff1ec 0,transparent 60%),linear-gradient(180deg,#eef3f0,#f6f3ec)}
+header.top{background:linear-gradient(135deg,#14a08f 0%,#0f766e 45%,#0b4f4a 100%);box-shadow:0 6px 18px rgba(11,79,74,.35),inset 0 -1px 0 rgba(255,255,255,.12)}
+.dorm{text-shadow:0 2px 4px rgba(0,0,0,.25);letter-spacing:.2px}
+header select{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 3px 8px rgba(0,0,0,.15);backdrop-filter:blur(6px)}
+.card{border:1px solid rgba(255,255,255,.9);border-radius:20px;background:linear-gradient(180deg,#ffffff,#fbfaf6);
+  box-shadow:0 1px 1px rgba(20,40,38,.04),0 6px 16px rgba(20,40,38,.07),0 18px 36px -18px rgba(20,40,38,.18)}
+.stat{border:1px solid rgba(255,255,255,.95);border-radius:16px;background:linear-gradient(180deg,#fff,#f6f4ef);
+  box-shadow:inset 0 1px 0 #fff,0 3px 0 #e2ddd2,0 8px 16px -6px rgba(20,40,38,.18)}
+.stat.pri{background:linear-gradient(180deg,#eefaf7,#d4eee8);box-shadow:inset 0 1px 0 #fff,0 3px 0 #b5ddd4,0 8px 16px -6px rgba(15,118,110,.3)}
+.stat.ok{background:linear-gradient(180deg,#f1fbf4,#d8f0df);box-shadow:inset 0 1px 0 #fff,0 3px 0 #b9e0c4,0 8px 16px -6px rgba(21,128,61,.28)}
+.stat.bad{background:linear-gradient(180deg,#fff4f4,#fadcdc);box-shadow:inset 0 1px 0 #fff,0 3px 0 #efbcbc,0 8px 16px -6px rgba(185,28,28,.25)}
+.stat.pri .v{color:#0b5d57}.stat.ok .v{color:var(--ok)}.stat.bad .v{color:var(--bad)}
+.btn{--edge:#d4cec1;position:relative;border:1px solid #e3ded3;border-radius:14px;background:linear-gradient(180deg,#ffffff 0%,#f3f1eb 100%);
+  box-shadow:0 4px 0 var(--edge),0 9px 16px -4px rgba(20,40,38,.22),inset 0 1px 0 rgba(255,255,255,.9);
+  transition:transform .08s ease,box-shadow .08s ease,filter .15s;margin-bottom:4px}
+.btn:hover{filter:brightness(1.03)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--edge),0 3px 6px -2px rgba(20,40,38,.25),inset 0 1px 0 rgba(255,255,255,.6)}
+.btn.pri{--edge:#09524d;border-color:#0d6b64;background:linear-gradient(180deg,#22b3a2 0%,#13897d 55%,#0f766e 100%);text-shadow:0 1px 1px rgba(0,0,0,.25);
+  box-shadow:0 4px 0 var(--edge),0 10px 20px -4px rgba(15,118,110,.55),inset 0 1px 0 rgba(255,255,255,.4)}
+.btn.line{--edge:#04893a;border-color:#05a644;background:linear-gradient(180deg,#3ee07f 0%,#0bc457 55%,#06b14d 100%);text-shadow:0 1px 1px rgba(0,0,0,.2);
+  box-shadow:0 4px 0 var(--edge),0 10px 20px -4px rgba(6,177,77,.5),inset 0 1px 0 rgba(255,255,255,.45)}
+.btn.bad{--edge:#ecbcbc;border-color:#f3cfcf;background:linear-gradient(180deg,#fff,#fdf1f1)}
+.btn.block{margin-top:12px}
+input,textarea,select.f{border:1px solid #e0dbd0;border-radius:12px;background:linear-gradient(180deg,#fbfaf7,#fff);box-shadow:inset 0 2px 4px rgba(20,40,38,.07)}
+input:focus,textarea:focus{outline:0;border-color:#14a08f;box-shadow:inset 0 2px 4px rgba(20,40,38,.06),0 0 0 4px rgba(20,160,143,.18)}
+.rno{text-align:center;padding:5px 6px;border-radius:12px;background:linear-gradient(180deg,#f0faf7,#d6eee8);color:#0b5d57;font-size:16px;
+  box-shadow:inset 0 1px 0 #fff,0 2px 0 #b9dcd3,0 4px 8px -3px rgba(15,118,110,.3)}
+.item{border-radius:12px;padding:11px 6px;margin:0 -6px}
+.item:hover{background:linear-gradient(90deg,#f4faf8,#fff)}
+.chip{box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 2px 4px -1px rgba(0,0,0,.12)}
+.chip.ok{background:linear-gradient(180deg,#eaf8ee,#d3efdb)}.chip.bad{background:linear-gradient(180deg,#fff0f0,#fbd9d9)}
+nav.tabs{background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.9);box-shadow:0 -6px 20px rgba(20,40,38,.10)}
+nav.tabs button span{display:inline-flex;align-items:center;justify-content:center;width:44px;height:30px;border-radius:12px;transition:.15s}
+nav.tabs button.on span{filter:none;opacity:1;background:linear-gradient(180deg,#22b3a2,#0f766e);box-shadow:0 3px 0 #09524d,0 6px 12px -2px rgba(15,118,110,.5),inset 0 1px 0 rgba(255,255,255,.4)}
+.modal{background:rgba(12,30,28,.5);backdrop-filter:blur(3px)}
+.sheet{background:linear-gradient(180deg,#fff,#fbfaf6);box-shadow:0 -10px 40px rgba(0,0,0,.25)}
+.sheet::before{content:"";display:block;width:44px;height:5px;border-radius:9px;background:#dcd7cc;margin:-6px auto 10px}
+.x{background:linear-gradient(180deg,#fff,#efece5);box-shadow:0 2px 0 #d8d2c6,0 4px 8px -2px rgba(0,0,0,.2);border:1px solid #e6e1d7}
+.x:active{transform:translateY(2px);box-shadow:0 0 0 #d8d2c6}
+.qr,.poster{box-shadow:0 2px 0 #e2ddd2,0 12px 24px -10px rgba(20,40,38,.25)}
+.paidbox{background:linear-gradient(180deg,#eefaf1,#d6f0de);box-shadow:inset 0 1px 0 #fff,0 3px 0 #bde3c8}
+.banner{background:linear-gradient(135deg,#eefaf7,#dff3ee);border:1px solid #fff;box-shadow:0 3px 0 #c6e5de,0 8px 18px -8px rgba(15,118,110,.35);border-radius:16px}
+.hint{box-shadow:0 2px 0 #f2d9b8}
+.mres{background:linear-gradient(180deg,#f7f6f2,#fff);box-shadow:inset 0 2px 4px rgba(0,0,0,.05)}
+#toast{box-shadow:0 10px 24px rgba(0,0,0,.3)}
+@media(min-width:900px){
+  nav.tabs{box-shadow:6px 0 24px rgba(20,40,38,.08);border-right:1px solid rgba(255,255,255,.9)}
+  nav.tabs button.on{background:linear-gradient(90deg,#e6f5f1,transparent)}
+  nav.tabs button span{width:38px;height:32px}
+  .sheet::before{display:none}
+}
+*/
+/* ===== plain ledger theme ===== */
+:root{--bg:#f6f4ef;--card:#fff;--ink:#22211e;--mut:#6e695f;--line:#e3ded3;--pri:#2f5d50;--pri2:#e9f0eb;--warn:#8a5a12;--warn2:#fbf3e4;--bad:#a63a2a;--bad2:#f8ebe7;--ok:#3a6b38;--ok2:#ecf3ea}
+body{font-family:'IBM Plex Sans Thai Looped','IBM Plex Sans Thai',system-ui,sans-serif;background:var(--bg);font-variant-numeric:tabular-nums}
+header.top{background:var(--card);color:var(--ink);border-bottom:1px solid var(--line);box-shadow:none;padding:12px 16px}
+.dorm{font-size:18px;text-shadow:none;letter-spacing:0}
+.sub{color:var(--mut);opacity:1}
+header select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;box-shadow:none;backdrop-filter:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;box-shadow:none;padding:16px}
+.h{font-size:16px;font-weight:600}
+.stats{gap:0;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.stat,.stat.ok,.stat.bad,.stat.pri{background:none;border:0;border-left:1px solid var(--line);border-radius:0;box-shadow:none;padding:10px 12px}
+.stat:first-child{border-left:0}
+.stat .v{font-weight:600}
+.stat.pri .v{color:var(--pri)}.stat.ok .v{color:var(--ok)}.stat.bad .v{color:var(--bad)}
+.card .stats{border-radius:6px}
+.rno{background:none;box-shadow:none;border-radius:0;padding:0;color:var(--ink);font-weight:600;text-align:left;min-width:48px;font-size:16px}
+.item{border-radius:0;margin:0;padding:12px 0}
+.item:hover{background:#faf9f5}
+.chip,.chip.ok,.chip.bad,.chip.mut,.chip.warn{background:none;box-shadow:none;padding:0;border-radius:0;font-weight:500}
+.chip::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor;margin-right:6px;vertical-align:1px}
+.chip.ok{color:var(--ok)}.chip.bad{color:var(--bad)}.chip.warn{color:var(--warn)}.chip.mut{color:var(--mut)}
+.btn{border:1px solid #cfc8bb;background:var(--card);border-radius:6px;box-shadow:none;margin-bottom:0;transition:background .12s;font-weight:500}
+.btn:hover{background:#f3f0e9;filter:none}
+.btn:active{transform:none;box-shadow:none;background:#ebe7de}
+.btn.pri{background:var(--pri);border-color:var(--pri);color:#fff;text-shadow:none;box-shadow:none}
+.btn.pri:hover{background:#264d42}
+.btn.line{background:#06c755;border-color:#06c755;color:#fff;text-shadow:none;box-shadow:none}
+.btn.line:hover{background:#05b04b}
+.btn.bad{background:var(--card);border-color:#e2c3bc;color:var(--bad);box-shadow:none}
+.btn.big{font-size:15.5px;padding:12px}
+input,textarea,select.f{border:1px solid #d6d0c4;border-radius:6px;background:#fff;box-shadow:none}
+input:focus,textarea:focus{outline:0;border-color:var(--pri);box-shadow:0 0 0 3px rgba(47,93,80,.15)}
+.sec{font-weight:600;margin:18px 0 4px;padding-top:12px;border-top:1px solid var(--line)}
+.pills{gap:0;border:1px solid #d6d0c4;border-radius:6px;overflow:hidden;display:inline-flex;flex-wrap:wrap}
+.pill{background:#fff;border:0;border-left:1px solid #d6d0c4;border-radius:0;box-shadow:none;padding:8px 12px;font-weight:500}
+.pill:first-child{border-left:0}
+.pill.on{background:var(--pri);color:#fff;box-shadow:none;border-color:#d6d0c4}
+.pill:active{transform:none;box-shadow:none}
+.paylog .pill{border:1px solid #d6d0c4;border-radius:6px}
+.banner{background:var(--pri2);border:0;border-left:3px solid var(--pri);border-radius:0 6px 6px 0;box-shadow:none}
+.hint{background:var(--warn2);border-left:3px solid #d9a441;border-radius:0 6px 6px 0;box-shadow:none}
+.mres{background:#f8f6f1;box-shadow:none;border-radius:6px}
+.paidbox{background:var(--ok2);box-shadow:none;border-radius:6px}
+.qr{border:1px solid var(--line);border-radius:8px;box-shadow:none}
+.poster{background:#fff;border:1px solid var(--ink);border-radius:4px;box-shadow:none}
+.poster .big{color:var(--ink);font-size:26px}
+.doc{border-radius:6px}
+table.bill tr.tot td{color:var(--ink);border-top:2px solid var(--ink);padding-top:10px}
+nav.tabs{background:var(--card);backdrop-filter:none;border-top:1px solid var(--line);box-shadow:none}
+nav.tabs button{color:var(--mut);font-size:11.5px;gap:3px;position:relative}
+nav.tabs button svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+nav.tabs button.on{color:var(--pri);font-weight:600}
+nav.tabs button.on::before{content:"";position:absolute;top:-6px;left:30%;right:30%;height:2px;background:var(--pri)}
+.modal{background:rgba(30,28,24,.45);backdrop-filter:none}
+.sheet{background:var(--card);border-radius:12px 12px 0 0;box-shadow:none}
+.x{background:#f1eee8;border:0;box-shadow:none;border-radius:6px;width:32px;height:32px;font-size:15px;color:var(--mut)}
+.x:active{transform:none}
+#toast{background:var(--ink);border-radius:6px;box-shadow:none}
+@media(min-width:900px){
+  header.top{padding:14px 24px}
+  nav.tabs{box-shadow:none;border-right:1px solid var(--line);border-top:0;padding-top:76px}
+  nav.tabs button{border-radius:6px;font-size:15px}
+  nav.tabs button.on{background:var(--pri2)}
+  nav.tabs button.on::before{display:none}
+  nav.tabs button:hover{background:#f3f0e9}
+  .sheet{border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,.18)}
+}
+/* ---- v2 ---- */
+.rmap{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px;margin-top:10px}
+.tile{border:1px solid var(--line);border-radius:6px;padding:6px 4px;text-align:center;cursor:pointer;background:#fff;font-size:12px;line-height:1.3}
+.tile b{display:block;font-size:15px}
+.tile.paid{background:var(--ok2);border-color:#c8dcc4;color:var(--ok)}
+.tile.due{background:var(--bad2);border-color:#e6c4bc;color:var(--bad)}
+.tile.wait{background:#fff;color:var(--ink)}
+.tile.empty{background:#f1eee8;color:var(--mut);border-style:dashed}
+.tile.resv{background:#eaf0f6;border-color:#c6d4e3;color:#2b5d8a}
+.tile.fix{background:var(--warn2);border-color:#ecd5ad;color:var(--warn)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--mut);margin-top:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px;border:1px solid var(--line)}
+.thumbs{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.thumbs img{width:72px;height:72px;object-fit:cover;border-radius:6px;border:1px solid var(--line);cursor:pointer}
+.ph-btn{position:relative;overflow:hidden}
+.ph-btn input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.check{display:flex;gap:8px;align-items:flex-start;color:var(--ink);font-size:13px}
+.check input{width:20px;height:20px;margin:0;flex:none}
+.bar2{height:8px;background:#ebe7de;border-radius:99px;overflow:hidden;margin-top:6px}.bar2 i{display:block;height:100%;background:var(--pri)}
+main{padding-bottom:70px}
+.fab{position:fixed;right:14px;bottom:84px;z-index:8;background:var(--pri);color:#fff;border:0;border-radius:99px;padding:11px 16px;font:inherit;font-weight:600;font-size:14px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+@media(min-width:900px){.fab{bottom:24px;right:24px}}
+.chat{display:flex;flex-direction:column;gap:8px;max-height:52vh;overflow:auto;padding:4px 2px}
+.msg{max-width:86%;padding:9px 12px;border-radius:12px;font-size:14px;line-height:1.55;white-space:pre-line}
+.msg.bot{background:#f3f0e9;align-self:flex-start;border-bottom-left-radius:4px}
+.msg.me{background:var(--pri);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chips button{border:1px solid #d6d0c4;background:#fff;border-radius:99px;padding:6px 11px;font:inherit;font-size:13px;cursor:pointer;color:var(--ink)}
+.chatin{display:flex;gap:8px;margin-top:10px}.chatin input{margin:0}
+/* ===== JOE tactile theme ===== */
+:root{--bg:#ede6d8;--card:#fffdf8;--ink:#1f2a24;--mut:#6f6858;--line:#e4dac7;--pri:#2c5e4f;--pri2:#e4efe8;--brass:#b98a3e;--lip:#d8cdb6}
+body{background:linear-gradient(180deg,#f3eee4 0,#e9e1d1 100%) fixed;color:var(--ink)}
+header.top{background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 1px 0 #fff inset,0 8px 18px -14px rgba(60,45,20,.45)}
+.dorm{font-weight:700;letter-spacing:.1px}
+.dorm::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;background:var(--brass);margin-right:8px;vertical-align:1px;box-shadow:0 2px 0 #8d6627}
+header select{background:linear-gradient(#fffefb,#f3ede1);border:1px solid #d9cfbc;border-radius:9px;box-shadow:0 2px 0 var(--lip),inset 0 1px 0 #fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:inset 0 1px 0 #fff,0 2px 0 var(--lip),0 10px 22px -16px rgba(60,45,20,.45)}
+.stats{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:inset 0 1px 0 #fff,0 2px 0 var(--lip),0 10px 22px -16px rgba(60,45,20,.45)}
+.card .stats{box-shadow:inset 0 2px 4px rgba(60,45,20,.07);background:#faf6ee;border-radius:10px}
+.stat .v{font-size:22px;font-weight:700;letter-spacing:-.3px}
+.stat .l{letter-spacing:.2px}
+.btn{background:linear-gradient(180deg,#fffefb,#f1eadc);border:1px solid #d6cbb5;border-radius:10px;box-shadow:inset 0 1px 0 #fff,0 2px 0 var(--lip),0 6px 12px -8px rgba(60,45,20,.45);transition:transform .06s,box-shadow .06s;font-weight:600}
+.btn:hover{background:linear-gradient(180deg,#fff,#f4eee2)}
+.btn:active{transform:translateY(2px);box-shadow:inset 0 1px 2px rgba(60,45,20,.15),0 0 0 var(--lip)}
+.btn.pri{background:linear-gradient(180deg,#3b7a66,#2c5e4f);border-color:#234c40;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.25);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 3px 0 #1b3f34,0 8px 16px -8px rgba(28,64,52,.7)}
+.btn.pri:hover{background:linear-gradient(180deg,#418470,#2f6454)}
+.btn.pri:active{box-shadow:inset 0 2px 3px rgba(0,0,0,.25),0 0 0 #1b3f34;transform:translateY(3px)}
+.btn.line{background:linear-gradient(180deg,#17d46a,#06b14d);border-color:#049a42;box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 3px 0 #037a35,0 8px 16px -8px rgba(4,120,52,.6)}
+.btn.line:active{transform:translateY(3px);box-shadow:inset 0 2px 3px rgba(0,0,0,.2)}
+.btn.bad{color:var(--bad);background:linear-gradient(180deg,#fffdfb,#f8ece8);border-color:#e3c6be;box-shadow:inset 0 1px 0 #fff,0 2px 0 #e0c2b8}
+input,textarea,select.f{background:#fffdf8;border:1px solid #d9cfbc;border-radius:9px;box-shadow:inset 0 2px 3px rgba(60,45,20,.08)}
+input:focus,textarea:focus{border-color:var(--pri);box-shadow:inset 0 2px 3px rgba(60,45,20,.06),0 0 0 3px rgba(44,94,79,.16)}
+.rno{display:inline-flex;align-items:center;justify-content:center;min-width:52px;height:38px;padding:0 8px;border-radius:9px;background:linear-gradient(180deg,#fffefb,#efe7d7);border:1px solid #ddd2bd;box-shadow:inset 0 1px 0 #fff,0 2px 0 var(--lip);font-size:15px}
+.item{padding:11px 4px;border-radius:10px;margin:0 -4px}
+.item:hover{background:#f8f3e9}
+.tile{border-radius:11px;padding:8px 4px 7px;border:1px solid #ddd2bd;background:linear-gradient(180deg,#fffefb,#f2ebdd);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 3px 0 var(--lip),0 8px 12px -10px rgba(60,45,20,.5);transition:transform .06s,box-shadow .06s}
+.tile:active{transform:translateY(3px);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}
+.tile.paid{background:linear-gradient(180deg,#f2f9f1,#dcecd8);border-color:#bcd6b6;box-shadow:inset 0 1px 0 #fff,0 3px 0 #a9c7a2,0 8px 12px -10px rgba(40,90,40,.5)}
+.tile.due{background:linear-gradient(180deg,#fff5f2,#f6dcd5);border-color:#e6bfb5;box-shadow:inset 0 1px 0 #fff,0 3px 0 #d9aa9e,0 8px 12px -10px rgba(140,50,30,.5)}
+.tile.empty{background:#ebe5d8;border-style:dashed;box-shadow:inset 0 2px 4px rgba(60,45,20,.1)}
+.tile.resv{background:linear-gradient(180deg,#f3f7fb,#dde7f1);border-color:#c3d2e2;box-shadow:inset 0 1px 0 #fff,0 3px 0 #adc0d4}
+.tile.fix{background:linear-gradient(180deg,#fffaf0,#f6e8cc);border-color:#e6d1a8;box-shadow:inset 0 1px 0 #fff,0 3px 0 #d8bd88}
+.pills{border:1px solid #d6cbb5;border-radius:10px;background:#f1eadc;padding:3px;gap:3px;box-shadow:inset 0 2px 3px rgba(60,45,20,.1)}
+.pill{border:0;border-radius:8px;background:transparent;padding:7px 12px}
+.pill.on{background:linear-gradient(180deg,#3b7a66,#2c5e4f);color:#fff;box-shadow:0 2px 0 #1b3f34}
+.banner{background:#e9f1ea;border:1px solid #cfe0d3;border-left:4px solid var(--pri);border-radius:0 12px 12px 0}
+.hint{border-radius:0 10px 10px 0}
+.sec{border-top:1px dashed var(--line)}
+nav.tabs{background:rgba(255,253,248,.97);border-top:1px solid var(--line);box-shadow:0 -10px 24px -18px rgba(60,45,20,.55)}
+nav.tabs button.on::before{display:none}
+nav.tabs button svg{padding:4px 10px;width:44px;height:30px;border-radius:10px;box-sizing:border-box}
+nav.tabs button.on svg{background:linear-gradient(180deg,#3b7a66,#2c5e4f);color:#fff;stroke:#fff;box-shadow:0 2px 0 #1b3f34}
+.sheet{background:var(--card);border-radius:20px 20px 0 0;box-shadow:0 -14px 40px rgba(40,30,10,.25)}
+.sheet::before{content:"";display:block;width:42px;height:5px;border-radius:9px;background:#ddd3c0;margin:-6px auto 12px;box-shadow:inset 0 1px 1px rgba(0,0,0,.08)}
+.modal{background:rgba(35,30,20,.42)}
+.x{background:linear-gradient(180deg,#fffefb,#efe7d7);border:1px solid #ddd2bd;box-shadow:0 2px 0 var(--lip);border-radius:9px}
+.x:active{transform:translateY(2px);box-shadow:none}
+.fab{background:linear-gradient(180deg,#c99a4b,#b0823a);border:1px solid #946b2a;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 3px 0 #7d5a22,0 10px 18px -8px rgba(110,80,30,.7);text-shadow:0 1px 0 rgba(0,0,0,.2)}
+.fab:active{transform:translateY(3px);box-shadow:inset 0 2px 3px rgba(0,0,0,.2)}
+.msg.bot{background:#f3ede1;box-shadow:inset 0 1px 0 #fff,0 1px 0 var(--lip)}
+.msg.me{background:linear-gradient(180deg,#3b7a66,#2c5e4f);box-shadow:0 2px 0 #1b3f34}
+.chips button{background:linear-gradient(180deg,#fffefb,#f1eadc);border-color:#d6cbb5;box-shadow:0 2px 0 var(--lip)}
+.qr,.poster{border-radius:14px;box-shadow:inset 0 1px 0 #fff,0 2px 0 var(--lip),0 10px 22px -16px rgba(60,45,20,.45)}
+.paidbox{background:linear-gradient(180deg,#f2f9f1,#dcecd8);border:1px solid #bcd6b6;border-radius:10px}
+.bar2{box-shadow:inset 0 1px 2px rgba(0,0,0,.12)}.bar2 i{background:linear-gradient(90deg,#3b7a66,#2c5e4f)}
+#toast{border-radius:10px;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+@media(min-width:900px){nav.tabs{background:var(--card);box-shadow:8px 0 24px -18px rgba(60,45,20,.5)}nav.tabs button.on{background:var(--pri2)}nav.tabs button svg{padding:0;width:22px;height:22px;background:none!important;box-shadow:none!important;stroke:currentColor!important}.sheet{border-radius:16px}.sheet::before{display:none}}
+@media print{header,nav,.noprint,.fab{display:none!important}.modal{position:static;background:none}.sheet{max-height:none;box-shadow:none}.doc{max-height:none;border:0;background:none}body{padding:0}main{display:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div><div class="dorm" id="dormName"></div><div class="sub" id="topSub"></div></div>
+  <select id="monthSel" aria-label="เลือกเดือน"></select>
+</header>
+<main id="view"></main>
+<nav class="tabs">
+  <button data-t="home" onclick="go('home')"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>หน้าหลัก</button>
+  <button data-t="meter" onclick="go('meter')"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 13l4-4"/><path d="M9 17.5h6"/></svg>จดมิเตอร์</button>
+  <button data-t="bills" onclick="go('bills')"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>บิล</button>
+  <button data-t="rooms" onclick="go('rooms')"><svg viewBox="0 0 24 24"><path d="M6 21V4h12v17"/><path d="M3 21h18"/><path d="M14.5 12h.5"/></svg>ห้อง</button>
+  <button data-t="money" onclick="go('money')"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-7M21 19H3"/></svg>บัญชี</button>
+  <button data-t="settings" onclick="go('settings')"><svg viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg>ตั้งค่า</button>
+</nav>
+<div id="modal" class="modal hidden" onclick="if(event.target===this)closeM()"><div class="sheet" id="sheet"></div></div>
+<div id="toast"></div>
+<button class="fab noprint" id="fab" onclick="openBot()">💬 ถามน้องโจ้</button>
+
+<script>
+const LS='dorm_app_v1';
+const TH_M=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+const pad=n=>String(n).padStart(2,'0');
+const monthKey=d=>d.getFullYear()+'-'+pad(d.getMonth()+1);
+const monthLabel=k=>{const[y,m]=k.split('-');return TH_M[m-1]+' '+(+y+543)};
+const prevKey=k=>{let[y,m]=k.split('-').map(Number);m--;if(!m){m=12;y--}return y+'-'+pad(m)};
+const nextKey=k=>{let[y,m]=k.split('-').map(Number);m++;if(m>12){m=1;y++}return y+'-'+pad(m)};
+const r2=n=>Math.round((+n||0)*100)/100;
+const baht=n=>r2(n).toLocaleString('th-TH',{maximumFractionDigits:2});
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const today=()=>{const d=new Date();return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())};
+const fmtDate=s=>{if(!s)return'';const[y,m,d]=s.split('-');return (+d)+' '+TH_M[m-1].slice(0,3)+'. '+(+y+543)};
+const uid=()=>'r'+Math.random().toString(36).slice(2,9);
+const $=id=>document.getElementById(id);
+
+let S, storageOK=true, tab='home', cur=monthKey(new Date());
+
+function load(){
+  try{const raw=localStorage.getItem(LS);if(raw){S=JSON.parse(raw);fixS();return}}catch(e){storageOK=false}
+  S=demo();
+}
+function fixS(){S.history=S.history||[];S.expenses=S.expenses||[];S.repairs=S.repairs||[];S.parcels=S.parcels||[];S.mphotos=S.mphotos||{};S.readings=S.readings||{};S.bills=S.bills||{};S.settings={...defSettings(),...S.settings}}
+function prunePhotos(){const keep=[cur,prevKey(cur),prevKey(prevKey(cur)),monthKey(new Date()),prevKey(monthKey(new Date()))];Object.keys(S.mphotos||{}).forEach(k=>{if(!keep.includes(k))delete S.mphotos[k]})}
+function save(){try{localStorage.setItem(LS,JSON.stringify(S))}catch(e){storageOK=false;toast('⚠️ พื้นที่เก็บข้อมูลเต็ม ลองลบรูปเก่า')}}
+
+function demo(){
+  const k=monthKey(new Date()),p=prevKey(k);
+  const list=[['101',3500,'สมชาย ใจดี','0812345678'],['102',3500,'สุดา รักเรียน','0898765432'],['103',3800,'วิชัย มั่นคง','0861112222'],['201',3000,'นภา สายบุญ','0823334444'],['202',3000,'ธนา ขยันดี','0845556666'],['203',3000,'','']];
+  const rooms=list.map((a,i)=>({id:'r'+(i+1),no:a[0],rent:a[1],tenant:a[2],phone:a[3],deposit:a[2]?a[1]:0,advance:0,idCard:'',tAddress:'',termMonths:12,moveIn:a[2]?'2026-01-01':'',wStart:100+i*37,eStart:2000+i*311,feeLabel:'อินเทอร์เน็ต',fee:a[2]?200:0,note:''}));
+  S={settings:{...defSettings(),name:'หอพักตัวอย่าง',ownerName:'นายเจ้าของ หอพัก',address:'123 ม.1 ต.ตัวอย่าง อ.เมือง จ.ตัวอย่าง',phone:'0899999999',amenities:'แอร์ · เตียง · ตู้เสื้อผ้า · WiFi · ที่จอดรถ'},rooms,readings:{},bills:{},history:[],expenses:[],repairs:[],parcels:[],mphotos:{},demo:true};
+  S.readings[p]={};S.bills[p]={};
+  rooms.forEach((r,i)=>{if(!r.tenant)return;
+    const c={w:r.wStart+6+i,e:r.eStart+120+i*25};S.readings[p][r.id]=c;
+    const b=calcBill(r,{w:r.wStart,e:r.eStart},c);b.paid=i!==2;b.paidDate=b.paid?p+'-0'+(3+i%3):'';S.bills[p][r.id]=b;});
+  S.expenses=[{id:uid(),date:p+'-10',cat:'ค่าไฟจ่ายการไฟฟ้า',amt:2900,note:'บิลการไฟฟ้า'},{id:uid(),date:p+'-12',cat:'ค่าน้ำจ่ายการประปา',amt:600,note:''},{id:uid(),date:p+'-20',cat:'แม่บ้าน/ค่าจ้าง',amt:1500,note:''}];
+  S.repairs=[{id:uid(),roomId:'r2',date:k+'-02',issue:'ก๊อกน้ำห้องน้ำรั่ว',status:'open',cost:0}];
+  return S;
+}
+
+function defSettings(){return{name:'หอพักของฉัน',ownerName:'',address:'',phone:'',waterRate:15,waterMin:0,elecRate:5,elecMin:0,dueDay:5,promptpay:'',note:'ขอบคุณที่ชำระตรงเวลาครับ 🙏',lineId:'',mapUrl:'',amenities:'',appUrl:'',payChannels:'เงินสด · โอน/พร้อมเพย์ · บัตรเครดิต',bankInfo:'',lateFlat:0,latePerDay:0,lastBackup:'',taxId:'',married:false,seqInv:0,seqRc:0}}
+const room=id=>S.rooms.find(r=>r.id===id);
+const sortedRooms=()=>[...S.rooms].sort((a,b)=>String(a.no).localeCompare(String(b.no),'th',{numeric:true}));
+const occRooms=()=>sortedRooms().filter(r=>r.tenant);
+
+function getPrev(id,k){
+  let kk=prevKey(k);
+  for(let i=0;i<36;i++){const x=S.readings[kk]&&S.readings[kk][id];if(x&&x.w!=null&&x.e!=null)return{w:+x.w,e:+x.e};kk=prevKey(kk)}
+  const r=room(id);return{w:+r.wStart||0,e:+r.eStart||0};
+}
+function calcBill(r,p,c,old={}){
+  const s=S.settings;
+  const wU=r2(Math.max(0,c.w-p.w)),eU=r2(Math.max(0,c.e-p.e));
+  const wAmt=r2(Math.max(wU*(+s.waterRate||0),+s.waterMin||0)),eAmt=r2(Math.max(eU*(+s.elecRate||0),+s.elecMin||0));
+  const rent=+r.rent||0,fee=+r.fee||0,other=+old.other||0;
+  return{no:r.no,tenant:r.tenant,rent,wPrev:p.w,wCur:c.w,wUnits:wU,wAmt,ePrev:p.e,eCur:c.e,eUnits:eU,eAmt,feeLabel:r.feeLabel||'ค่าบริการ',fee,other,otherNote:old.otherNote||'',
+    total:r2(rent+wAmt+eAmt+fee+other),paid:!!old.paid,paidDate:old.paidDate||'',payments:old.payments||null,warn:c.w<p.w||c.e<p.e};
+}
+
+/* ---------- shell ---------- */
+/* หน้าจอแบบเรียบ: ตัดอีโมจิออกจากข้อความที่แสดงบนจอ (ข้อความที่ส่ง LINE ยังมีอีโมจิเหมือนเดิม) */
+const plain=s=>String(s).replace(/\p{Extended_Pictographic}️?\s?/gu,'');
+function V(h){$('view').innerHTML=plain(h);window.scrollTo(0,0)}
+function go(t){tab=t;document.querySelectorAll('nav.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));render()}
+function render(){
+  $('dormName').textContent=S.settings.name||'หอพัก';document.title=(S.settings.name||'หอพัก')+' · JOE หอพัก';
+  $('topSub').textContent='JOE หอพัก · '+S.rooms.length+' ห้อง · มีผู้เช่า '+occRooms().length;
+  ({home:renderHome,meter:renderMeter,bills:renderBills,rooms:renderRooms,money:renderMoney,settings:renderSettings})[tab]();
+}
+function buildMonths(){
+  const sel=$('monthSel');const now=monthKey(new Date());let k=nextKey(now),opts=[];
+  for(let i=0;i<14;i++){opts.push(k);k=prevKey(k)}
+  sel.innerHTML=opts.map(o=>`<option value="${o}" ${o===cur?'selected':''}>${monthLabel(o)}</option>`).join('');
+  sel.onchange=()=>{cur=sel.value;render()};
+}
+function sheet(h){$('sheet').innerHTML=plain(h);$('modal').classList.remove('hidden')}
+function closeM(){$('modal').classList.add('hidden')}
+let tt;function toast(m){const t=$('toast');t.textContent=plain(m);t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),1800)}
+function lineUrl(t){return 'https://line.me/R/msg/text/?'+encodeURIComponent(t)}
+function copyText(t){
+  const fb=()=>{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');toast('คัดลอกแล้ว')}catch(e){toast('คัดลอกไม่ได้')}a.remove()};
+  try{navigator.clipboard.writeText(t).then(()=>toast('คัดลอกแล้ว'),fb)}catch(e){fb()}
+}
+
+/* ---------- home ---------- */
+function unpaidAll(){
+  const out=[];Object.keys(S.bills).sort().forEach(k=>{Object.entries(S.bills[k]).forEach(([id,b])=>{if(!b.paid)out.push({k,id,b})})});return out;
+}
+const METHODS=['เงินสด','โอน/พร้อมเพย์','บัตรเครดิต','อื่นๆ'];
+function paidSum(b){return b.payments&&b.payments.length?r2(b.payments.reduce((a,p)=>a+(+p.amt||0),0)):(b.paid?b.total:0)}
+function remain(b){return r2(Math.max(0,b.total-paidSum(b)))}
+function methodsOf(b){return b.payments&&b.payments.length?[...new Set(b.payments.map(p=>p.method))].join(', '):''}
+function syncPaid(b){if(b.payments&&b.payments.length){b.paid=paidSum(b)>=b.total-0.001;b.paidDate=b.payments[b.payments.length-1].date}}
+function statusChip(b){if(b.paid)return`<span class="chip ok">ชำระแล้ว${methodsOf(b)?' · '+esc(methodsOf(b)):''}</span>`;
+  return paidSum(b)>0?`<span class="chip warn">ค้าง ${baht(remain(b))}</span>`:'<span class="chip bad">ค้าง</span>'}
+function renderHome(){
+  const k=cur,bills=S.bills[k]||{},arr=Object.values(bills);
+  const billed=arr.reduce((a,b)=>a+b.total,0),paid=arr.reduce((a,b)=>a+paidSum(b),0);
+  const occ=occRooms(),notRead=occ.filter(r=>!(S.readings[k]&&S.readings[k][r.id])).length;
+  const un=unpaidAll(),unSum=un.reduce((a,x)=>a+remain(x.b),0);
+  let h='';
+  if(S.demo)h+=`<div class="banner">👋 นี่คือ<b>ข้อมูลตัวอย่าง</b> ลองกดเล่นได้เลย เมื่อพร้อมใช้จริง ไปที่ <b>ตั้งค่า → ล้างข้อมูลทั้งหมด</b> แล้วเพิ่มห้องของคุณ</div>`;
+  if(!storageOK)h+=`<div class="hint sm">⚠️ เบราว์เซอร์นี้บันทึกข้อมูลไม่ได้ ข้อมูลจะหายเมื่อปิดหน้า</div>`;
+  const lb=S.settings.lastBackup,bdays=lb?Math.floor((new Date(today())-new Date(lb))/864e5):999;
+  if(!S.demo&&S.rooms.length&&bdays>=30)h+=`<div class="hint sm">🛟 ${lb?'สำรองข้อมูลครั้งล่าสุด '+bdays+' วันก่อน':'ยังไม่เคยสำรองข้อมูล'} — ข้อมูลอยู่ในเครื่องนี้เท่านั้น <button class="btn sm" onclick="go('settings')">สำรองเลย</button></div>`;
+  h+=`<div class="stats">
+    <div class="stat"><div class="l">ห้องทั้งหมด</div><div class="v">${S.rooms.length}</div></div>
+    <div class="stat pri"><div class="l">มีผู้เช่า</div><div class="v">${occ.length}</div></div>
+    <div class="stat"><div class="l">ห้องว่าง</div><div class="v">${S.rooms.length-occ.length}</div></div></div>
+  <div class="card"><div class="h">${monthLabel(k)}</div>
+    <div class="stats" style="margin:10px 0 0">
+      <div class="stat"><div class="l">ยอดบิล</div><div class="v">${baht(billed)}</div></div>
+      <div class="stat ok"><div class="l">รับแล้ว</div><div class="v">${baht(paid)}</div></div>
+      <div class="stat bad"><div class="l">ค้าง</div><div class="v">${baht(billed-paid)}</div></div></div>
+    ${occ.length&&notRead?`<button class="btn pri block" onclick="go('meter')">📟 ยังไม่จดมิเตอร์ ${notRead} ห้อง — จดเลย</button>`:''}
+    ${arr.length?`<a class="btn line block" href="${lineUrl(summaryText(k))}" target="_blank" rel="noopener">💬 ส่งสรุปเดือนนี้ทาง LINE</a>`:''}
+  </div>
+  ${roomMap(k)}
+  <div id="installBox"></div>
+  <div class="home-grid"><div class="card"><div class="mhead"><div class="h">📢 ห้องว่าง ${S.rooms.length-occ.length} ห้อง</div></div><div class="sm mut">สร้างป้ายประกาศพร้อม QR ให้คนหาห้องสแกนติดต่อ แคปไปโพสต์หรือพิมพ์ติดหน้าหอ</div>
+    <button class="btn pri block" onclick="openPoster()">📢 สร้างป้ายประกาศห้องว่าง</button></div>
+  <div class="card"><div class="mhead"><div class="h">ค้างชำระทั้งหมด</div><b class="bad">${baht(unSum)} ฿</b></div>`;
+  if(!un.length)h+=`<div class="empty">🎉 ไม่มียอดค้างชำระ</div>`;
+  else un.forEach(x=>{const dl=daysLate(x.k);h+=`<div class="item" onclick="openBill('${x.k}','${x.id}')"><div class="rno">${esc(x.b.no)}</div><div class="grow"><div>${esc(x.b.tenant)}</div><div class="sm ${dl>0?'bad':'mut'}">${monthLabel(x.k)} · ${dl>0?'เลยกำหนด '+dl+' วัน':dl===0?'ครบกำหนดวันนี้':'ครบกำหนดอีก '+(-dl)+' วัน'}</div></div><div class="right"><b>${baht(remain(x.b))}</b><br>${statusChip(x.b)}</div></div>`});
+  h+=`</div>${parcelCard()}</div>`;
+  V(h);showInstall();
+}
+function summaryText(k){
+  const bills=S.bills[k]||{};const arr=Object.values(bills).sort((a,b)=>String(a.no).localeCompare(String(b.no),'th',{numeric:true}));
+  const billed=arr.reduce((a,b)=>a+b.total,0),paid=arr.reduce((a,b)=>a+paidSum(b),0);
+  let t=`📊 สรุป ${S.settings.name} — ${monthLabel(k)}\nยอดบิล ${baht(billed)} บาท\n✅ รับแล้ว ${baht(paid)} บาท\n⏳ ค้าง ${baht(billed-paid)} บาท\n──────────\n`;
+  arr.forEach(b=>{t+=`${b.paid?'✅':'⏳'} ห้อง ${b.no} ${b.tenant} ${baht(b.total)} บาท${b.paid&&methodsOf(b)?' ('+methodsOf(b)+')':(!b.paid&&paidSum(b)?' (ค้าง '+baht(remain(b))+')':'')}\n`});
+  return t.trim();
+}
+
+/* ---------- meter ---------- */
+function renderMeter(){
+  const k=cur,rooms=occRooms(),s=S.settings;
+  if(!rooms.length)return V(`<div class="card empty">ยังไม่มีห้องที่มีผู้เช่า<br><br><button class="btn pri" onclick="go('rooms')">ไปเพิ่มห้อง / ผู้เช่า</button></div>`);
+  const rd=S.readings[k]||{};
+  let h=`<div class="card"><div class="h">📟 จดมิเตอร์ ${monthLabel(k)}</div><div class="sm mut">กรอกเลขมิเตอร์ปัจจุบัน ระบบคิดหน่วยและเงินให้อัตโนมัติ · น้ำ ${s.waterRate} ฿/หน่วย${+s.waterMin?` (ขั้นต่ำ ${s.waterMin} ฿)`:''} · ไฟ ${s.elecRate} ฿/หน่วย${+s.elecMin?` (ขั้นต่ำ ${s.elecMin} ฿)`:''}</div></div>`;
+  h+='<div class="cardgrid">';
+  rooms.forEach(r=>{const p=getPrev(r.id,k),c=rd[r.id]||{};
+    h+=`<div class="card"><div class="mhead"><b>ห้อง ${esc(r.no)}</b><span class="sm mut">${esc(r.tenant)}</span></div>
+    <div class="grid2">
+      <label>💧 น้ำ · ครั้งก่อน <b>${p.w}</b><input type="number" inputmode="decimal" id="w_${r.id}" value="${c.w??''}" placeholder="เลขปัจจุบัน" oninput="mPrev('${r.id}')"></label>
+      <label>⚡ ไฟ · ครั้งก่อน <b>${p.e}</b><input type="number" inputmode="decimal" id="e_${r.id}" value="${c.e??''}" placeholder="เลขปัจจุบัน" oninput="mPrev('${r.id}')"></label>
+    </div><div class="mres" id="m_${r.id}"></div>
+    <div class="row-ph" style="margin-top:8px;display:flex;gap:8px;align-items:center">${(S.mphotos[k]||{})[r.id]?`<img src="${S.mphotos[k][r.id]}" style="width:56px;height:56px;object-fit:cover;border-radius:6px;border:1px solid var(--line)" onclick="viewImg(S.mphotos['${k}']['${r.id}'])">`:''}
+    <label class="btn sm ph-btn" style="margin:0;color:var(--ink)">📷 ${(S.mphotos[k]||{})[r.id]?'ถ่ายใหม่':'ถ่ายรูปมิเตอร์ (หลักฐาน)'}<input type="file" accept="image/*" capture="environment" onchange="meterPhoto(this,'${r.id}')"></label></div></div>`});
+  h+='</div>';
+  h+=`<button class="btn pri block big" onclick="saveMeter()">💾 บันทึกและออกบิล</button>`;
+  V(h);rooms.forEach(r=>mPrev(r.id));
+}
+function mPrev(id){
+  const w=$('w_'+id).value,e=$('e_'+id).value,el=$('m_'+id);
+  if(w===''||e===''){el.innerHTML='<span class="mut">กรอกเลขน้ำและไฟให้ครบ</span>';return}
+  const old=(S.bills[cur]||{})[id]||{};
+  const b=calcBill(room(id),getPrev(id,cur),{w:+w,e:+e},old);
+  el.innerHTML=`น้ำ ${b.wUnits} หน่วย = ${baht(b.wAmt)} ฿ · ไฟ ${b.eUnits} หน่วย = ${baht(b.eAmt)} ฿<br><b>รวมทั้งบิล ${baht(b.total)} ฿</b>`+(b.warn?'<div class="bad">⚠️ เลขน้อยกว่าครั้งก่อน กรุณาตรวจสอบ</div>':'')+abnormal(id,b);
+}
+function saveMeter(){
+  const k=cur;let n=0;S.readings[k]=S.readings[k]||{};S.bills[k]=S.bills[k]||{};
+  occRooms().forEach(r=>{const w=$('w_'+r.id).value,e=$('e_'+r.id).value;if(w===''||e==='')return;
+    S.readings[k][r.id]={w:+w,e:+e};
+    const ob=S.bills[k][r.id]||{};S.bills[k][r.id]=calcBill(r,getPrev(r.id,k),{w:+w,e:+e},ob);S.bills[k][r.id].inv=ob.inv||nextInv(k);n++;});
+  if(!n){toast('ยังไม่ได้กรอกเลขมิเตอร์');return}
+  save();toast('ออกบิลแล้ว '+n+' ห้อง');go('bills');
+}
+
+/* ---------- bills ---------- */
+function renderBills(){
+  const k=cur,bills=S.bills[k]||{};
+  const ids=Object.keys(bills).sort((a,b)=>String(bills[a].no).localeCompare(String(bills[b].no),'th',{numeric:true}));
+  if(!ids.length)return V(`<div class="card empty">ยังไม่มีบิลเดือน ${monthLabel(k)}<br><br><button class="btn pri" onclick="go('meter')">📟 จดมิเตอร์เพื่อออกบิล</button></div>`);
+  const paidN=ids.filter(i=>bills[i].paid).length;
+  let h=`<div class="card"><div class="mhead"><div class="h">🧾 บิล ${monthLabel(k)}</div><span class="sm mut">ชำระแล้ว ${paidN}/${ids.length}</span></div>`;
+  ids.forEach(id=>{const b=bills[id];
+    h+=`<div class="item" onclick="openBill('${k}','${id}')"><div class="rno">${esc(b.no)}</div><div class="grow"><div>${esc(b.tenant)}</div><div class="sm mut">น้ำ ${b.wUnits} · ไฟ ${b.eUnits} หน่วย</div></div><div class="right"><b>${baht(b.total)}</b><br>${statusChip(b)}</div></div>`});
+  h+=`</div><div class="sm mut" style="text-align:center">แตะที่บิลเพื่อดู QR ส่ง LINE หรือบันทึกรับเงิน</div>`;
+  V(h);
+}
+function billText(k,id,remind){
+  const b=S.bills[k][id],s=S.settings;ensureInv(k,id);
+  let t=(remind?'⏰ แจ้งเตือนค้างชำระ\n':'')+`🏠 ${s.name}\nใบแจ้งหนี้ ${b.inv} · ห้อง ${b.no} — ${monthLabel(k)}\nผู้เช่า: ${b.tenant}\n──────────\n`;
+  t+=`ค่าห้อง: ${baht(b.rent)} บาท\n💧 ค่าน้ำ: ${b.wPrev}→${b.wCur} (${b.wUnits} หน่วย) ${baht(b.wAmt)} บาท\n⚡ ค่าไฟ: ${b.ePrev}→${b.eCur} (${b.eUnits} หน่วย) ${baht(b.eAmt)} บาท\n`;
+  if(b.fee)t+=`${b.feeLabel}: ${baht(b.fee)} บาท\n`;
+  if(b.other)t+=`${b.otherNote||'ค่าอื่นๆ'}: ${baht(b.other)} บาท\n`;
+  t+=`──────────\n💰 รวม ${baht(b.total)} บาท\n`;
+  if(b.paid)t+=`✅ ได้รับชำระแล้ว ${fmtDate(b.paidDate)}${methodsOf(b)?' ('+methodsOf(b)+')':''} ขอบคุณครับ\n`;
+  else{if(paidSum(b))t+=`ชำระแล้ว ${baht(paidSum(b))} บาท · คงเหลือ ${baht(remain(b))} บาท\n`;
+    t+=`📅 กรุณาชำระภายในวันที่ ${dueText(k)}\n`;if(s.payChannels)t+=`ช่องทางชำระ: ${s.payChannels}\n`;if(s.bankInfo)t+=`โอนเข้า: ${s.bankInfo}\n`;if(s.promptpay)t+=`พร้อมเพย์: ${s.promptpay}\n`;
+    const pl=payLink(k,id);if(pl)t+=`📲 กดเพื่อเปิด QR จ่ายเงิน:\n${pl}\n`}
+  if(s.note&&!b.paid)t+=s.note;
+  return t.trim();
+}
+function openBill(k,id){ensureInv(k,id);
+  const b=S.bills[k][id],s=S.settings;let qr='';
+  if(!b.paid){
+    if(s.promptpay&&typeof qrcode!=='undefined'){try{const q=qrcode(0,'M');q.addData(ppPayload(s.promptpay,remain(b)));q.make();qr=`<div class="qr">${q.createSvgTag(5,2)}<div class="sm mut">สแกนจ่ายพร้อมเพย์ ${baht(remain(b))} บาท<br>(แคปหน้าจอส่งให้ผู้เช่าได้)</div></div>`}catch(e){}}
+    else if(!s.promptpay)qr=`<div class="hint sm">💡 ใส่เลขพร้อมเพย์ในหน้า <b>ตั้งค่า</b> เพื่อแสดง QR รับเงินอัตโนมัติ</div>`;
+  }
+  sheet(`<div class="sh-h"><div><div class="h">ห้อง ${esc(b.no)} · ${monthLabel(k)}</div><div class="mut">${esc(b.tenant)}</div></div><button class="x" onclick="closeM()">✕</button></div>
+  <table class="bill">
+    <tr><td>ค่าห้อง</td><td>${baht(b.rent)}</td></tr>
+    <tr><td>💧 ค่าน้ำ<div class="sm mut">${b.wPrev} → ${b.wCur} = ${b.wUnits} หน่วย</div></td><td>${baht(b.wAmt)}</td></tr>
+    <tr><td>⚡ ค่าไฟ<div class="sm mut">${b.ePrev} → ${b.eCur} = ${b.eUnits} หน่วย</div></td><td>${baht(b.eAmt)}</td></tr>
+    ${b.fee?`<tr><td>${esc(b.feeLabel)}</td><td>${baht(b.fee)}</td></tr>`:''}
+    ${b.other?`<tr><td>${esc(b.otherNote||'ค่าอื่นๆ')}</td><td>${baht(b.other)}</td></tr>`:''}
+    <tr class="tot"><td>รวม</td><td>${baht(b.total)} ฿</td></tr>
+  </table>${qr}
+  <button class="btn pri block big" onclick="billImage('${k}','${id}')">🖼️ รูปบิล + QR ส่ง LINE ผู้เช่า</button>
+  <div class="act">
+    <a class="btn line" href="${lineUrl(billText(k,id,!b.paid&&k<monthKey(new Date())))}" target="_blank" rel="noopener">💬 ส่งข้อความ</a>
+    <button class="btn" onclick="copyText(billText('${k}','${id}'))">📋 คัดลอกบิล</button>
+  </div>
+  <div class="sec">💵 การชำระเงิน</div>
+  ${(b.payments||[]).map((p,i)=>`<div class="paylog"><span>${fmtDate(p.date)} · <b>${esc(p.method)}</b>${p.note?' · '+esc(p.note):''}</span><span><b>${baht(p.amt)}</b> ${p.method!=='หักเงินประกัน'?`<button class="pill" style="padding:3px 9px;font-size:12px" onclick="openReceipt('${k}','${id}',${i})">ใบเสร็จ</button>`:''} <button class="pill" style="padding:3px 9px;font-size:12px" onclick="delPay('${k}','${id}',${i})">ลบ</button></span></div>`).join('')}
+  ${b.paid?`<div class="paidbox">✅ ชำระครบแล้ว ${fmtDate(b.paidDate)}${methodsOf(b)?' · '+esc(methodsOf(b)):''}</div>${!(b.payments&&b.payments.length)?`<button class="btn pri block" onclick="openReceipt('${k}','${id}',0)">ออกใบเสร็จรับเงิน</button>`:''}<button class="btn block" onclick="setPaid('${k}','${id}',false)">ยกเลิกสถานะชำระ</button>`
+  :`${paidSum(b)?`<div class="hint sm">ชำระแล้ว ${baht(paidSum(b))} · คงเหลือ <b>${baht(remain(b))}</b> บาท</div>`:''}
+   <div class="sm mut">ช่องทางที่รับ</div><div class="pills" id="pMethods">${METHODS.map((m,i)=>`<button type="button" class="pill${i===0?' on':''}" onclick="pickM(this)">${m}</button>`).join('')}</div>
+   <div class="grid2"><label>จำนวนเงินที่รับ<input id="pAmt" type="number" inputmode="decimal" value="${remain(b)}"></label><label>วันที่รับ<input type="date" id="pDate" value="${today()}"></label></div>
+   <label>หมายเหตุ (ถ้ามี)<input id="pNote" placeholder="เช่น เลขสลิป / 4 ตัวท้ายบัตร"></label>
+   <button class="btn pri block big" onclick="setPaid('${k}','${id}',true)">✅ บันทึกรับเงิน</button>`}
+  ${lateBox(k,id)}
+  <div class="sec">ค่าใช้จ่ายเพิ่มเติม</div>
+  <div class="grid2"><label>จำนวน (บาท)<input id="oAmt" type="number" inputmode="decimal" value="${b.other||''}"></label><label>รายละเอียด<input id="oNote" value="${esc(b.otherNote)}" placeholder="เช่น ค่าปรับ ค่าซ่อม"></label></div>
+  <button class="btn block" onclick="updOther('${k}','${id}')">อัปเดตยอดบิล</button>`);
+}
+function updOther(k,id){const b=S.bills[k][id];b.other=r2($('oAmt').value);b.otherNote=$('oNote').value.trim();
+  b.total=r2(b.rent+b.wAmt+b.eAmt+b.fee+b.other);syncPaid(b);save();toast('อัปเดตแล้ว');openBill(k,id);render()}
+function pickM(el){el.parentNode.querySelectorAll('.pill').forEach(p=>p.classList.toggle('on',p===el))}
+function setPaid(k,id,v){const b=S.bills[k][id];
+  if(!v){b.payments=[];b.paid=false;b.paidDate='';save();toast('ยกเลิกแล้ว');openBill(k,id);render();return}
+  const amt=r2($('pAmt').value);if(!(amt>0)){toast('กรอกจำนวนเงิน');return}
+  if(!b.payments||!b.payments.length)b.payments=paidSum(b)?[{date:b.paidDate||today(),amt:paidSum(b),method:'ไม่ระบุ',note:''}]:[];
+  const on=document.querySelector('#pMethods .pill.on');
+  b.payments.push({date:$('pDate').value||today(),amt,method:on?on.textContent:'เงินสด',note:$('pNote').value.trim()});
+  b.payments[b.payments.length-1].rc=nextRc(b.payments[b.payments.length-1].date);
+  syncPaid(b);save();toast(b.paid?'ชำระครบแล้ว ✅ ออกใบเสร็จแล้ว':'บันทึกแล้ว · คงเหลือ '+baht(remain(b)));render();openReceipt(k,id,b.payments.length-1)}
+function delPay(k,id,i){const b=S.bills[k][id];b.payments.splice(i,1);if(!b.payments.length){b.paid=false;b.paidDate=''}else syncPaid(b);save();openBill(k,id);render()}
+
+/* PromptPay EMVCo payload */
+function crc16(s){let c=0xFFFF;for(let i=0;i<s.length;i++){c^=s.charCodeAt(i)<<8;for(let j=0;j<8;j++){c=(c&0x8000)?((c<<1)^0x1021):(c<<1);c&=0xFFFF}}return c.toString(16).toUpperCase().padStart(4,'0')}
+function ppPayload(id,amount){
+  const f=(t,v)=>t+pad(v.length)+v;let d=String(id).replace(/\D/g,''),acc;
+  if(d.length>=13)acc=f(d.length>=15?'03':'02',d);
+  else{if(d.startsWith('0'))d='66'+d.slice(1);acc=f('01',('0000000000000'+d).slice(-13))}
+  const p=f('00','01')+f('01',amount?'12':'11')+f('29',f('00','A000000677010111')+acc)+f('53','764')+(amount?f('54',(+amount).toFixed(2)):'')+f('58','TH')+'6304';
+  return p+crc16(p);
+}
+
+/* ---------- rooms ---------- */
+function renderRooms(){
+  const rs=sortedRooms();
+  let h=`<button class="btn pri block big" style="margin:0 0 12px" onclick="editRoom()">➕ เพิ่มห้อง</button><div class="card">`;
+  if(!rs.length)h+=`<div class="empty">ยังไม่มีห้อง กด "เพิ่มห้อง" ด้านบน</div>`;
+  rs.forEach(r=>{h+=`<div class="item" onclick="editRoom('${r.id}')"><div class="rno">${esc(r.no)}</div><div class="grow"><div>${r.tenant?esc(r.tenant):'<span class="mut">— ห้องว่าง —</span>'}</div><div class="sm mut">${r.phone?esc(r.phone)+' · ':''}ค่าห้อง ${baht(r.rent)} ฿</div></div>${r.tenant?'<span class="chip ok">มีผู้เช่า</span>':'<span class="chip mut">ว่าง</span>'}</div>`});
+  h+='</div>';
+  if(S.history.length){h+=`<div class="card"><div class="h">📁 ประวัติการย้ายออก</div>`;
+    [...S.history].reverse().forEach(x=>{h+=`<div class="item" onclick="openHist('${x.id}')"><div class="rno">${esc(x.roomNo)}</div><div class="grow"><div>${esc(x.tenant)}</div><div class="sm mut">ย้ายออก ${fmtDate(x.moveOut)}</div></div><div class="right sm">${x.refund>=0?'คืน':'เก็บเพิ่ม'}<br><b class="${x.refund>=0?'pos':'neg'}">${baht(Math.abs(x.refund))} ฿</b></div></div>`});h+='</div>'}
+  V(h);
+}
+function editRoom(id){
+  const r=id?room(id):{no:'',rent:'',tenant:'',phone:'',deposit:'',moveIn:'',wStart:'',eStart:'',feeLabel:'อินเทอร์เน็ต',fee:'',note:''};
+  sheet(`<div class="sh-h"><div class="h">${id?'แก้ไขห้อง '+esc(r.no):'เพิ่มห้องใหม่'}</div><button class="x" onclick="closeM()">✕</button></div>
+  <div class="grid2"><label>เลขห้อง *<input id="f_no" value="${esc(r.no)}"></label><label>ค่าห้อง/เดือน *<input id="f_rent" type="number" inputmode="decimal" value="${esc(r.rent)}"></label></div>
+  <div class="sec">ผู้เช่า <span class="sm mut">(เว้นว่าง = ห้องว่าง)</span></div>
+  <label>ชื่อผู้เช่า<input id="f_tenant" value="${esc(r.tenant)}"></label>
+  <div class="grid2"><label>เบอร์โทร<input id="f_phone" type="tel" value="${esc(r.phone)}"></label><label>เลขบัตรประชาชน<input id="f_idCard" inputmode="numeric" value="${esc(r.idCard)}"></label></div>
+  <label>ที่อยู่ตามบัตร<input id="f_tAddress" value="${esc(r.tAddress)}"></label>
+  <div class="grid2"><label>เงินประกัน<input id="f_deposit" type="number" inputmode="decimal" value="${esc(r.deposit)}"></label><label>ค่าเช่าล่วงหน้า<input id="f_advance" type="number" inputmode="decimal" value="${esc(r.advance||'')}"></label>
+  <label>วันเริ่มสัญญา<input id="f_moveIn" type="date" value="${esc(r.moveIn)}"></label><label>ระยะสัญญา (เดือน)<input id="f_termMonths" type="number" value="${esc(r.termMonths||12)}"></label></div>
+  <div class="sm mut">💡 แนะนำ: เงินประกัน + ค่าเช่าล่วงหน้า รวมไม่เกิน 3 เดือน (อ้างอิงประกาศ สคบ.)</div>
+  <label class="check" style="margin-top:10px"><input type="checkbox" id="f_pdpa" ${r.pdpa?'checked':''}> ผู้เช่ายินยอมให้เก็บข้อมูลส่วนตัว (ชื่อ เบอร์ เลขบัตร) เพื่อใช้ทำสัญญาและออกบิลเท่านั้น</label>
+  <div class="sec">รูปสภาพห้องวันเข้าอยู่ <span class="sm mut">(สูงสุด 4 รูป · ไว้เทียบตอนย้ายออก)</span></div>
+  <div class="thumbs" id="condBox">${(r.photos||[]).map((u,i)=>`<img src="${u}" onclick="viewImg(this.src)">`).join('')}</div>
+  ${id?`<div class="btn3"><label class="btn ph-btn" style="margin:0;color:var(--ink)">📷 เพิ่มรูป<input type="file" accept="image/*" multiple onchange="condPhoto(this,'${id}')"></label>${(r.photos||[]).length?`<button class="btn bad" onclick="clearCond('${id}')">ลบรูปทั้งหมด</button>`:''}</div>`:'<div class="sm mut">บันทึกห้องก่อน แล้วเปิดแก้ไขเพื่อเพิ่มรูป</div>'}
+  <div class="sec">มิเตอร์เริ่มต้น <span class="sm mut">(ใช้ครั้งแรกเท่านั้น)</span></div>
+  <div class="grid2"><label>💧 น้ำ<input id="f_wStart" type="number" inputmode="decimal" value="${esc(r.wStart)}"></label><label>⚡ ไฟ<input id="f_eStart" type="number" inputmode="decimal" value="${esc(r.eStart)}"></label></div>
+  <div class="sec">ค่าบริการรายเดือนคงที่</div>
+  <div class="grid2"><label>ชื่อรายการ<input id="f_feeLabel" value="${esc(r.feeLabel)}"></label><label>บาท/เดือน<input id="f_fee" type="number" inputmode="decimal" value="${esc(r.fee)}"></label></div>
+  <label>หมายเหตุ<input id="f_note" value="${esc(r.note)}"></label>
+  <label>สถานะพิเศษของห้อง<select class="f" id="f_flag"><option value="">ปกติ</option><option value="resv" ${r.flag==='resv'?'selected':''}>จองแล้ว (รอเข้าอยู่)</option><option value="fix" ${r.flag==='fix'?'selected':''}>ปิดปรับปรุง/ซ่อม</option></select></label>
+  <button class="btn pri block big" onclick="saveRoom('${id||''}')">💾 บันทึก</button>
+  ${id&&r.tenant?`<div class="btn3"><button class="btn" onclick="openContract('${id}')">📄 สัญญาเช่า</button><button class="btn" onclick="openMoveOut('${id}')">🚪 แจ้งย้ายออก</button></div>`:''}
+  ${id?`<button class="btn bad block" id="delBtn" onclick="delRoom('${id}')">🗑️ ลบห้องนี้</button>`:''}`);
+}
+function saveRoom(id){
+  const v=f=>$('f_'+f).value.trim();
+  if(!v('no')||v('rent')===''){toast('กรอกเลขห้องและค่าห้อง');return}
+  if(S.rooms.some(r=>r.no===v('no')&&r.id!==id)){toast('มีเลขห้องนี้แล้ว');return}
+  const d={no:v('no'),rent:+v('rent'),tenant:v('tenant'),phone:v('phone'),deposit:+v('deposit')||0,advance:+v('advance')||0,idCard:v('idCard'),tAddress:v('tAddress'),termMonths:+v('termMonths')||12,moveIn:v('moveIn'),wStart:+v('wStart')||0,eStart:+v('eStart')||0,feeLabel:v('feeLabel')||'ค่าบริการ',fee:+v('fee')||0,note:v('note'),flag:$('f_flag').value,pdpa:$('f_pdpa').checked};
+  if(d.tenant&&d.idCard&&!d.pdpa){toast('กรุณาให้ผู้เช่ายินยอมเรื่องข้อมูลส่วนตัวก่อน');return}
+  if(id)Object.assign(room(id),d);else S.rooms.push({id:uid(),...d});
+  save();closeM();toast(d.deposit+d.advance>d.rent*3?'บันทึกแล้ว · แนะนำให้ประกัน+ล่วงหน้าไม่เกิน 3 เดือน':'บันทึกแล้ว');render();
+}
+function delRoom(id){
+  const b=$('delBtn');if(!b.dataset.c){b.dataset.c=1;b.textContent='แตะอีกครั้งเพื่อยืนยันการลบ';return}
+  S.rooms=S.rooms.filter(r=>r.id!==id);save();closeM();toast('ลบแล้ว');render();
+}
+
+/* ---------- settings ---------- */
+function renderSettings(){
+  const s=S.settings;
+  V(`<div class="card"><div class="h">🏢 ข้อมูลหอพัก</div>
+    <label>ชื่อหอพัก<input id="s_name" value="${esc(s.name)}"></label>
+    <label>เบอร์ติดต่อ<input id="s_phone" type="tel" value="${esc(s.phone)}"></label>
+    <label>ชื่อผู้ให้เช่า (ใช้ในสัญญา)<input id="s_ownerName" value="${esc(s.ownerName)}"></label>
+    <label>ที่อยู่หอพัก<input id="s_address" value="${esc(s.address)}"></label>
+    <label>LINE ID (สำหรับ QR ป้ายห้องว่าง)<input id="s_lineId" value="${esc(s.lineId)}" placeholder="เช่น mydorm หรือ @mydorm"></label>
+    <label>ลิงก์ Google Maps<input id="s_mapUrl" value="${esc(s.mapUrl)}" placeholder="https://maps.app.goo.gl/..."></label>
+    <label>สิ่งอำนวยความสะดวก<input id="s_amenities" value="${esc(s.amenities)}" placeholder="แอร์ · WiFi · ที่จอดรถ"></label>
+    <label>ลิงก์แอปบน GitHub (ถ้ามี — ใช้สร้างลิงก์จ่ายเงินในข้อความ LINE)<input id="s_appUrl" value="${esc(s.appUrl)}" placeholder="https://ชื่อ.github.io/dorm/"></label>
+    <label>ช่องทางที่รับชำระ (แสดงในบิล)<input id="s_payChannels" value="${esc(s.payChannels)}"></label>
+    <label>บัญชีธนาคารสำหรับโอน (ถ้ามี)<input id="s_bankInfo" value="${esc(s.bankInfo)}" placeholder="กสิกร 123-4-56789-0 ชื่อ ..."></label>
+    <label>เลขพร้อมเพย์ (เบอร์มือถือ หรือ เลขบัตรประชาชน)<input id="s_promptpay" inputmode="numeric" value="${esc(s.promptpay)}" placeholder="08xxxxxxxx"></label>
+    <label>เลขประจำตัวผู้เสียภาษีของผู้ให้เช่า (ไม่บังคับ — แสดงในใบเสร็จ)<input id="s_taxId" inputmode="numeric" value="${esc(s.taxId)}"></label>
+    <label class="check" style="margin-top:12px"><input type="checkbox" id="s_married" ${s.married?'checked':''}> ผู้ให้เช่ามีคู่สมรส (ใช้คำนวณเกณฑ์ยื่นภาษีครึ่งปี)</label></div>
+  <div class="card"><div class="h">💧⚡ อัตราค่าน้ำ-ไฟ</div>
+    <div class="grid2"><label>ค่าน้ำ ฿/หน่วย<input id="s_waterRate" type="number" inputmode="decimal" value="${s.waterRate}"></label><label>ค่าน้ำขั้นต่ำ ฿<input id="s_waterMin" type="number" inputmode="decimal" value="${s.waterMin}"></label>
+    <label>ค่าไฟ ฿/หน่วย<input id="s_elecRate" type="number" inputmode="decimal" value="${s.elecRate}"></label><label>ค่าไฟขั้นต่ำ ฿<input id="s_elecMin" type="number" inputmode="decimal" value="${s.elecMin}"></label></div>
+    <div class="hint sm">💡 แนะนำ: ตั้งค่าน้ำ-ไฟไม่เกินอัตราที่การไฟฟ้า/การประปาเรียกเก็บ (อ้างอิงประกาศ สคบ. 2568) — ดูเทียบได้ที่แท็บ <b>บัญชี</b></div>
+    <label>ครบกำหนดชำระวันที่<input id="s_dueDay" type="number" min="1" max="31" value="${s.dueDay}"></label>
+    <label>ข้อความท้ายบิล<input id="s_note" value="${esc(s.note)}"></label>
+    <div class="grid2"><label>ค่าปรับจ่ายช้า (ครั้งเดียว ฿)<input id="s_lateFlat" type="number" inputmode="decimal" value="${s.lateFlat||0}"></label><label>ค่าปรับต่อวัน ฿<input id="s_latePerDay" type="number" inputmode="decimal" value="${s.latePerDay||0}"></label></div>
+    <div class="sm mut">ระบบจะแนะนำค่าปรับในบิลที่เลยกำหนด ให้คุณกดเพิ่มเองทุกครั้ง</div>
+    <button class="btn pri block big" onclick="saveSettings()">💾 บันทึกการตั้งค่า</button></div>
+  <div class="card"><div class="h">🛟 สำรองข้อมูล</div><div class="sm mut">ข้อมูลเก็บอยู่ในเครื่องนี้เท่านั้น ควรคัดลอกเก็บไว้ (เช่น ส่งเข้า LINE ตัวเอง) ทุกสิ้นเดือน</div>
+    ${storageBar()}
+    <div class="btn3"><button class="btn" onclick="backupFile()">💾 ดาวน์โหลดไฟล์สำรอง</button><button class="btn" onclick="markBackup();copyText(JSON.stringify(S))">📋 คัดลอกข้อมูล</button></div>
+    <div class="sm mut" style="margin-top:4px">${S.settings.lastBackup?'สำรองล่าสุด '+fmtDate(S.settings.lastBackup):'ยังไม่เคยสำรองข้อมูล'}</div>
+    <label>กู้คืนจากไฟล์<input type="file" accept=".json,application/json" onchange="restoreFile(this)"></label>
+    <label>กู้คืน: วางข้อมูลสำรองที่นี่<textarea id="restore" placeholder='{"settings":...}'></textarea></label>
+    <button class="btn block" onclick="doRestore()">♻️ กู้คืนข้อมูล</button></div>
+  <div class="card"><div class="h">📣 แนะนำให้เจ้าของหอคนอื่น</div><div class="sm mut">ฟีเจอร์พื้นฐานใช้ฟรีตลอด ช่วยบอกต่อเพื่อนที่มีหอพักหรือห้องเช่า</div>
+    <a class="btn line block" href="${lineUrl(shareText())}" target="_blank" rel="noopener">💬 แชร์ทาง LINE</a>
+    <button class="btn block" onclick="copyText(shareText())">📋 คัดลอกลิงก์แนะนำ</button></div>
+  <div class="card"><div class="h">ℹ️ ข้อควรทราบ</div><div class="sm mut">JOE หอพักเป็นเครื่องมือช่วยจัดการ ให้เจ้าของหอทำงานได้สะดวกและปลอดภัยขึ้น ตัวเลขแนะนำและการแจ้งเตือนอ้างอิงจากประกาศที่เผยแพร่ทั่วไป ผู้ใช้ควรตรวจสอบข้อกฎหมายที่ใช้กับหอของตนเอง (สอบถาม สคบ. สายด่วน 1166)<br><br><b>สัญญาจาก JOE:</b> ฟีเจอร์ที่เคยใช้ฟรี จะฟรีตลอด หากมีการเปลี่ยนแปลงเงื่อนไขใดๆ จะแจ้งในแอปล่วงหน้าอย่างน้อย 30 วัน</div></div>
+  <div class="card"><div class="h">⚠️ เริ่มใช้งานจริง</div><div class="sm mut">ลบข้อมูลทั้งหมด (รวมข้อมูลตัวอย่าง) เพื่อเริ่มใส่ห้องของคุณเอง</div>
+    <button class="btn bad block" id="wipeBtn" onclick="wipe()">🗑️ ล้างข้อมูลทั้งหมด</button>
+    <button class="btn block" onclick="loadDemo()">โหลดข้อมูลตัวอย่างใหม่</button></div>`);
+}
+function saveSettings(){
+  const v=f=>$('s_'+f).value.trim(),s=S.settings;
+  Object.assign(s,{name:v('name')||'หอพัก',ownerName:v('ownerName'),address:v('address'),lineId:v('lineId'),mapUrl:v('mapUrl'),amenities:v('amenities'),appUrl:v('appUrl'),payChannels:v('payChannels'),bankInfo:v('bankInfo'),phone:v('phone'),promptpay:v('promptpay'),taxId:v('taxId'),married:$('s_married').checked,waterRate:+v('waterRate')||0,waterMin:+v('waterMin')||0,elecRate:+v('elecRate')||0,elecMin:+v('elecMin')||0,dueDay:+v('dueDay')||5,note:v('note'),lateFlat:+v('lateFlat')||0,latePerDay:+v('latePerDay')||0});
+  save();toast('บันทึกแล้ว');render();
+}
+function doRestore(){try{const d=JSON.parse($('restore').value);if(!d.settings||!d.rooms)throw 0;S=d;fixS();save();toast('กู้คืนสำเร็จ');go('home')}catch(e){toast('ข้อมูลไม่ถูกต้อง')}}
+function wipe(){const b=$('wipeBtn');if(!b.dataset.c){b.dataset.c=1;b.textContent='แตะอีกครั้งเพื่อยืนยัน — ลบทั้งหมด';return}
+  S={settings:{...S.settings,name:'หอพักของฉัน'},rooms:[],readings:{},bills:{},history:[],expenses:[],repairs:[],parcels:[],mphotos:{}};save();toast('ล้างข้อมูลแล้ว');go('rooms')}
+function loadDemo(){S=demo();save();toast('โหลดตัวอย่างแล้ว');go('home')}
+
+/* ---------- contract ---------- */
+const thDate=s=>{if(!s)return'..............';const[y,m,d]=s.split('-');return (+d)+' '+TH_M[m-1]+' '+(+y+543)};
+function addMonths(s,n){if(!s)return'';const d=new Date(s+'T00:00:00');d.setMonth(d.getMonth()+(+n||0));d.setDate(d.getDate()-1);return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+const dots=v=>v?v:'................................';
+function contractText(r){const s=S.settings;
+return `สัญญาเช่าห้องพักเพื่ออยู่อาศัย
+
+ทำที่ ${dots(s.name)} ${s.address||''}
+วันที่ ${thDate(r.moveIn)}
+
+สัญญานี้ทำขึ้นระหว่าง ${dots(s.ownerName)} ซึ่งต่อไปเรียกว่า "ผู้ให้เช่า" ฝ่ายหนึ่ง กับ ${dots(r.tenant)} เลขประจำตัวประชาชน ${dots(r.idCard)} ที่อยู่ ${dots(r.tAddress)} โทร ${dots(r.phone)} ซึ่งต่อไปเรียกว่า "ผู้เช่า" อีกฝ่ายหนึ่ง ทั้งสองฝ่ายตกลงกันดังนี้
+
+ข้อ 1 ทรัพย์ที่เช่า
+ผู้ให้เช่าตกลงให้เช่า และผู้เช่าตกลงเช่าห้องเลขที่ ${r.no} ของ ${s.name} เพื่อใช้เป็นที่อยู่อาศัยเท่านั้น${s.amenities?` พร้อมอุปกรณ์ ${s.amenities}`:''}
+
+ข้อ 2 ระยะเวลาการเช่า
+มีกำหนด ${r.termMonths||12} เดือน เริ่มวันที่ ${thDate(r.moveIn)} สิ้นสุดวันที่ ${thDate(addMonths(r.moveIn,r.termMonths||12))}
+
+ข้อ 3 ค่าเช่า
+ค่าเช่าเดือนละ ${baht(r.rent)} บาท ชำระภายในวันที่ ${s.dueDay} ของทุกเดือน${s.promptpay?` ผ่านพร้อมเพย์ ${s.promptpay}`:''} ผู้ให้เช่าจะออกใบแจ้งหนี้รายเดือนแสดงรายการค่าใช้จ่ายทุกครั้ง
+
+ข้อ 4 ค่าน้ำประปา ค่าไฟฟ้า และค่าบริการ
+คิดตามมิเตอร์ที่ใช้จริง ค่าน้ำหน่วยละ ${s.waterRate} บาท ค่าไฟฟ้าหน่วยละ ${s.elecRate} บาท ซึ่งไม่เกินอัตราที่หน่วยงานของรัฐเรียกเก็บจากผู้ให้เช่า${+r.fee?` และ${r.feeLabel||'ค่าบริการ'}เดือนละ ${baht(r.fee)} บาท`:''}
+
+ข้อ 5 เงินประกันและค่าเช่าล่วงหน้า
+ผู้เช่าวางเงินประกัน ${baht(r.deposit||0)} บาท${+r.advance?` และค่าเช่าล่วงหน้า ${baht(r.advance)} บาท`:''} ในวันทำสัญญา เมื่อสัญญาสิ้นสุดและผู้เช่าส่งมอบห้องคืนแล้ว ผู้ให้เช่าจะคืนเงินประกันภายใน 7 วัน หากมีความเสียหายที่ผู้เช่าต้องรับผิดชอบ ผู้ให้เช่าจะหักได้เฉพาะค่าเสียหายที่เกิดขึ้นจริงพร้อมแสดงหลักฐาน และคืนส่วนที่เหลือภายใน 14 วัน ทั้งนี้จะไม่หักค่าเสื่อมสภาพจากการใช้งานตามปกติ
+
+ข้อ 6 หน้าที่ของผู้เช่า
+ผู้เช่าจะดูแลรักษาห้องและอุปกรณ์เสมือนวิญญูชนพึงรักษาทรัพย์สินของตนเอง ไม่ดัดแปลงต่อเติมโดยไม่ได้รับอนุญาตเป็นหนังสือ ไม่นำห้องไปให้เช่าช่วง ไม่ใช้ห้องกระทำผิดกฎหมายหรือก่อความเดือดร้อนรำคาญแก่ผู้อื่น
+
+ข้อ 7 การตรวจห้อง
+ผู้ให้เช่าเข้าตรวจห้องได้ในเวลาอันสมควร โดยแจ้งให้ผู้เช่าทราบล่วงหน้า เว้นแต่กรณีเหตุฉุกเฉิน
+
+ข้อ 8 การเลิกสัญญา
+ผู้เช่าบอกเลิกสัญญาก่อนครบกำหนดได้ โดยแจ้งเป็นหนังสือล่วงหน้าไม่น้อยกว่า 30 วัน ผู้ให้เช่าบอกเลิกสัญญาได้เมื่อผู้เช่าผิดนัดชำระค่าเช่าหรือผิดสัญญาในข้อสาระสำคัญ และได้แจ้งเป็นหนังสือให้แก้ไขแล้วผู้เช่าไม่แก้ไข
+
+ข้อ 9 การส่งมอบห้องคืน
+เมื่อสัญญาสิ้นสุด ผู้เช่าจะส่งมอบห้องคืนในสภาพเรียบร้อย โดยทั้งสองฝ่ายร่วมกันตรวจสภาพห้องและจดเลขมิเตอร์ครั้งสุดท้าย
+
+ข้อ 10 ข้อมูลส่วนบุคคล
+ผู้เช่ายินยอมให้ผู้ให้เช่าเก็บและใช้ข้อมูลส่วนบุคคลเท่าที่จำเป็นเพื่อการทำสัญญา การออกใบแจ้งหนี้ และการติดต่อเท่านั้น ผู้ให้เช่าจะไม่เปิดเผยแก่บุคคลอื่นโดยไม่ได้รับความยินยอม เว้นแต่กฎหมายกำหนด และจะลบข้อมูลเลขประจำตัวประชาชนออกจากระบบเมื่อสัญญาสิ้นสุด
+
+สัญญานี้ทำขึ้นเป็นสองฉบับ มีข้อความถูกต้องตรงกัน คู่สัญญาได้อ่านและเข้าใจข้อความโดยตลอดแล้ว จึงลงลายมือชื่อไว้เป็นสำคัญ และต่างเก็บไว้ฝ่ายละหนึ่งฉบับ
+
+
+ลงชื่อ ................................ ผู้ให้เช่า
+      (${dots(s.ownerName)})
+
+ลงชื่อ ................................ ผู้เช่า
+      (${dots(r.tenant)})
+
+ลงชื่อ ................................ พยาน
+
+ลงชื่อ ................................ พยาน`}
+function openContract(id){const r=room(id);
+  const miss=[!S.settings.ownerName&&'ชื่อผู้ให้เช่า (ตั้งค่า)',!r.idCard&&'เลขบัตรผู้เช่า',!r.moveIn&&'วันเริ่มสัญญา'].filter(Boolean);
+  sheet(`<div class="sh-h noprint"><div class="h">📄 สัญญาเช่า ห้อง ${esc(r.no)}</div><button class="x" onclick="closeM()">✕</button></div>
+  ${miss.length?`<div class="hint sm noprint">ยังไม่ได้กรอก: ${miss.join(', ')} — ช่องว่างจะเป็นเส้นประให้เขียนมือ</div>`:''}
+  <div class="doc" id="docBox">${esc(contractText(r))}</div>
+  <div class="btn3 noprint"><button class="btn" onclick="copyText(contractText(room('${id}')))">📋 คัดลอก</button><button class="btn" onclick="doPrint()">🖨️ พิมพ์</button></div>
+  <div class="sm mut noprint" style="margin-top:8px">ร่างนี้เป็นตัวอย่างเพื่อความสะดวก แนะนำให้เทียบกับแบบสัญญามาตรฐานที่ สคบ. เผยแพร่ก่อนใช้จริง</div>
+  <button class="btn block noprint" onclick="editRoom('${id}')">← กลับ</button>`)}
+function doPrint(){try{window.print()}catch(e){}setTimeout(()=>toast('ถ้าพิมพ์ไม่ได้ ให้กดคัดลอกไปวางใน Word/Docs'),600)}
+
+/* ---------- move out ---------- */
+function openMoveOut(id){const r=room(id),k=monthKey(new Date()),p=getPrev(id,k),rd=(S.readings[k]||{})[id];
+  const un=unpaidAll().filter(x=>x.id===id&&!(x.k===k&&rd));
+  sheet(`<div class="sh-h"><div><div class="h">🚪 แจ้งย้ายออก ห้อง ${esc(r.no)}</div><div class="mut">${esc(r.tenant)}</div></div><button class="x" onclick="closeM()">✕</button></div>
+  <label>วันที่ย้ายออก / ส่งมอบห้อง<input type="date" id="mo_date" value="${today()}" oninput="moCalc('${id}')"></label>
+  <div class="sec">มิเตอร์ครั้งสุดท้าย</div>
+  <div class="grid2"><label>💧 น้ำ · ก่อนหน้า <b>${p.w}</b><input id="mo_w" type="number" inputmode="decimal" value="${rd?rd.w:''}" oninput="moCalc('${id}')"></label>
+  <label>⚡ ไฟ · ก่อนหน้า <b>${p.e}</b><input id="mo_e" type="number" inputmode="decimal" value="${rd?rd.e:''}" oninput="moCalc('${id}')"></label></div>
+  <label>ค่าห้องเดือนสุดท้าย (ถ้ามี)<input id="mo_rent" type="number" inputmode="decimal" placeholder="0" oninput="moCalc('${id}')"></label>
+  ${(r.photos||[]).length?`<div class="sec">รูปสภาพห้องวันเข้าอยู่ (ใช้เทียบ)</div><div class="thumbs">${r.photos.map(u=>`<img src="${u}" onclick="viewImg(this.src)">`).join('')}</div>`:''}
+  <div class="sec">หักค่าเสียหาย <span class="sm mut">(เฉพาะความเสียหายจริง มีหลักฐาน · ห้ามหักค่าเสื่อมปกติ)</span></div>
+  ${[1,2,3].map(i=>`<div class="grid2"><label>รายการ<input id="mo_dl${i}" placeholder="เช่น ผนังเป็นรู"></label><label>บาท<input id="mo_da${i}" type="number" inputmode="decimal" oninput="moCalc('${id}')"></label></div>`).join('')}
+  ${un.length?`<div class="sec">บิลค้างชำระ</div>${un.map(x=>`<div class="sm">• ${monthLabel(x.k)} — ${baht(remain(x.b))} บาท</div>`).join('')}`:''}
+  <div class="card" style="margin-top:12px" id="mo_res"></div>
+  <button class="btn pri block big" id="moBtn" onclick="doMoveOut('${id}')">✅ ยืนยันย้ายออก</button>`);moCalc(id)}
+function moData(id){const r=room(id),k=monthKey(new Date()),p=getPrev(id,k),rd=(S.readings[k]||{})[id];
+  const w=$('mo_w').value,e=$('mo_e').value;
+  const fin=(w!==''&&e!=='')?calcBill({...r,rent:+$('mo_rent').value||0,fee:0},p,{w:+w,e:+e}):null;
+  const un=unpaidAll().filter(x=>x.id===id&&!(x.k===k&&rd));
+  const ded=[1,2,3].map(i=>({label:$('mo_dl'+i).value.trim()||'ค่าเสียหาย',amt:+$('mo_da'+i).value||0})).filter(d=>d.amt>0);
+  const hold=(+r.deposit||0)+(+r.advance||0),unSum=un.reduce((a,x)=>a+remain(x.b),0),dSum=ded.reduce((a,d)=>a+d.amt,0),finSum=fin?fin.total:0;
+  return{r,k,fin,un,ded,hold,unSum,dSum,finSum,refund:r2(hold-unSum-dSum-finSum),date:$('mo_date').value||today()}}
+function moCalc(id){const d=moData(id);
+  const dl=d.ded.length?14:7,due=(()=>{const x=new Date(d.date+'T00:00:00');x.setDate(x.getDate()+dl);return x.getFullYear()+'-'+pad(x.getMonth()+1)+'-'+pad(x.getDate())})();
+  $('mo_res').innerHTML=`<table class="bill"><tr><td>เงินประกัน + ค่าเช่าล่วงหน้า</td><td>${baht(d.hold)}</td></tr>
+  ${d.fin?`<tr><td>บิลสุดท้าย (น้ำ ${d.fin.wUnits} · ไฟ ${d.fin.eUnits} หน่วย${d.fin.rent?' + ค่าห้อง':''})</td><td class="neg">−${baht(d.finSum)}</td></tr>`:`<tr><td colspan="2" class="sm mut">กรอกมิเตอร์สุดท้ายเพื่อคิดค่าน้ำไฟ</td></tr>`}
+  ${d.unSum?`<tr><td>บิลค้างชำระ</td><td class="neg">−${baht(d.unSum)}</td></tr>`:''}
+  ${d.ded.map(x=>`<tr><td>${esc(x.label)}</td><td class="neg">−${baht(x.amt)}</td></tr>`).join('')}
+  <tr class="tot"><td>${d.refund>=0?'คืนผู้เช่า':'ผู้เช่าต้องจ่ายเพิ่ม'}</td><td class="${d.refund>=0?'':'neg'}">${baht(Math.abs(d.refund))} ฿</td></tr></table>
+  ${d.refund>0?`<div class="hint sm">⏰ แนะนำให้คืนภายใน ${dl} วัน (ภายใน ${fmtDate(due)}) อ้างอิงประกาศ สคบ.</div>`:''}`}
+function moveOutText(x){const s=S.settings;
+  let t=`🏠 ${s.name}\nสรุปการย้ายออก ห้อง ${x.roomNo}\nผู้เช่า: ${x.tenant}\nวันที่ส่งมอบห้อง: ${fmtDate(x.moveOut)}\n──────────\nเงินประกัน + ค่าเช่าล่วงหน้า: ${baht(x.hold)} บาท\n`;
+  if(x.fin)t+=`หัก บิลสุดท้าย (น้ำ ${x.fin.wPrev}→${x.fin.wCur} · ไฟ ${x.fin.ePrev}→${x.fin.eCur}): ${baht(x.fin.total)} บาท\n`;
+  if(x.unSum)t+=`หัก บิลค้างชำระ: ${baht(x.unSum)} บาท\n`;
+  x.ded.forEach(d=>t+=`หัก ${d.label}: ${baht(d.amt)} บาท\n`);
+  t+=`──────────\n${x.refund>=0?`💰 คืนเงินให้ผู้เช่า ${baht(x.refund)} บาท`:`💰 ผู้เช่าชำระเพิ่ม ${baht(-x.refund)} บาท`}\nขอบคุณที่ใช้บริการครับ 🙏`;return t}
+function doMoveOut(id){const b=$('moBtn');if(!b.dataset.c){b.dataset.c=1;b.textContent='แตะอีกครั้งเพื่อยืนยัน';return}
+  const d=moData(id),r=d.r,mk=d.date.slice(0,7);
+  if(d.fin){S.readings[mk]=S.readings[mk]||{};S.readings[mk][id]={w:d.fin.wCur,e:d.fin.eCur};S.bills[mk]=S.bills[mk]||{};
+    S.bills[mk][id]={...d.fin,tenant:r.tenant,paid:true,paidDate:d.date,payments:[{date:d.date,amt:d.fin.total,method:'หักเงินประกัน',note:''}]};r.wStart=d.fin.wCur;r.eStart=d.fin.eCur}
+  d.un.forEach(x=>{const rm=remain(x.b);if(!x.b.payments||!x.b.payments.length)x.b.payments=paidSum(x.b)?[{date:x.b.paidDate||d.date,amt:paidSum(x.b),method:'ไม่ระบุ',note:''}]:[];
+    x.b.payments.push({date:d.date,amt:rm,method:'หักเงินประกัน',note:''});syncPaid(x.b)});
+  const h={id:uid(),roomNo:r.no,tenant:r.tenant,phone:r.phone,moveIn:r.moveIn,moveOut:d.date,hold:d.hold,fin:d.fin,unSum:d.unSum,ded:d.ded,refund:d.refund};
+  S.history.push(h);
+  Object.assign(r,{tenant:'',phone:'',idCard:'',tAddress:'',deposit:0,advance:0,moveIn:'',pdpa:false,photos:[],flag:''});
+  save();toast('บันทึกการย้ายออกแล้ว');openHist(h.id);render()}
+function openHist(hid){const x=S.history.find(h=>h.id===hid);
+  sheet(`<div class="sh-h"><div class="h">📁 ย้ายออก ห้อง ${esc(x.roomNo)}</div><button class="x" onclick="closeM()">✕</button></div>
+  <div class="doc">${esc(moveOutText(x))}</div>
+  <div class="btn3"><a class="btn line" href="${lineUrl(moveOutText(x))}" target="_blank" rel="noopener">💬 ส่ง LINE</a><button class="btn" onclick="copyText(moveOutText(S.history.find(h=>h.id==='${hid}')))">📋 คัดลอก</button></div>`)}
+
+/* ---------- vacancy poster ---------- */
+function contactLink(){const s=S.settings;
+  if(s.lineId){const id=s.lineId.trim();if(/^https?:/.test(id))return{url:id,label:'สแกนแอดไลน์ติดต่อ'};return{url:'https://line.me/R/ti/p/'+(id.startsWith('@')?id:'~'+id),label:'สแกนแอดไลน์ติดต่อ'}}
+  if(s.mapUrl)return{url:s.mapUrl,label:'สแกนดูแผนที่'};
+  if(s.phone)return{url:'tel:'+s.phone.replace(/\D/g,''),label:'สแกนเพื่อโทร'};return null}
+function posterText(){const s=S.settings,v=sortedRooms().filter(r=>!r.tenant);
+  let t=`🏠 ห้องว่างให้เช่า — ${s.name}\n`;if(s.address)t+=`📍 ${s.address}\n`;
+  v.forEach(r=>t+=`• ห้อง ${r.no} — ${baht(r.rent)} บาท/เดือน\n`);
+  if(s.amenities)t+=`✨ ${s.amenities}\n`;t+=`💧 น้ำ ${s.waterRate} ฿/หน่วย · ⚡ ไฟ ${s.elecRate} ฿/หน่วย\n`;
+  if(s.phone)t+=`📞 ${s.phone}\n`;if(s.lineId)t+=`LINE: ${s.lineId}\n`;if(s.mapUrl)t+=`🗺️ ${s.mapUrl}\n`;return t.trim()}
+function openPoster(){const s=S.settings,v=sortedRooms().filter(r=>!r.tenant),c=contactLink();let qr='';
+  if(c&&typeof qrcode!=='undefined'){try{const q=qrcode(0,'M');q.addData(c.url);q.make();qr=`<div style="margin-top:10px">${q.createSvgTag(5,2)}<div class="sm"><b>${c.label}</b></div></div>`}catch(e){}}
+  sheet(`<div class="sh-h"><div class="h">📢 ป้ายประกาศห้องว่าง</div><button class="x" onclick="closeM()">✕</button></div>
+  ${!c?`<div class="hint sm">💡 ใส่ LINE ID / Google Maps / เบอร์โทร ในหน้า <b>ตั้งค่า</b> เพื่อสร้าง QR ติดต่อ</div>`:''}
+  <div class="poster"><div class="big">ห้องว่างให้เช่า</div><div class="h">${esc(s.name)}</div>${s.address?`<div class="sm mut">📍 ${esc(s.address)}</div>`:''}
+  <div style="margin:12px 0">${v.length?v.map(r=>`<div class="rm"><span>ห้อง <b>${esc(r.no)}</b></span><b>${baht(r.rent)} ฿/เดือน</b></div>`).join(''):'<div class="mut">ขณะนี้ห้องเต็ม</div>'}</div>
+  ${s.amenities?`<div class="sm">✨ ${esc(s.amenities)}</div>`:''}${s.phone?`<div class="h" style="margin-top:6px">📞 ${esc(s.phone)}</div>`:''}${qr}</div>
+  <div class="sm mut" style="text-align:center;margin-top:6px">แคปหน้าจอเพื่อพิมพ์ติดหน้าหอ หรือโพสต์ลง Facebook/LINE</div>
+  <div class="btn3"><a class="btn line" href="${lineUrl(posterText())}" target="_blank" rel="noopener">💬 แชร์ LINE</a><button class="btn" onclick="copyText(posterText())">📋 คัดลอกข้อความโพสต์</button></div>`)}
+
+
+/* ================= v2: ผังห้อง ค่าปรับ รูป พัสดุ บัญชี งานซ่อม สำรองข้อมูล ================= */
+function dueDate(k){const[y,m]=nextKey(k).split('-').map(Number);const last=new Date(y,m,0).getDate();return new Date(y,m-1,Math.min(+S.settings.dueDay||5,last))}
+function daysLate(k){const t=new Date(today()+'T00:00:00');return Math.round((t-dueDate(k))/864e5)}
+function roomState(r,k){
+  if(r.flag==='fix')return['fix','ซ่อม'];if(!r.tenant)return r.flag==='resv'?['resv','จองแล้ว']:['empty','ว่าง'];
+  const b=(S.bills[k]||{})[r.id];const old=unpaidAll().some(x=>x.id===r.id&&x.k<k);
+  if(old||(b&&!b.paid&&daysLate(k)>0))return['due','ค้าง'];
+  if(b&&b.paid)return['paid','จ่ายแล้ว'];return['wait',b?'รอจ่าย':'ยังไม่ออกบิล'];
+}
+function roomMap(k){const rs=sortedRooms();if(!rs.length)return'';
+  const fixN=S.repairs.filter(x=>x.status!=='done');
+  return `<div class="card"><div class="mhead"><div class="h">ผังห้อง · ${monthLabel(k)}</div>${fixN.length?`<span class="sm" style="color:var(--warn);cursor:pointer" onclick="go('money')">🔧 งานซ่อมค้าง ${fixN.length}</span>`:''}</div>
+  <div class="rmap">${rs.map(r=>{const[c,t]=roomState(r,k);const fx=fixN.some(x=>x.roomId===r.id);return `<div class="tile ${c}" onclick="tileClick('${r.id}')"><b>${esc(r.no)}${fx?' 🔧':''}</b>${t}</div>`}).join('')}</div>
+  <div class="legend"><span><i style="background:var(--ok2)"></i>จ่ายแล้ว</span><span><i style="background:#fff"></i>รอจ่าย</span><span><i style="background:var(--bad2)"></i>ค้าง/เลยกำหนด</span><span><i style="background:#f1eee8"></i>ว่าง</span><span><i style="background:#eaf0f6"></i>จอง</span><span><i style="background:var(--warn2)"></i>ซ่อม</span></div></div>`}
+function tileClick(id){const b=(S.bills[cur]||{})[id];if(b)openBill(cur,id);else editRoom(id)}
+function lateFee(k){const s=S.settings,d=daysLate(k);if(d<=0)return 0;return r2((+s.lateFlat||0)+(+s.latePerDay||0)*d)}
+function lateBox(k,id){const b=S.bills[k][id];if(b.paid)return'';const d=daysLate(k);if(d<=0)return'';
+  const f=lateFee(k),has=/ค่าปรับ/.test(b.otherNote||'');
+  return `<div class="hint sm">⏰ เลยกำหนดชำระ ${d} วัน${f&&!has?` · ค่าปรับตามที่ตั้งไว้ ${baht(f)} บาท <button class="btn sm" onclick="addLate('${k}','${id}')">เพิ่มเข้าบิล</button>`:''}${!f?' · ตั้งค่าปรับได้ในหน้าตั้งค่า':''}</div>`}
+function addLate(k,id){const b=S.bills[k][id],f=lateFee(k),d=daysLate(k);b.other=r2((+b.other||0)+f);b.otherNote=((b.otherNote?b.otherNote+' + ':'')+'ค่าปรับจ่ายช้า '+d+' วัน');
+  b.total=r2(b.rent+b.wAmt+b.eAmt+b.fee+b.other);syncPaid(b);save();toast('เพิ่มค่าปรับแล้ว');openBill(k,id);render()}
+function abnormal(id,b){const hist=[];let kk=prevKey(cur);for(let i=0;i<6&&hist.length<3;i++){const x=(S.bills[kk]||{})[id];if(x)hist.push(x);kk=prevKey(kk)}
+  if(hist.length<2)return'';const aw=hist.reduce((a,x)=>a+x.wUnits,0)/hist.length,ae=hist.reduce((a,x)=>a+x.eUnits,0)/hist.length;let m='';
+  if(b.wUnits>Math.max(aw*1.8,aw+5))m+=`<div style="color:var(--warn)">💧 น้ำสูงกว่าปกติ (เฉลี่ย ${r2(aw)} หน่วย) — อาจมีน้ำรั่ว ลองตรวจก๊อก/ชักโครก</div>`;
+  if(b.eUnits>Math.max(ae*1.8,ae+40))m+=`<div style="color:var(--warn)">⚡ ไฟสูงกว่าปกติ (เฉลี่ย ${r2(ae)} หน่วย) — ตรวจเลขมิเตอร์อีกครั้ง</div>`;return m}
+function shrink(file,maxW,q){return new Promise((ok,no)=>{const fr=new FileReader();fr.onload=()=>{const im=new Image();im.onload=()=>{const sc=Math.min(1,maxW/im.width),c=document.createElement('canvas');c.width=Math.round(im.width*sc);c.height=Math.round(im.height*sc);c.getContext('2d').drawImage(im,0,0,c.width,c.height);ok(c.toDataURL('image/jpeg',q))};im.onerror=no;im.src=fr.result};fr.onerror=no;fr.readAsDataURL(file)})}
+async function meterPhoto(inp,id){const f=inp.files[0];if(!f)return;try{const keep={};occRooms().forEach(r=>{const w=$('w_'+r.id),e=$('e_'+r.id);if(w)keep[r.id]=[w.value,e.value]});
+  const u=await shrink(f,480,.55);S.mphotos[cur]=S.mphotos[cur]||{};S.mphotos[cur][id]=u;prunePhotos();save();renderMeter();
+  Object.entries(keep).forEach(([i,[w,e]])=>{$('w_'+i).value=w;$('e_'+i).value=e;mPrev(i)});toast('บันทึกรูปแล้ว')}catch(e){toast('โหลดรูปไม่สำเร็จ')}}
+async function condPhoto(inp,id){const r=room(id);r.photos=r.photos||[];const fs=[...inp.files].slice(0,4-r.photos.length);if(!fs.length){toast('ครบ 4 รูปแล้ว');return}
+  try{for(const f of fs)r.photos.push(await shrink(f,420,.5));save();editRoom(id);toast('เพิ่มรูปแล้ว')}catch(e){toast('โหลดรูปไม่สำเร็จ')}}
+function clearCond(id){room(id).photos=[];save();editRoom(id)}
+function viewImg(u){const d=document.createElement('div');d.className='modal';d.style.alignItems='center';d.style.zIndex=30;d.onclick=()=>d.remove();d.innerHTML=`<img src="${u}" style="max-width:94vw;max-height:88vh;border-radius:8px">`;document.body.appendChild(d)}
+/* ---- parcels ---- */
+function parcelCard(){const ps=S.parcels.filter(p=>!p.picked);
+  return `<div class="card"><div class="mhead"><div class="h">📦 พัสดุรอรับ ${ps.length}</div><button class="btn sm" onclick="addParcel()">+ รับพัสดุ</button></div>
+  ${ps.length?ps.map(p=>{const r=room(p.roomId)||{};return `<div class="item"><div class="rno">${esc(r.no||'-')}</div><div class="grow"><div>${esc(p.note||'พัสดุ')}</div><div class="sm mut">มาถึง ${fmtDate(p.date)}</div></div>
+   <a class="btn sm line" href="${lineUrl(`📦 ${S.settings.name}\\nห้อง ${r.no||''} มีพัสดุ${p.note?' ('+p.note+')':''} มาถึงเมื่อ ${fmtDate(p.date)}\\nรับได้ที่สำนักงานหอพักครับ`)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">แจ้ง</a>
+   <button class="btn sm" onclick="pickParcel('${p.id}')">รับแล้ว</button></div>`}).join(''):'<div class="sm mut">ไม่มีพัสดุค้าง</div>'}</div>`}
+function addParcel(){const rs=occRooms();if(!rs.length){toast('ยังไม่มีห้องที่มีผู้เช่า');return}
+  sheet(`<div class="sh-h"><div class="h">📦 รับพัสดุแทนผู้เช่า</div><button class="x" onclick="closeM()">✕</button></div>
+  <label>ห้อง<select class="f" id="pc_room">${rs.map(r=>`<option value="${r.id}">${esc(r.no)} · ${esc(r.tenant)}</option>`).join('')}</select></label>
+  <label>รายละเอียด<input id="pc_note" placeholder="เช่น กล่อง Kerry / ซองเอกสาร"></label>
+  <button class="btn pri block big" onclick="saveParcel()">บันทึก</button>`)}
+function saveParcel(){S.parcels.push({id:uid(),roomId:$('pc_room').value,note:$('pc_note').value.trim(),date:today(),picked:false});save();closeM();toast('บันทึกพัสดุแล้ว');render()}
+function pickParcel(id){const p=S.parcels.find(x=>x.id===id);p.picked=true;p.pickDate=today();S.parcels=S.parcels.filter(x=>!x.picked||x.pickDate>=prevKey(monthKey(new Date())));save();render()}
+/* ---- money tab ---- */
+const EXP_CATS=['ค่าไฟจ่ายการไฟฟ้า','ค่าน้ำจ่ายการประปา','ซ่อมแซม','แม่บ้าน/ค่าจ้าง','ผ่อนธนาคาร','ภาษี/ค่าธรรมเนียม','อินเทอร์เน็ต','อื่นๆ'];
+function incomeOf(k){const arr=Object.values(S.bills[k]||{});return{billed:r2(arr.reduce((a,b)=>a+b.total,0)),got:r2(arr.reduce((a,b)=>a+paidSum(b),0)),w:r2(arr.reduce((a,b)=>a+b.wAmt,0)),e:r2(arr.reduce((a,b)=>a+b.eAmt,0)),wU:r2(arr.reduce((a,b)=>a+b.wUnits,0)),eU:r2(arr.reduce((a,b)=>a+b.eUnits,0))}}
+const expOf=k=>S.expenses.filter(x=>(x.date||'').slice(0,7)===k);
+function renderMoney(){
+  const k=cur,inc=incomeOf(k),ex=expOf(k),exSum=r2(ex.reduce((a,x)=>a+x.amt,0)),profit=r2(inc.got-exSum);
+  const occ=S.rooms.length?Math.round(occRooms().length/S.rooms.length*100):0;
+  const pe=r2(ex.filter(x=>x.cat==='ค่าไฟจ่ายการไฟฟ้า').reduce((a,x)=>a+x.amt,0)),pw=r2(ex.filter(x=>x.cat==='ค่าน้ำจ่ายการประปา').reduce((a,x)=>a+x.amt,0));
+  const cmp=(lbl,got,paid)=>paid?`<tr><td>${lbl}<div class="sm mut">เก็บจากผู้เช่า ${baht(got)} · จ่ายจริง ${baht(paid)}</div></td><td class="${got>paid*1.02?'neg':'pos'}">${got>paid*1.02?'เก็บเกิน '+baht(got-paid):'ไม่เกิน ✓'}</td></tr>`:`<tr><td colspan="2" class="sm mut" style="text-align:left">${lbl}: บันทึกบิลที่จ่ายจริงในรายจ่าย เพื่อเทียบ</td></tr>`;
+  const open=S.repairs.filter(x=>x.status!=='done'),done=S.repairs.filter(x=>x.status==='done').slice(-5).reverse();
+  let y=k.slice(0,4),yr=[];for(let m=1;m<=12;m++){const kk=y+'-'+pad(m),i=incomeOf(kk),e=r2(expOf(kk).reduce((a,x)=>a+x.amt,0));yr.push({kk,got:i.got,e})}
+  const yGot=r2(yr.reduce((a,x)=>a+x.got,0)),yEx=r2(yr.reduce((a,x)=>a+x.e,0)),mx=Math.max(1,...yr.map(x=>Math.max(x.got,x.e)));
+  V(`<div class="card"><div class="h">📊 กระแสเงินสดของหอ · ${monthLabel(k)}</div>
+   <div class="stats" style="margin:10px 0 0"><div class="stat ok"><div class="l">รับเงินแล้ว</div><div class="v">${baht(inc.got)}</div></div><div class="stat bad"><div class="l">รายจ่าย</div><div class="v">${baht(exSum)}</div></div><div class="stat pri"><div class="l">กำไรสุทธิ</div><div class="v ${profit<0?'neg':''}">${baht(profit)}</div></div></div>
+   <div class="sm mut" style="margin-top:8px">ยอดบิลทั้งเดือน ${baht(inc.billed)} · ค้างรับ ${baht(inc.billed-inc.got)} · อัตราเข้าพัก ${occ}%</div><div class="bar2"><i style="width:${occ}%"></i></div></div>
+  <div class="card"><div class="h">⚖️ เทียบค่าน้ำ-ไฟ</div><div class="sm mut">ช่วยดูว่าค่าน้ำ-ไฟที่เก็บจากผู้เช่า ไม่เกินที่หอจ่ายจริง</div><table class="bill">${cmp('ค่าไฟ',inc.e,pe)}${cmp('ค่าน้ำ',inc.w,pw)}</table></div>
+  <div class="card"><div class="mhead"><div class="h">💸 รายจ่ายเดือนนี้</div><button class="btn sm pri" onclick="editExp()">+ เพิ่ม</button></div>
+   ${ex.length?ex.sort((a,b)=>a.date<b.date?-1:1).map(x=>`<div class="item" onclick="editExp('${x.id}')"><div class="grow"><div>${esc(x.cat)}</div><div class="sm mut">${fmtDate(x.date)}${x.note?' · '+esc(x.note):''}</div></div><b>${baht(x.amt)}</b></div>`).join(''):'<div class="sm mut">ยังไม่มีรายจ่าย</div>'}</div>
+  <div class="card"><div class="mhead"><div class="h">🔧 งานซ่อม ${open.length?'ค้าง '+open.length:''}</div><button class="btn sm pri" onclick="editRepair()">+ แจ้งซ่อม</button></div>
+   ${open.map(x=>{const r=room(x.roomId)||{};return `<div class="item" onclick="editRepair('${x.id}')"><div class="rno">${esc(r.no||'ส่วนกลาง')}</div><div class="grow"><div>${esc(x.issue)}</div><div class="sm mut">แจ้ง ${fmtDate(x.date)}</div></div><span class="chip ${x.status==='doing'?'warn':'bad'}">${x.status==='doing'?'กำลังซ่อม':'รอซ่อม'}</span></div>`}).join('')||'<div class="sm mut">ไม่มีงานซ่อมค้าง</div>'}
+   ${done.length?`<div class="sm mut" style="margin-top:8px">เสร็จล่าสุด: ${done.map(x=>esc(x.issue)+(x.cost?' ('+baht(x.cost)+')':'')).join(' · ')}</div>`:''}</div>
+  ${taxCard(y)}
+  <div class="card"><div class="h">📅 สรุปทั้งปี ${+y+543}</div>
+   ${yr.map(x=>`<div style="display:grid;grid-template-columns:44px 1fr 90px;gap:6px;align-items:center;font-size:12px;margin-top:4px"><span>${TH_M[+x.kk.slice(5)-1].slice(0,3)}.</span><div><div style="height:7px;background:var(--ok);width:${x.got/mx*100}%;border-radius:2px"></div><div style="height:7px;background:var(--bad);width:${x.e/mx*100}%;border-radius:2px;margin-top:2px;opacity:.7"></div></div><span style="text-align:right">${baht(x.got-x.e)}</span></div>`).join('')}
+   <table class="bill" style="margin-top:10px"><tr><td>รายได้ค่าเช่ารวมทั้งปี (ใช้ประกอบการยื่นภาษี)</td><td>${baht(yGot)}</td></tr><tr><td>รายจ่ายรวม</td><td>${baht(yEx)}</td></tr><tr class="tot"><td>กำไรสุทธิทั้งปี</td><td>${baht(yGot-yEx)} ฿</td></tr></table>
+   <button class="btn block" onclick="copyText(yearText('${y}'))">📋 คัดลอกสรุปทั้งปี</button></div>`)}
+function yearText(y){let t=`📅 สรุปรายรับ-รายจ่าย ${S.settings.name} ปี ${+y+543}\n`;let G=0,E=0;
+  for(let m=1;m<=12;m++){const kk=y+'-'+pad(m),g=incomeOf(kk).got,e=r2(expOf(kk).reduce((a,x)=>a+x.amt,0));G+=g;E+=e;if(g||e)t+=`${TH_M[m-1]}: รับ ${baht(g)} · จ่าย ${baht(e)} · สุทธิ ${baht(g-e)}\n`}
+  return t+`──────────\nรวมรับ ${baht(G)} · รวมจ่าย ${baht(E)} · กำไร ${baht(G-E)} บาท`}
+function editExp(id){const x=id?S.expenses.find(e=>e.id===id):{date:cur===monthKey(new Date())?today():cur+'-01',cat:EXP_CATS[0],amt:'',note:''};
+  sheet(`<div class="sh-h"><div class="h">${id?'แก้ไขรายจ่าย':'เพิ่มรายจ่าย'}</div><button class="x" onclick="closeM()">✕</button></div>
+  <label>หมวด<select class="f" id="x_cat">${EXP_CATS.map(c=>`<option ${c===x.cat?'selected':''}>${c}</option>`).join('')}</select></label>
+  <div class="grid2"><label>จำนวนเงิน<input id="x_amt" type="number" inputmode="decimal" value="${x.amt}"></label><label>วันที่<input id="x_date" type="date" value="${x.date}"></label></div>
+  <label>หมายเหตุ<input id="x_note" value="${esc(x.note)}"></label>
+  <button class="btn pri block big" onclick="saveExp('${id||''}')">บันทึก</button>${id?`<button class="btn bad block" onclick="delExp('${id}')">ลบรายการนี้</button>`:''}`)}
+function saveExp(id){const amt=r2($('x_amt').value);if(!(amt>0)){toast('กรอกจำนวนเงิน');return}
+  const d={cat:$('x_cat').value,amt,date:$('x_date').value||today(),note:$('x_note').value.trim()};
+  if(id)Object.assign(S.expenses.find(e=>e.id===id),d);else S.expenses.push({id:uid(),...d});save();closeM();toast('บันทึกแล้ว');render()}
+function delExp(id){S.expenses=S.expenses.filter(e=>e.id!==id);save();closeM();render()}
+function editRepair(id){const x=id?S.repairs.find(e=>e.id===id):{roomId:'',date:today(),issue:'',status:'open',cost:''};
+  sheet(`<div class="sh-h"><div class="h">${id?'งานซ่อม':'แจ้งซ่อม'}</div><button class="x" onclick="closeM()">✕</button></div>
+  <label>ห้อง<select class="f" id="rp_room"><option value="">ส่วนกลาง</option>${sortedRooms().map(r=>`<option value="${r.id}" ${r.id===x.roomId?'selected':''}>${esc(r.no)}${r.tenant?' · '+esc(r.tenant):''}</option>`).join('')}</select></label>
+  <label>อาการ/รายการ<input id="rp_issue" value="${esc(x.issue)}" placeholder="เช่น แอร์ไม่เย็น"></label>
+  <div class="grid2"><label>วันที่แจ้ง<input id="rp_date" type="date" value="${x.date}"></label><label>สถานะ<select class="f" id="rp_st"><option value="open" ${x.status==='open'?'selected':''}>รอซ่อม</option><option value="doing" ${x.status==='doing'?'selected':''}>กำลังซ่อม</option><option value="done" ${x.status==='done'?'selected':''}>เสร็จแล้ว</option></select></label></div>
+  <label>ค่าซ่อม (ถ้ามี — เมื่อเสร็จจะบันทึกเป็นรายจ่ายให้)<input id="rp_cost" type="number" inputmode="decimal" value="${x.cost||''}"></label>
+  <button class="btn pri block big" onclick="saveRepair('${id||''}')">บันทึก</button>${id?`<button class="btn bad block" onclick="delRepair('${id}')">ลบ</button>`:''}`)}
+function saveRepair(id){const issue=$('rp_issue').value.trim();if(!issue){toast('กรอกรายการซ่อม');return}
+  const d={roomId:$('rp_room').value,issue,date:$('rp_date').value||today(),status:$('rp_st').value,cost:r2($('rp_cost').value)};
+  let x=id?S.repairs.find(e=>e.id===id):null;if(x)Object.assign(x,d);else{x={id:uid(),...d};S.repairs.push(x)}
+  if(x.status==='done'&&x.cost>0&&!x.expId){const r=room(x.roomId);const e={id:uid(),cat:'ซ่อมแซม',amt:x.cost,date:today(),note:(r?'ห้อง '+r.no+' · ':'')+x.issue};S.expenses.push(e);x.expId=e.id}
+  if(x.status==='done'&&!x.doneDate)x.doneDate=today();save();closeM();toast('บันทึกแล้ว');render()}
+function delRepair(id){S.repairs=S.repairs.filter(e=>e.id!==id);save();closeM();render()}
+/* ---- backup ---- */
+function markBackup(){S.settings.lastBackup=today();save()}
+function storageBar(){let used=0;try{used=new Blob([localStorage.getItem(LS)||'']).size}catch(e){}const pct=Math.min(100,used/(5*1024*1024)*100);
+  return `<div class="sm mut" style="margin-top:8px">ใช้พื้นที่ ${(used/1024/1024).toFixed(2)} MB จากประมาณ 5 MB${pct>70?' — <b class="bad">ใกล้เต็ม ลองลบรูปสภาพห้องที่ไม่ใช้</b>':''}</div><div class="bar2"><i style="width:${pct}%"></i></div>`}
+function backupFile(){markBackup();try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));a.download=`JOE-หอพัก-สำรอง-${today()}.json`;document.body.appendChild(a);a.click();a.remove();toast('ถ้าไม่มีไฟล์ดาวน์โหลด ให้ใช้ปุ่มคัดลอกแทน')}catch(e){toast('ดาวน์โหลดไม่ได้ ใช้ปุ่มคัดลอกแทน')}setTimeout(render,400)}
+function restoreFile(inp){const f=inp.files[0];if(!f)return;const fr=new FileReader();fr.onload=()=>{$('restore').value=fr.result;doRestore()};fr.readAsText(f)}
+
+/* ================= v3: ใบแจ้งหนี้ ใบเสร็จ ภาษี ================= */
+const yy=d=>String(+d.slice(0,4)+543).slice(2);
+function nextInv(k){const s=S.settings;s.seqInv=(+s.seqInv||0)+1;return `INV${yy(k)}${k.slice(5,7)}-${String(s.seqInv).padStart(4,'0')}`}
+function nextRc(d){const s=S.settings;s.seqRc=(+s.seqRc||0)+1;return `RC${yy(d)}${d.slice(5,7)}-${String(s.seqRc).padStart(4,'0')}`}
+function ensureInv(k,id){const b=(S.bills[k]||{})[id];if(b&&!b.inv){b.inv=nextInv(k);save()}}
+function bahtText(n){n=Math.round((+n||0)*100)/100;const D=['','หนึ่ง','สอง','สาม','สี่','ห้า','หก','เจ็ด','แปด','เก้า'],P=['','สิบ','ร้อย','พัน','หมื่น','แสน'];
+  const rd=x=>{x=String(x);if(+x===0)return'';if(x.length>6){return rd(x.slice(0,-6))+'ล้าน'+rd(x.slice(-6))}let t='';const L=x.length;
+    for(let i=0;i<L;i++){const d=+x[i],pos=L-i-1;if(!d)continue;if(pos===1&&d===1)t+='สิบ';else if(pos===1&&d===2)t+='ยี่สิบ';else if(pos===0&&d===1&&L>1&&+x[L-2]!==0)t+='เอ็ด';else if(pos===0&&d===1&&L>1)t+='เอ็ด';else t+=D[d]+P[pos]}return t};
+  const b=Math.floor(n),st=Math.round((n-b)*100);let t=(b?rd(b):'ศูนย์')+'บาท';t+=st?rd(st)+'สตางค์':'ถ้วน';return t}
+function rcRows(b,p){const full=Math.abs(p.amt-b.total)<0.01;
+  if(!full)return[[`ชำระค่าเช่าและค่าบริการห้อง ${b.no} (บางส่วน)`,p.amt]];
+  const r=[['ค่าเช่าห้อง',b.rent],[`ค่าน้ำประปา ${b.wUnits} หน่วย`,b.wAmt],[`ค่าไฟฟ้า ${b.eUnits} หน่วย`,b.eAmt]];
+  if(b.fee)r.push([b.feeLabel,b.fee]);if(b.other)r.push([b.otherNote||'ค่าอื่นๆ',b.other]);return r}
+function ensureRc(b,i){const p=b.payments[i];if(!p.rc){p.rc=nextRc(p.date||today());save()}return p}
+function receiptCanvas(k,id,i){
+  const s=S.settings,b=S.bills[k][id],p=ensureRc(b,i),rows=rcRows(b,p),W=720,F="'IBM Plex Sans Thai Looped','IBM Plex Sans Thai',sans-serif";
+  const H=560+rows.length*52+240;const c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');
+  const T=(t,X,Y,f,col,al)=>{x.font=f;x.fillStyle=col||'#22211e';x.textAlign=al||'left';x.fillText(t,X,Y);x.textAlign='left'};
+  x.fillStyle='#fff';x.fillRect(0,0,W,H);x.strokeStyle='#22211e';x.lineWidth=2;x.strokeRect(16,16,W-32,H-32);
+  T('ใบเสร็จรับเงิน',W/2,78,`700 38px ${F}`,'#22211e','center');T('RECEIPT',W/2,108,`400 18px ${F}`,'#6e695f','center');
+  T('เลขที่ '+p.rc,W-48,150,`600 22px ${F}`,'#22211e','right');T('วันที่ '+thDate(p.date),W-48,180,`400 20px ${F}`,'#22211e','right');
+  let y=150;T(s.name||'หอพัก',48,y,`700 24px ${F}`);y+=30;
+  if(s.ownerName){T('ผู้ให้เช่า: '+s.ownerName,48,y,`400 18px ${F}`,'#444');y+=26}
+  if(s.address){T(s.address.slice(0,48),48,y,`400 18px ${F}`,'#444');y+=26}
+  if(s.taxId){T('เลขประจำตัวผู้เสียภาษี '+s.taxId,48,y,`400 18px ${F}`,'#444');y+=26}
+  if(s.phone){T('โทร '+s.phone,48,y,`400 18px ${F}`,'#444');y+=26}
+  y=Math.max(y,200)+20;x.fillStyle='#f6f4ef';x.fillRect(40,y,W-80,70);
+  T('ได้รับเงินจาก  '+(b.tenant||'-'),56,y+30,`600 22px ${F}`);T(`ห้อง ${b.no} · ค่าเช่าประจำเดือน ${monthLabel(k)} · อ้างอิง ${b.inv||'-'}`,56,y+58,`400 18px ${F}`,'#444');
+  y+=110;T('รายการ',48,y,`600 20px ${F}`);T('จำนวนเงิน (บาท)',W-48,y,`600 20px ${F}`,'#22211e','right');
+  x.beginPath();x.moveTo(40,y+12);x.lineTo(W-40,y+12);x.stroke();y+=50;
+  rows.forEach(([l,v])=>{T(l,48,y,`400 21px ${F}`);T(baht(v),W-48,y,`400 21px ${F}`,'#22211e','right');y+=52});
+  x.beginPath();x.moveTo(40,y-30);x.lineTo(W-40,y-30);x.stroke();
+  T('รวมเงิน',48,y+6,`700 26px ${F}`);T(baht(p.amt)+' บาท',W-48,y+6,`700 26px ${F}`,'#22211e','right');
+  T('('+bahtText(p.amt)+')',W-48,y+40,`400 19px ${F}`,'#444','right');
+  y+=80;T('ชำระโดย: '+p.method+(p.note?' · '+p.note:''),48,y,`400 19px ${F}`,'#444');
+  y+=90;x.setLineDash([4,4]);x.beginPath();x.moveTo(W-330,y);x.lineTo(W-60,y);x.stroke();x.setLineDash([]);
+  T('ผู้รับเงิน',W-195,y+30,`400 19px ${F}`,'#22211e','center');if(s.ownerName)T('('+s.ownerName+')',W-195,y+56,`400 17px ${F}`,'#444','center');
+  return c}
+async function openReceipt(k,id,i){try{await document.fonts.ready}catch(e){}
+  const b0=S.bills[k][id];if(!b0.payments||!b0.payments.length){b0.payments=[{date:b0.paidDate||today(),amt:b0.total,method:'ไม่ระบุ',note:''}];i=0}
+  const b=S.bills[k][id],p=ensureRc(b,i),url=receiptCanvas(k,id,i).toDataURL('image/png');
+  sheet(`<div class="sh-h"><div><div class="h">ใบเสร็จ ${esc(p.rc)}</div><div class="mut sm">ห้อง ${esc(b.no)} · ${baht(p.amt)} บาท</div></div><button class="x" onclick="openBill('${k}','${id}')">✕</button></div>
+  <img src="${url}" alt="ใบเสร็จ" style="width:100%;border:1px solid var(--line);border-radius:6px">
+  <div class="hint sm"><b>กดค้างที่รูป → บันทึกรูป</b> แล้วส่งเข้าแชท LINE ผู้เช่า หรือพิมพ์เก็บไว้เป็นหลักฐาน</div>
+  <div class="btn3"><button class="btn" onclick="shareImg('${k}','${id}',${i})">ส่ง/แชร์รูป</button><a class="btn line" href="${lineUrl(rcText(k,id,i))}" target="_blank" rel="noopener">ส่งข้อความ LINE</a></div>
+  <button class="btn block" onclick="openBill('${k}','${id}')">← กลับไปที่บิล</button>`)}
+async function shareImg(k,id,i){const c=receiptCanvas(k,id,i),p=S.bills[k][id].payments[i];
+  try{const blob=await new Promise(r=>c.toBlob(r,'image/png'));const f=new File([blob],`ใบเสร็จ-${p.rc}.png`,{type:'image/png'});
+    if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f]});return}}catch(e){if(e&&e.name==='AbortError')return}
+  toast('กดค้างที่รูปเพื่อบันทึกแทน')}
+function rcText(k,id,i){const s=S.settings,b=S.bills[k][id],p=ensureRc(b,i);
+  return `🧾 ใบเสร็จรับเงิน ${p.rc}\n${s.name}\nวันที่ ${fmtDate(p.date)}\nได้รับเงินจาก ${b.tenant} ห้อง ${b.no}\nค่าเช่าเดือน ${monthLabel(k)} (อ้างอิง ${b.inv||'-'})\nจำนวน ${baht(p.amt)} บาท (${bahtText(p.amt)})\nชำระโดย ${p.method}\nขอบคุณครับ 🙏`}
+/* ---- tax ---- */
+function paymentsInYear(y){const out=[];
+  Object.entries(S.bills).forEach(([k,bs])=>Object.entries(bs).forEach(([id,b])=>{
+    const ps=b.payments&&b.payments.length?b.payments:(b.paid?[{date:b.paidDate||k+'-01',amt:b.total,method:'ไม่ระบุ'}]:[]);
+    ps.forEach((p,i)=>{if(p.method==='หักเงินประกัน'||!(p.date||'').startsWith(y))return;const sh=b.total?p.amt/b.total:0;
+      out.push({k,id,i,b,p,rent:r2(b.rent*sh),util:r2((b.wAmt+b.eAmt)*sh),svc:r2((b.fee+b.other)*sh)})})}));
+  return out.sort((a,b)=>a.p.date<b.p.date?-1:1)}
+function taxCard(y){const s=S.settings,all=paymentsInYear(y),h1=all.filter(x=>x.p.date.slice(5,7)<='06');
+  const sum=a=>({tot:r2(a.reduce((t,x)=>t+x.p.amt,0)),rent:r2(a.reduce((t,x)=>t+x.rent,0)),util:r2(a.reduce((t,x)=>t+x.util,0)),svc:r2(a.reduce((t,x)=>t+x.svc,0))});
+  const Y=sum(all),H=sum(h1),lim=s.married?120000:60000,need94=H.tot>lim,real=r2(S.expenses.filter(e=>(e.date||'').startsWith(y)&&e.cat!=='ผ่อนธนาคาร').reduce((t,e)=>t+e.amt,0));
+  const row=(l,v,c)=>`<tr><td>${l}</td><td class="${c||''}">${baht(v)}</td></tr>`;
+  return `<div class="card"><div class="h">🧾 ภาษีค่าเช่า ปี ${+y+543}</div><div class="sm mut">ค่าเช่าเป็นเงินได้ประเภท 40(5) นับตามวันที่ได้รับเงินจริง</div>
+  <div class="sec">ครึ่งปีแรก (ม.ค.–มิ.ย.) · ภ.ง.ด.94</div>
+  <table class="bill">${row('เงินได้ที่รับจริง',H.tot)}</table>
+  <div class="${need94?'hint':'mres'} sm">${need94?`ยอดเกิน ${baht(lim)} บาท (เกณฑ์${s.married?'ผู้มีคู่สมรส':'คนโสด'}) — เข้าเกณฑ์ต้องยื่น ภ.ง.ด.94 (ยื่นช่วง ก.ค.–ก.ย.)`:`ยังไม่เกิน ${baht(lim)} บาท (เกณฑ์${s.married?'ผู้มีคู่สมรส':'คนโสด'}) — ยังไม่เข้าเกณฑ์ยื่นครึ่งปี (นับเฉพาะรายได้ในระบบนี้)`}</div>
+  <div class="sec">ทั้งปี · ภ.ง.ด.90</div>
+  <table class="bill">${row('ค่าเช่าห้อง',Y.rent)}${row('ค่าน้ำ-ไฟที่เรียกเก็บ',Y.util)}${row('ค่าบริการ/ค่าอื่นๆ',Y.svc)}
+  <tr class="tot"><td>เงินได้ 40(5) รวม</td><td>${baht(Y.tot)} ฿</td></tr>
+  ${row('หักค่าใช้จ่ายแบบเหมา 30%',-r2(Y.tot*.3),'neg')}<tr class="tot"><td>เงินได้หลังหักค่าใช้จ่าย (แบบเหมา)</td><td>${baht(r2(Y.tot*.7))} ฿</td></tr></table>
+  <div class="mres sm">เทียบ: รายจ่ายจริงที่บันทึกไว้ ${baht(real)} บาท (ไม่รวมผ่อนธนาคาร) ${real>Y.tot*.3?'— <b>มากกว่า 30%</b> อาจเลือกหักตามจริงได้ ต้องมีหลักฐานทุกรายการ':'— แบบเหมา 30% ได้ประโยชน์มากกว่า'}</div>
+  <div class="sm mut" style="margin-top:8px">เป็นตัวเลขช่วยเตรียมยื่นแบบ ภาษีจริงต้องรวมเงินได้อื่น (เช่น เงินเดือน) และค่าลดหย่อน ควรตรวจกับกรมสรรพากร (โทร 1161) ก่อนยื่น · ค่าน้ำไฟที่เก็บแทนต้องรวมเป็นเงินได้หรือไม่ ควรสอบถามสรรพากร</div>
+  <div class="btn3"><button class="btn" onclick="copyText(taxText('${y}'))">คัดลอกสรุปภาษี</button><button class="btn" onclick="openRcList('${y}')">ทะเบียนใบเสร็จ (${all.length})</button></div></div>`}
+function taxText(y){const s=S.settings,all=paymentsInYear(y),tot=r2(all.reduce((t,x)=>t+x.p.amt,0)),h=r2(all.filter(x=>x.p.date.slice(5,7)<='06').reduce((t,x)=>t+x.p.amt,0));
+  return `สรุปเงินได้ค่าเช่า 40(5) ปีภาษี ${+y+543}\n${s.name} · ผู้ให้เช่า ${s.ownerName||'-'}\nครึ่งปีแรก (ม.ค.–มิ.ย.): ${baht(h)} บาท\nทั้งปี: ${baht(tot)} บาท\nหักค่าใช้จ่ายเหมา 30%: ${baht(tot*.3)} บาท\nคงเหลือ: ${baht(tot*.7)} บาท\nจำนวนใบเสร็จ: ${all.length} ใบ`}
+function openRcList(y){const all=paymentsInYear(y);
+  sheet(`<div class="sh-h"><div class="h">ทะเบียนใบเสร็จ ปี ${+y+543}</div><button class="x" onclick="closeM()">✕</button></div>
+  ${all.length?all.map(x=>`<div class="item" onclick="openReceipt('${x.k}','${x.id}',${x.i})"><div class="grow"><div>${esc(x.p.rc||'(ยังไม่ออก)')} · ห้อง ${esc(x.b.no)}</div><div class="sm mut">${fmtDate(x.p.date)} · ${esc(x.b.tenant)} · ${esc(x.p.method)}</div></div><b>${baht(x.p.amt)}</b></div>`).join(''):'<div class="empty">ยังไม่มีการรับเงินในปีนี้</div>'}
+  <button class="btn block" onclick="copyText(rcCsv('${y}'))">คัดลอกเป็นตาราง (วางใน Excel/Sheets)</button>`)}
+function rcCsv(y){return ['เลขที่\tวันที่\tห้อง\tผู้เช่า\tเดือนบิล\tวิธีชำระ\tจำนวนเงิน'].concat(paymentsInYear(y).map(x=>[x.p.rc||'',x.p.date,x.b.no,x.b.tenant,monthLabel(x.k),x.p.method,x.p.amt].join('\t'))).join('\n')}
+
+/* ================= v4: น้องโจ้ ผู้ช่วยตอบคำถาม (ทำงานในเครื่อง ไม่ใช้เน็ต) ================= */
+const SUPPORT_LINE=''; /* ใส่ LINE OA ของ JOE เช่น '@joeapp' แล้วปุ่มส่งคำถามจะลิงก์ไปที่นั่น */
+const FAQ=[
+ {k:['เริ่ม','ใช้ยังไง','ใช้งานยังไง','เริ่มต้น','มือใหม่','ตัวอย่าง','ล้างข้อมูล'],q:'เริ่มใช้งานยังไง',a:'1) ไปที่ ตั้งค่า → กด "ล้างข้อมูลทั้งหมด" เพื่อลบข้อมูลตัวอย่าง\n2) ใส่ชื่อหอ เบอร์ และเลขพร้อมเพย์ในหน้าตั้งค่า\n3) ไปที่ ห้อง → เพิ่มห้องและผู้เช่า พร้อมเลขมิเตอร์เริ่มต้น\n4) สิ้นเดือนไปที่ จดมิเตอร์ → กรอกเลข → ระบบออกบิลให้',go:'settings'},
+ {k:['เพิ่มห้อง','ห้องใหม่','ลบห้อง','แก้ห้อง','ผู้เช่าใหม่','เพิ่มผู้เช่า'],q:'เพิ่ม/แก้ห้องและผู้เช่า',a:'ไปที่แท็บ ห้อง → กด "เพิ่มห้อง" ใส่เลขห้องและค่าเช่า ถ้ามีผู้เช่าให้ใส่ชื่อ เบอร์ วันเริ่มสัญญา และเลขมิเตอร์เริ่มต้น (ใช้ครั้งแรกครั้งเดียว)\nแก้ไข/ลบ: แตะที่ห้องนั้น',go:'rooms'},
+ {k:['จดมิเตอร์','มิเตอร์','ออกบิล','เลขน้ำ','เลขไฟ'],q:'จดมิเตอร์และออกบิล',a:'ไปที่ จดมิเตอร์ → กรอกเลขน้ำและไฟปัจจุบันของแต่ละห้อง ระบบคิดหน่วยและเงินให้ทันที → กด "บันทึกและออกบิล"\nถ่ายรูปมิเตอร์เก็บเป็นหลักฐานได้ด้วยปุ่มกล้อง',go:'meter'},
+ {k:['น้อยกว่า','ติดลบ','เปลี่ยนมิเตอร์','มิเตอร์ใหม่','มิเตอร์เสีย','วนรอบ','มิเตอร์','เปลี่ยน','พิมพ์ผิด'],q:'เลขมิเตอร์น้อยกว่าครั้งก่อน',a:'ถ้าเปลี่ยนมิเตอร์ใหม่: ไปที่ ห้อง → แตะห้อง → แก้ "มิเตอร์เริ่มต้น" เป็นเลขของมิเตอร์ใหม่ แล้วลบเลขเดือนนี้ออกก่อนจดใหม่\nถ้าพิมพ์ผิด: แก้เลขในหน้า จดมิเตอร์ แล้วกดบันทึกอีกครั้ง บิลจะคำนวณใหม่'},
+ {k:['ค่าน้ำ','ค่าไฟ','หน่วยละ','ขั้นต่ำ','อัตรา','เรท'],q:'ตั้งค่าน้ำ-ค่าไฟ',a:'ไปที่ ตั้งค่า → อัตราค่าน้ำ-ไฟ ใส่บาทต่อหน่วย และค่าขั้นต่ำ (ถ้ามี)\nแนะนำ: ไม่เกินอัตราที่การไฟฟ้า/การประปาเรียกเก็บ ดูเทียบได้ที่แท็บ บัญชี',go:'settings'},
+ {k:['พร้อมเพย์','qr','คิวอาร์','สแกนจ่าย','รับเงินโอน'],q:'ใส่พร้อมเพย์ให้มี QR ในบิล',a:'ไปที่ ตั้งค่า → ใส่เลขพร้อมเพย์ (เบอร์มือถือ หรือเลขบัตรประชาชน) บิลทุกใบจะมี QR ยอดตรงบิลอัตโนมัติ ผู้เช่าสแกนจ่ายได้ทันที',go:'settings'},
+ {k:['ส่งบิล','ไลน์','line','ส่งให้ผู้เช่า','รูปบิล','แชร์'],q:'ส่งบิลให้ผู้เช่าทาง LINE',a:'ไปที่ บิล → แตะบิลห้องนั้น → เลือก\n• "รูปบิล + QR" ได้รูปสวยพร้อม QR ส่งเข้าแชทได้เลย\n• "ส่งข้อความ" เปิด LINE พร้อมข้อความบิล',go:'bills'},
+ {k:['รับเงิน','จ่ายแล้ว','บันทึกการชำระ','จ่ายบางส่วน','แบ่งจ่าย','ผ่อนจ่าย'],q:'บันทึกรับเงิน / จ่ายบางส่วน',a:'แตะบิล → เลือกช่องทางที่รับ → ใส่จำนวนเงิน → "บันทึกรับเงิน"\nถ้าจ่ายไม่ครบ ระบบจำยอดคงเหลือให้ และจ่ายต่อได้หลายงวด ทุกงวดได้ใบเสร็จแยก',go:'bills'},
+ {k:['ใบเสร็จ','receipt','หลักฐานการจ่าย'],q:'ออกใบเสร็จรับเงิน',a:'ทุกครั้งที่กด "บันทึกรับเงิน" ระบบออกใบเสร็จให้อัตโนมัติ (เลขที่ RC…) กดค้างที่รูปเพื่อบันทึกแล้วส่งให้ผู้เช่า\nใบเสร็จย้อนหลัง: แตะบิล → ปุ่ม "ใบเสร็จ" ข้างรายการรับเงิน\nดูทั้งหมด: บัญชี → ทะเบียนใบเสร็จ'},
+ {k:['ใบแจ้งหนี้','invoice','เลขที่บิล'],q:'ใบแจ้งหนี้',a:'บิลทุกใบคือใบแจ้งหนี้ มีเลขที่ INV… อัตโนมัติ แสดงทั้งในรูปบิลและข้อความ LINE'},
+ {k:['ค่าปรับ','จ่ายช้า','เลยกำหนด','ล่าช้า'],q:'ค่าปรับจ่ายช้า',a:'ตั้งอัตราที่ ตั้งค่า → ค่าปรับจ่ายช้า (ครั้งเดียว และ/หรือ ต่อวัน)\nเมื่อบิลเลยกำหนด จะมีปุ่ม "เพิ่มเข้าบิล" ให้กดเองทุกครั้ง ระบบไม่บวกเองอัตโนมัติ'},
+ {k:['ค้าง','ทวง','เตือน','ยังไม่จ่าย'],q:'ดูคนค้างชำระ / ส่งเตือน',a:'หน้าหลักมีรายการ "ค้างชำระทั้งหมด" บอกจำนวนวันที่เลยกำหนด แตะห้องนั้น → "ส่งข้อความ" ระบบเขียนข้อความแจ้งเตือนให้',go:'home'},
+ {k:['สัญญา','สัญญาเช่า','พิมพ์สัญญา'],q:'ทำสัญญาเช่า',a:'ห้อง → แตะห้องที่มีผู้เช่า → "สัญญาเช่า" ระบบเติมชื่อ ห้อง ค่าเช่า เงินประกันให้ คัดลอกไปวางใน Word หรือพิมพ์ได้\nแนะนำให้เทียบกับแบบสัญญามาตรฐานที่ สคบ. เผยแพร่ก่อนใช้จริง',go:'rooms'},
+ {k:['ย้ายออก','คืนเงินประกัน','เงินประกัน','มัดจำ','หักค่าเสียหาย'],q:'ย้ายออก / คืนเงินประกัน',a:'ห้อง → แตะห้อง → "แจ้งย้ายออก" กรอกมิเตอร์สุดท้ายและค่าเสียหาย (ถ้ามี) ระบบคำนวณยอดคืนให้ พร้อมเตือนวันที่แนะนำให้คืน (7 วัน / 14 วันถ้ามีหักค่าเสียหาย) และใช้รูปสภาพห้องวันเข้าอยู่เทียบได้',go:'rooms'},
+ {k:['ห้องว่าง','ประกาศ','ป้าย','หาผู้เช่า','โพสต์'],q:'ประกาศห้องว่าง',a:'หน้าหลัก → "สร้างป้ายประกาศห้องว่าง" ได้ป้ายพร้อม QR ติดต่อ แคปไปโพสต์ Facebook/LINE หรือพิมพ์ติดหน้าหอ (ใส่ LINE ID ในตั้งค่าเพื่อให้ QR แอดไลน์ได้)',go:'home'},
+ {k:['สำรอง','backup','ย้ายเครื่อง','เปลี่ยนมือถือ','กู้คืน','เครื่องใหม่'],q:'สำรองข้อมูล / ย้ายเครื่อง',a:'ตั้งค่า → สำรองข้อมูล → "ดาวน์โหลดไฟล์สำรอง" (หรือคัดลอกข้อมูลส่งเข้า LINE ตัวเอง)\nเครื่องใหม่: เปิดแอป → ตั้งค่า → "กู้คืนจากไฟล์" แนะนำสำรองทุกสิ้นเดือน',go:'settings'},
+ {k:['หาย','ข้อมูลหาย','ล้างแคช','ลบแอป'],q:'ข้อมูลหายได้ไหม',a:'ข้อมูลเก็บในเบราว์เซอร์ของเครื่องนี้ ถ้าล้างข้อมูลเบราว์เซอร์ ลบแอป หรือเครื่องหาย ข้อมูลจะหาย จึงควร "สำรองข้อมูล" เป็นประจำ (แอปจะเตือนถ้าไม่ได้สำรองเกิน 30 วัน)'},
+ {k:['ปลอดภัย','ข้อมูลอยู่ที่ไหน','ใครเห็น','ความเป็นส่วนตัว','pdpa'],q:'ข้อมูลปลอดภัยไหม',a:'ข้อมูลทั้งหมดอยู่ในเครื่องของคุณเท่านั้น ไม่ได้ส่งขึ้นเซิร์ฟเวอร์ของ JOE ไม่มีใครเห็นนอกจากคุณ\nข้อมูลผู้เช่า: ควรให้ผู้เช่ากดยินยอมในหน้าห้อง และระบบลบเลขบัตรออกให้เมื่อย้ายออก'},
+ {k:['ติดตั้ง','หน้าจอ','ไอคอน','เป็นแอป','ไม่มีเน็ต','ออฟไลน์'],q:'ติดตั้งเป็นแอปบนมือถือ',a:'เปิดเว็บใน Chrome → เมนู ⋮ → "เพิ่มลงในหน้าจอหลัก" หรือ "ติดตั้งแอป" จะได้ไอคอนบนหน้าจอ และใช้ได้แม้ไม่มีเน็ต'},
+ {k:['หลายเครื่อง','ผู้ช่วย','คอมกับมือถือ','แชร์ข้อมูล','ซิงค์'],q:'ใช้หลายเครื่องได้ไหม',a:'ตอนนี้ข้อมูลอยู่เครื่องเดียว ถ้าจะย้ายใช้ไฟล์สำรอง/กู้คืน\nการใช้หลายเครื่องพร้อมกัน (มือถือ + คอม + ผู้ช่วย) จะมาใน JOE หอพัก Pro'},
+ {k:['ภาษี','ภงด','ภ.ง.ด','สรรพากร','ยื่นภาษี','40(5)'],q:'ยื่นภาษีค่าเช่า',a:'บัญชี → การ์ด "ภาษีค่าเช่า" สรุปเงินได้ครึ่งปี (ภ.ง.ด.94) และทั้งปี (ภ.ง.ด.90) พร้อมหักค่าใช้จ่ายเหมา 30% ให้ดู\nเป็นตัวเลขช่วยเตรียม ควรตรวจกับสรรพากร (1161) ก่อนยื่น',go:'money'},
+ {k:['รายจ่าย','กำไร','บัญชี','รายรับ'],q:'บันทึกรายจ่าย / ดูกำไร',a:'แท็บ บัญชี → "+ เพิ่ม" ในรายจ่าย ระบบสรุปรับ−จ่าย=กำไรรายเดือน และทั้งปี',go:'money'},
+ {k:['ซ่อม','แจ้งซ่อม','เสีย','รั่ว'],q:'งานซ่อม',a:'บัญชี → "+ แจ้งซ่อม" ติดตามสถานะ รอ/กำลังซ่อม/เสร็จ เมื่อเสร็จและใส่ค่าซ่อม ระบบบันทึกเป็นรายจ่ายให้อัตโนมัติ ห้องที่มีงานซ่อมค้างจะขึ้นในผังห้อง',go:'money'},
+ {k:['พัสดุ','ของมาส่ง','kerry','flash','ไปรษณีย์'],q:'รับพัสดุแทนผู้เช่า',a:'หน้าหลัก → การ์ด "พัสดุรอรับ" → "+ รับพัสดุ" แล้วกด "แจ้ง" ส่ง LINE บอกผู้เช่า เมื่อมารับกด "รับแล้ว"',go:'home'},
+ {k:['สี','ผังห้อง','สีแดง','สีเขียว'],q:'สีในผังห้องหมายถึงอะไร',a:'เขียว = จ่ายแล้ว · ขาว = รอจ่าย · แดง = ค้าง/เลยกำหนด · เทา = ว่าง · ฟ้า = จองแล้ว · ส้ม = ปิดซ่อม'},
+ {k:['ฟรี','ราคา','เสียเงิน','ค่าบริการ','pro','โปร'],q:'ฟรีจริงไหม / Pro คืออะไร',a:'ฟีเจอร์พื้นฐานทั้งหมดในแอปนี้ใช้ฟรีตลอด ฟีเจอร์ที่เคยฟรีจะฟรีตลอด\nPro (กำลังพัฒนา) สำหรับสิ่งที่ต้องใช้เซิร์ฟเวอร์ เช่น ใช้หลายเครื่อง หน้าผู้เช่า แจ้ง LINE อัตโนมัติ'},
+ {k:['พิมพ์','print','ปริ้น'],q:'พิมพ์เอกสาร',a:'สัญญา: กด "พิมพ์" ในหน้าสัญญา หรือคัดลอกไปวางใน Word\nบิล/ใบเสร็จ: บันทึกรูปแล้วพิมพ์จากแกลเลอรี'},
+];
+const GREET=['สวัสดี','หวัดดี','hello','hi','ดีครับ','ดีค่ะ'],THANK=['ขอบคุณ','thank','ขอบใจ'];
+const norm=t=>String(t).toLowerCase().replace(/\s+/g,'');
+function botAnswer(q){const n=norm(q);
+  if(GREET.some(g=>n.startsWith(g))&&n.length<12)return{a:'สวัสดีครับ ผมน้องโจ้ ผู้ช่วยของ JOE หอพัก ถามเรื่องการใช้งานได้เลยครับ หรือแตะหัวข้อด้านล่าง'};
+  if(THANK.some(g=>n.includes(g)))return{a:'ยินดีครับ มีอะไรถามได้ตลอดนะครับ 🙏'};
+  let best=null,sc=0;FAQ.forEach(f=>{let x=0;f.k.forEach(k=>{if(n.includes(norm(k)))x+=norm(k).length});if(x>sc){sc=x;best=f}});
+  if(best)return best;return null}
+let botLog=[];
+function openBot(){if(!botLog.length)botLog.push({me:false,t:'สวัสดีครับ ผมน้องโจ้ 👋 ช่วยตอบเรื่องการใช้ JOE หอพัก พิมพ์คำถาม หรือแตะหัวข้อด้านล่างได้เลย'});
+  sheet(`<div class="sh-h"><div><div class="h">ถามน้องโจ้</div><div class="sm mut">ผู้ช่วยตอบคำถามการใช้งาน · ทำงานในเครื่อง</div></div><button class="x" onclick="closeM()">✕</button></div>
+  <div class="chat" id="chatLog"></div>
+  <div class="chips" id="chatChips"></div>
+  <form class="chatin" onsubmit="event.preventDefault();botSend()"><input id="chatIn" placeholder="พิมพ์คำถาม เช่น ออกใบเสร็จยังไง" autocomplete="off"><button class="btn pri" type="submit">ส่ง</button></form>`);
+  drawBot()}
+function drawBot(){const el=$('chatLog');if(!el)return;
+  el.innerHTML=botLog.map(m=>`<div class="msg ${m.me?'me':'bot'}">${esc(m.t)}${m.go?`<div style="margin-top:6px"><button class="btn sm" onclick="closeM();go('${m.go}')">ไปที่หน้านั้น →</button></div>`:''}${m.ask?`<div style="margin-top:6px">${SUPPORT_LINE?`<a class="btn sm line" href="${lineUrl('คำถามถึงทีม JOE หอพัก: '+m.ask)}" target="_blank" rel="noopener">ส่งคำถามถึงทีม JOE</a>`:`<button class="btn sm" onclick="copyText(${esc(JSON.stringify('คำถามถึงทีม JOE หอพัก: '+m.ask))})">คัดลอกคำถามไว้ส่งทีม JOE</button>`}</div>`:''}</div>`).join('');
+  el.scrollTop=el.scrollHeight;
+  const pick=['เริ่มใช้งานยังไง','ส่งบิลให้ผู้เช่าทาง LINE','ออกใบเสร็จรับเงิน','สำรองข้อมูล / ย้ายเครื่อง','ย้ายออก / คืนเงินประกัน','ยื่นภาษีค่าเช่า'];
+  $('chatChips').innerHTML=pick.map(q=>`<button type="button" onclick="botSend(${esc(JSON.stringify(q))})">${esc(q)}</button>`).join('')}
+function botSend(q){const inp=$('chatIn');q=(q||(inp&&inp.value)||'').trim();if(!q)return;if(inp)inp.value='';
+  botLog.push({me:true,t:q});const r=botAnswer(q);
+  if(r)botLog.push({me:false,t:r.a,go:r.go});
+  else{const sug=FAQ.filter(f=>f.k.some(k=>norm(q).includes(norm(k).slice(0,3)))).slice(0,3).map(f=>f.q);
+    botLog.push({me:false,t:'ขอโทษครับ น้องโจ้ยังตอบคำถามนี้ไม่ได้'+(sug.length?'\nหมายถึงเรื่องนี้หรือเปล่า: '+sug.join(' / '):'')+'\nลองพิมพ์คำสั้นๆ เช่น "ใบเสร็จ" "มิเตอร์" "ย้ายออก" หรือส่งคำถามถึงทีม JOE',ask:q})}
+  if(botLog.length>60)botLog=botLog.slice(-60);drawBot();setTimeout(()=>{const i=$('chatIn');i&&i.focus()},50)}
+document.addEventListener('keydown',e=>{if(e.key!=='Enter'||e.target.tagName!=='INPUT')return;
+  const ins=[...document.querySelectorAll('#view input, #sheet input')].filter(i=>i.offsetParent!==null);const i=ins.indexOf(e.target);
+  if(i>-1&&i<ins.length-1){e.preventDefault();ins[i+1].focus();ins[i+1].select&&ins[i+1].select()}});
+if(window.matchMedia('(min-width:900px)').matches)document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+/* ---------- bill image + pay link ---------- */
+const dueText=k=>`${S.settings.dueDay} ${monthLabel(nextKey(k))}`;
+function b64e(o){return btoa(String.fromCharCode(...new TextEncoder().encode(JSON.stringify(o)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'')}
+function b64d(t){t=t.replace(/-/g,'+').replace(/_/g,'/');return JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(t),c=>c.charCodeAt(0))))}
+function payLink(k,id){const s=S.settings,b=S.bills[k][id];if(!s.appUrl||!s.promptpay||b.paid)return'';
+  const base=s.appUrl.split('?')[0].split('#')[0];
+  return base+'?pay='+b64e({n:s.name,r:b.no,t:b.tenant,m:monthLabel(k),a:remain(b),p:s.promptpay,d:dueText(k),ph:s.phone||''})}
+function qrModules(text){const q=qrcode(0,'M');q.addData(text);q.make();return q}
+function drawQR(ctx,text,x,y,size){const q=qrModules(text),n=q.getModuleCount(),cell=Math.floor(size/(n+4)),off=Math.floor((size-cell*n)/2);
+  ctx.fillStyle='#fff';ctx.fillRect(x,y,size,size);ctx.fillStyle='#111';
+  for(let r=0;r<n;r++)for(let c=0;c<n;c++)if(q.isDark(r,c))ctx.fillRect(x+off+c*cell,y+off+r*cell,cell,cell)}
+function makeBillCanvas(k,id){ensureInv(k,id);
+  const s=S.settings,b=S.bills[k][id],W=720,F="'IBM Plex Sans Thai Looped','IBM Plex Sans Thai',sans-serif";
+  const rows=[['ค่าห้อง',b.rent],[`ค่าน้ำ  ${b.wPrev} → ${b.wCur} (${b.wUnits} หน่วย)`,b.wAmt],[`ค่าไฟ  ${b.ePrev} → ${b.eCur} (${b.eUnits} หน่วย)`,b.eAmt]];
+  if(b.fee)rows.push([b.feeLabel,b.fee]);if(b.other)rows.push([b.otherNote||'ค่าอื่นๆ',b.other]);
+  const showQR=!b.paid&&s.promptpay&&typeof qrcode!=='undefined';
+  const H=150+120+rows.length*56+80+(showQR?400:0)+(b.paid?110:110)+140;
+  const c=document.createElement('canvas');c.width=W;c.height=H;const x=c.getContext('2d');
+  x.fillStyle='#f5f3ee';x.fillRect(0,0,W,H);
+  x.fillStyle='#2f5d50';x.fillRect(0,0,W,150);
+  x.fillStyle='#fff';x.font=`700 36px ${F}`;x.fillText(s.name||'หอพัก',40,68);
+  x.font=`400 24px ${F}`;x.fillStyle='#dfe8e2';x.fillText('ใบแจ้งหนี้ เลขที่ '+(b.inv||'-')+' · '+monthLabel(k),40,112);
+  x.fillStyle='#fff';x.beginPath();x.roundRect?x.roundRect(24,170,W-48,H-194,24):x.rect(24,170,W-48,H-194);x.fill();
+  let y=225;x.fillStyle='#1c2a2b';x.font=`700 34px ${F}`;x.fillText('ห้อง '+b.no,56,y);
+  x.font=`400 24px ${F}`;x.fillStyle='#5d6b6c';x.textAlign='right';x.fillText(b.tenant||'',W-56,y);x.textAlign='left';
+  y+=55;x.font=`400 24px ${F}`;
+  rows.forEach(([l,v])=>{x.fillStyle='#1c2a2b';x.fillText(l,56,y);x.textAlign='right';x.fillText(baht(v)+' ฿',W-56,y);x.textAlign='left';
+    x.strokeStyle='#e2ddd2';x.setLineDash([6,6]);x.beginPath();x.moveTo(56,y+20);x.lineTo(W-56,y+20);x.stroke();x.setLineDash([]);y+=56});
+  y+=20;x.fillStyle='#22211e';x.font=`700 40px ${F}`;x.fillText('รวม',56,y);x.textAlign='right';x.fillText(baht(b.total)+' บาท',W-56,y);x.textAlign='left';
+  y+=40;
+  if(showQR){drawQR(x,ppPayload(s.promptpay,remain(b)),(W-320)/2,y,320);y+=345;x.textAlign='center';x.fillStyle='#1c2a2b';x.font=`600 24px ${F}`;
+    x.fillText('สแกนจ่ายพร้อมเพย์ '+baht(remain(b))+' บาท',W/2,y);x.font=`400 20px ${F}`;x.fillStyle='#5d6b6c';x.fillText('พร้อมเพย์: '+s.promptpay+(s.payChannels?'  ·  หรือ '+s.payChannels:''),W/2,y+30);x.textAlign='left';y+=55}
+  if(!showQR&&!b.paid&&s.payChannels){x.textAlign='center';x.fillStyle='#1c2a2b';x.font=`500 22px ${F}`;x.fillText('ช่องทางชำระ: '+s.payChannels,W/2,y+10);if(s.bankInfo){x.font=`400 20px ${F}`;x.fillText('โอนเข้า: '+s.bankInfo,W/2,y+40)}x.textAlign='left';y+=s.bankInfo?70:40}
+  if(b.paid){x.fillStyle='#e7f5ec';x.fillRect(56,y,W-112,70);x.fillStyle='#15803d';x.font=`700 28px ${F}`;x.textAlign='center';x.fillText('✓ ชำระแล้ว '+fmtDate(b.paidDate)+(methodsOf(b)?' ('+methodsOf(b)+')':''),W/2,y+46);x.textAlign='left'}
+  else{x.fillStyle='#fff4dc';x.fillRect(56,y,W-112,70);x.fillStyle='#8a4b00';x.font=`700 26px ${F}`;x.textAlign='center';x.fillText('กรุณาชำระภายในวันที่ '+dueText(k),W/2,y+45);x.textAlign='left'}
+  y+=100;x.fillStyle='#5d6b6c';x.font=`400 18px ${F}`;x.textAlign='center';x.fillText((s.phone?'ติดต่อ '+s.phone+' · ':'')+(s.note||''),W/2,Math.min(y,H-40));x.textAlign='left';
+  return c;
+}
+async function billImage(k,id){
+  try{await document.fonts.ready}catch(e){}
+  const b=S.bills[k][id],c=makeBillCanvas(k,id),url=c.toDataURL('image/png'),name=`บิล-ห้อง${b.no}-${k}.png`;
+  try{const blob=await new Promise(r=>c.toBlob(r,'image/png'));const f=new File([blob],name,{type:'image/png'});
+    if(navigator.canShare&&navigator.canShare({files:[f]})){await navigator.share({files:[f],text:`บิลห้อง ${b.no} ${monthLabel(k)} รวม ${baht(b.total)} บาท`});toast('ส่งแล้ว');return}}catch(e){if(e&&e.name==='AbortError')return}
+  sheet(`<div class="sh-h"><div class="h">🖼️ รูปบิลห้อง ${esc(b.no)}</div><button class="x" onclick="openBill('${k}','${id}')">✕</button></div>
+  <div class="hint sm"><b>กดค้างที่รูป → บันทึกรูป</b> หรือ แคปหน้าจอ แล้วส่งรูปเข้าแชท LINE ผู้เช่า · ผู้เช่าเปิดแอปธนาคาร เลือก "สแกน" → "เลือกรูปจากอัลบั้ม" จ่ายได้ทันที</div>
+  <img src="${url}" alt="รูปบิล" style="width:100%;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.15)">
+  <a class="btn line block" href="${lineUrl(billText(k,id))}" target="_blank" rel="noopener">💬 ส่งข้อความบิลประกอบ</a>`)}
+
+function renderPayPage(d){
+  document.body.innerHTML='';document.body.style.padding='0';
+  let qr='';try{const q=qrModules(ppPayload(d.p,d.a));qr=q.createSvgTag(6,2)}catch(e){qr='<div class="hint">โหลด QR ไม่สำเร็จ</div>'}
+  const m=document.createElement('main');m.style.maxWidth='460px';
+  m.innerHTML=`<div class="card" style="text-align:center;margin-top:20px"><div class="mut sm">ใบแจ้งค่าเช่า</div><div class="dorm" style="font-size:22px">${esc(d.n)}</div>
+  <div class="h" style="margin-top:6px">ห้อง ${esc(d.r)} · ${esc(d.m)}</div><div class="mut">${esc(d.t||'')}</div>
+  <div style="font-size:34px;font-weight:700;color:var(--pri);margin:10px 0">${baht(d.a)} บาท</div>
+  <div class="qr" style="border:0;box-shadow:none">${qr}</div>
+  <div class="sm">พร้อมเพย์: <b>${esc(d.p)}</b></div>
+  <div class="hint sm" style="margin-top:12px">📅 กรุณาชำระภายในวันที่ <b>${esc(d.d)}</b></div>
+  <div class="sm mut" style="text-align:left;margin-top:10px">วิธีจ่าย: แคปหน้าจอนี้ → เปิดแอปธนาคาร → สแกน → เลือกรูปจากอัลบั้ม<br>หรือเปิดหน้านี้ในอีกเครื่องแล้วสแกน${d.ph?`<br>สอบถาม: ${esc(d.ph)}`:''}</div></div>`;
+  m.innerHTML=plain(m.innerHTML);document.body.appendChild(m)}
+
+const SITE_URL='https://platikarn-collab.github.io/joe/dorm/';
+function shareText(){return `🏠 JOE หอพัก โปรแกรมหอพักฟรี! จดมิเตอร์ ออกบิล ส่ง LINE พร้อม QR พร้อมเพย์ ใช้ได้ทั้งมือถือและคอม ฟีเจอร์พื้นฐานใช้ฟรีตลอด\n👉 ${SITE_URL}`}
+let deferredInstall=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;showInstall()});
+function showInstall(){const b=document.getElementById('installBox');if(!b||!deferredInstall)return;
+  b.innerHTML=`<div class="banner">📲 <b>ติดตั้งเป็นแอปบนมือถือ</b> เปิดได้จากหน้าจอโดยตรง ใช้ได้แม้ไม่มีเน็ต<button class="btn pri block" onclick="doInstall()">ติดตั้งแอป</button></div>`}
+async function doInstall(){if(!deferredInstall)return;deferredInstall.prompt();try{await deferredInstall.userChoice}catch(e){}deferredInstall=null;document.getElementById('installBox').innerHTML=''}
+try{if('serviceWorker' in navigator&&location.protocol==='https:'&&!location.hostname.endsWith('claude.ai'))navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}
+(function(){let p=null;try{p=new URLSearchParams(location.search).get('pay')}catch(e){}
+  if(p){try{renderPayPage(b64d(p))}catch(e){document.body.innerHTML='<main><div class="card empty">ลิงก์ไม่ถูกต้อง</div></main>'}return}
+  load();buildMonths();go('home');})();
+</script>
+</body>
+</html>

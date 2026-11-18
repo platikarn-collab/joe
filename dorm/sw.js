@@ -1,7 +1,7 @@
 // JOE หอพัก — ใช้งานได้แม้ไม่มีเน็ต
 // หน้าแอปโหลดจากเน็ตก่อนเสมอ (ได้เวอร์ชันใหม่ทันทีเมื่ออัปเดต) ถ้าไม่มีเน็ตจึงใช้ตัวที่เก็บไว้
-const CACHE = 'joe-dorm-v1';
-const FILES = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
+const CACHE = 'joe-dorm-v2';
+const FILES = ['./', './index.html', './guide.html', './manifest.json', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
 });

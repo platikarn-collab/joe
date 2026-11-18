@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>วิธีติดตั้งและใช้งาน · JOE หอพัก</title>
+<meta name="description" content="วิธีติดตั้งและใช้งาน JOE หอพัก โปรแกรมหอพักฟรี พร้อมข้อตกลงการใช้งาน">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ef;--card:#fff;--ink:#22211e;--mut:#6e695f;--line:#e3ded3;--pri:#2f5d50;--pri2:#e9f0eb;--warn2:#fbf3e4}
+*{box-sizing:border-box}
+body{margin:0;font-family:'IBM Plex Sans Thai Looped','IBM Plex Sans Thai',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.7}
+header{background:var(--card);border-bottom:1px solid var(--line);padding:14px 18px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:2}
+header img{width:40px;height:40px;border-radius:8px}
+header b{font-size:18px;display:block;line-height:1.3}
+header span{font-size:13px;color:var(--mut)}
+main{max-width:720px;margin:0 auto;padding:18px 16px 40px}
+h1{font-size:24px;line-height:1.35;margin:6px 0 6px}
+h2{font-size:19px;margin:0 0 8px;line-height:1.4}
+h3{font-size:16px;margin:16px 0 4px}
+p{margin:6px 0}
+.lead{color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:14px 0}
+.btn{display:block;text-align:center;background:var(--pri);color:#fff;text-decoration:none;font-weight:600;border-radius:6px;padding:13px;margin:12px 0 4px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+nav.toc a{font-size:14px;color:var(--pri);text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:6px;padding:5px 10px}
+.tabs{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:8px 0 10px}
+.tabs button{flex:1;border:0;border-left:1px solid var(--line);background:#fff;font:inherit;font-size:14px;padding:9px 4px;cursor:pointer;color:var(--ink)}
+.tabs button:first-child{border-left:0}
+.tabs button.on{background:var(--pri);color:#fff;font-weight:600}
+.pane{display:none}.pane.on{display:block}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:6px 0}
+ol.steps>li{counter-increment:s;position:relative;padding:0 0 12px 40px}
+ol.steps>li::before{content:counter(s);position:absolute;left:0;top:1px;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--pri);color:var(--pri);font-weight:600;font-size:14px;display:flex;align-items:center;justify-content:center}
+ol.steps>li:not(:last-child)::after{content:"";position:absolute;left:14px;top:32px;bottom:2px;border-left:1.5px dashed #cfc8bb}
+.k{display:inline-block;border:1px solid #cfc8bb;border-radius:5px;padding:0 7px;font-size:14px;background:#faf9f5;white-space:nowrap}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:10px 0;font-size:14px}
+.flow span{border:1px solid var(--line);background:#faf9f5;border-radius:6px;padding:4px 9px}
+.flow i{font-style:normal;color:var(--mut)}
+.note{background:var(--warn2);border-left:3px solid #d9a441;border-radius:0 6px 6px 0;padding:10px 12px;margin:10px 0;font-size:15px}
+.tip{background:var(--pri2);border-left:3px solid var(--pri);border-radius:0 6px 6px 0;padding:10px 12px;margin:10px 0;font-size:15px}
+details{border-top:1px solid var(--line);padding:10px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:600}
+details p{color:#3d3b36}
+.terms ol{padding-left:22px;margin:6px 0}
+.terms li{margin:6px 0}
+footer{text-align:center;color:var(--mut);font-size:13px;padding:10px 16px 30px}
+footer a{color:var(--mut)}
+@media print{header,nav.toc,.btn,.tabs{display:none}.pane{display:block}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header><img src="icon-192.png" alt=""><div><b>JOE หอพัก</b><span>คู่มือการใช้งาน</span></div></header>
+<main>
+  <h1>วิธีติดตั้งและใช้งาน JOE หอพัก</h1>
+  <p class="lead">โปรแกรมช่วยจดมิเตอร์ ออกบิล และส่งบิลทาง LINE ใช้ฟรี ไม่ต้องสมัคร ข้อมูลเก็บอยู่ในเครื่องของคุณเอง</p>
+  <a class="btn" href="./">เปิดแอป JOE หอพัก</a>
+  <nav class="toc">
+    <a href="#install">ติดตั้ง</a><a href="#start">เริ่มใช้ครั้งแรก</a><a href="#monthly">ใช้ทุกเดือน</a><a href="#more">ฟีเจอร์อื่น</a><a href="#backup">สำรองข้อมูล</a><a href="#faq">คำถามที่พบบ่อย</a><a href="#terms">ข้อตกลงการใช้งาน</a>
+  </nav>
+
+  <section class="card" id="install">
+    <h2>1. ติดตั้งลงเครื่อง</h2>
+    <p>ติดตั้งแล้วจะมีไอคอน JOE อยู่บนหน้าจอ กดเปิดได้เหมือนแอปทั่วไป และใช้ได้แม้ไม่มีเน็ต</p>
+    <div class="tabs" role="tablist">
+      <button class="on" data-p="android">Android</button><button data-p="iphone">iPhone</button><button data-p="pc">คอมพิวเตอร์</button>
+    </div>
+    <div class="pane on" id="p-android">
+      <ol class="steps">
+        <li>เปิดลิงก์แอปด้วย <b>Chrome</b> (ถ้าเปิดจาก LINE ให้กดมุมขวาบน แล้วเลือก "เปิดในเบราว์เซอร์")</li>
+        <li>กดปุ่ม <span class="k">⋮</span> มุมขวาบนของ Chrome</li>
+        <li>เลือก <b>ติดตั้งแอป</b> หรือ <b>เพิ่มลงในหน้าจอหลัก</b> แล้วกดยืนยัน</li>
+      </ol>
+    </div>
+    <div class="pane" id="p-iphone">
+      <ol class="steps">
+        <li>เปิดลิงก์แอปด้วย <b>Safari</b> (ถ้าเปิดจาก LINE ให้กดมุมขวาบน แล้วเลือก "เปิดใน Safari")</li>
+        <li>กดปุ่ม <b>แชร์</b> (รูปสี่เหลี่ยมมีลูกศรชี้ขึ้น) ที่แถบด้านล่าง</li>
+        <li>เลื่อนลงแล้วเลือก <b>เพิ่มไปยังหน้าจอโฮม</b> จากนั้นกด <b>เพิ่ม</b></li>
+      </ol>
+    </div>
+    <div class="pane" id="p-pc">
+      <ol class="steps">
+        <li>เปิดลิงก์แอปด้วย <b>Chrome</b> หรือ <b>Edge</b></li>
+        <li>กดไอคอนติดตั้ง (รูปจอมีลูกศร) ทางขวาของช่องที่อยู่เว็บ หรือกด <span class="k">⋮</span> แล้วเลือก <b>ติดตั้ง JOE หอพัก</b></li>
+        <li>กด <b>ติดตั้ง</b> จะมีไอคอนบนหน้าจอคอมให้เปิดได้ทุกครั้ง</li>
+      </ol>
+    </div>
+    <div class="note">ข้อมูลของมือถือกับคอมแยกกัน ถ้าจะย้ายเครื่องหรือใช้หลายเครื่อง ให้ใช้เมนูสำรองข้อมูล (ดูหัวข้อ 5)</div>
+  </section>
+
+  <section class="card" id="start">
+    <h2>2. เริ่มใช้ครั้งแรก</h2>
+    <p>เปิดแอปครั้งแรกจะมี <b>ข้อมูลตัวอย่าง</b> ให้ลองกดเล่นก่อน ลองดูจนเข้าใจแล้วค่อยเริ่มใส่ข้อมูลจริง</p>
+    <ol class="steps">
+      <li><b>ล้างข้อมูลตัวอย่าง</b> — ไปที่ <span class="k">ตั้งค่า</span> แล้วกด <b>ล้างข้อมูลทั้งหมด</b> (กด 2 ครั้งเพื่อยืนยัน)</li>
+      <li><b>ใส่ข้อมูลหอ</b> — ใน <span class="k">ตั้งค่า</span> กรอกชื่อหอ เบอร์โทร <b>เลขพร้อมเพย์</b> และค่าน้ำ-ค่าไฟต่อหน่วย แล้วกดบันทึก</li>
+      <li><b>เพิ่มห้อง</b> — ไปที่ <span class="k">ห้อง</span> กด <b>เพิ่มห้อง</b> ใส่เลขห้องกับค่าเช่า ห้องที่มีคนอยู่ให้ใส่ชื่อผู้เช่าด้วย</li>
+      <li><b>ใส่เลขมิเตอร์เริ่มต้น</b> — ในหน้าห้องเดียวกัน กรอกเลขมิเตอร์น้ำและไฟปัจจุบัน เพื่อให้เดือนแรกคิดหน่วยได้ถูก</li>
+    </ol>
+    <div class="tip">มีห้องหลายห้อง ไม่ต้องใส่ให้เสร็จในวันเดียว ใส่เฉพาะห้องที่มีคนเช่าก่อนก็ได้</div>
+  </section>
+
+  <section class="card" id="monthly">
+    <h2>3. ใช้ทุกเดือน</h2>
+    <div class="flow"><span>จดมิเตอร์</span><i>→</i><span>ออกบิล</span><i>→</i><span>ส่งบิลทาง LINE</span><i>→</i><span>บันทึกรับเงิน</span><i>→</i><span>สำรองข้อมูล</span></div>
+    <ol class="steps">
+      <li><b>จดมิเตอร์</b> — ไปที่ <span class="k">จดมิเตอร์</span> กรอกเลขน้ำและไฟของแต่ละห้อง แอปจะคิดหน่วยและเงินให้ทันที แล้วกด <b>บันทึกและออกบิล</b></li>
+      <li><b>ส่งบิล</b> — ไปที่ <span class="k">บิล</span> แตะที่ห้อง แล้วกด <b>รูปบิล + QR</b> ส่งเข้าแชท LINE ของผู้เช่า ผู้เช่าสแกน QR จ่ายผ่านพร้อมเพย์ได้เลย</li>
+      <li><b>บันทึกรับเงิน</b> — เมื่อได้เงินแล้ว แตะที่บิลห้องนั้น เลือกช่องทางที่รับ แล้วกด <b>บันทึกรับเงิน</b> จ่ายไม่ครบก็บันทึกได้ แอปจะจำยอดค้างไว้ให้</li>
+      <li><b>ดูยอดค้าง</b> — หน้า <span class="k">หน้าหลัก</span> จะสรุปว่าห้องไหนค้างเท่าไร และส่งสรุปของเดือนเข้า LINE ตัวเองได้</li>
+    </ol>
+    <div class="note">ตรวจตัวเลขในบิลทุกครั้งก่อนส่ง ถ้าเลขมิเตอร์น้อยกว่าเดือนก่อน แอปจะเตือน ให้เช็กว่าจดผิดหรือมิเตอร์ถูกเปลี่ยน</div>
+  </section>
+
+  <section class="card" id="more">
+    <h2>4. ฟีเจอร์อื่น ๆ</h2>
+    <h3>สัญญาเช่า</h3>
+    <p>ในหน้าห้องที่มีผู้เช่า กด <b>สัญญาเช่า</b> แอปจะร่างสัญญาจากข้อมูลที่กรอกไว้ แล้วคัดลอกไปพิมพ์ได้ <b>เป็นร่างตัวอย่างเพื่อความสะดวก</b> ควรอ่านและเทียบกับแบบสัญญามาตรฐานที่ สคบ. เผยแพร่ก่อนใช้จริง</p>
+    <h3>ย้ายออก / คืนเงินประกัน</h3>
+    <p>กด <b>แจ้งย้ายออก</b> กรอกมิเตอร์ครั้งสุดท้ายและค่าเสียหาย (ถ้ามี) แอปจะช่วยคำนวณยอดที่ต้องคืนหรือเก็บเพิ่ม พร้อมข้อความสรุปส่งให้ผู้เช่า</p>
+    <h3>ป้ายประกาศห้องว่าง</h3>
+    <p>ที่หน้าหลัก กด <b>สร้างป้ายประกาศห้องว่าง</b> จะได้ป้ายพร้อม QR สำหรับติดหน้าหอ หรือโพสต์ลง Facebook/LINE</p>
+    <h3>บัญชีและใบเสร็จ</h3>
+    <p>แท็บ <span class="k">บัญชี</span> สรุปรายรับรายจ่าย และออกใบเสร็จได้ ตัวเลขด้านภาษีเป็นข้อมูลช่วยเตรียมตัวเท่านั้น ควรตรวจกับกรมสรรพากรหรือผู้ทำบัญชีอีกครั้ง</p>
+    <h3>ถามน้องโจ้</h3>
+    <p>ใช้แอปไม่เป็นตรงไหน กดปุ่ม <b>ถามน้องโจ้</b> ในแอป เพื่อดูคำตอบของคำถามที่พบบ่อย</p>
+  </section>
+
+  <section class="card" id="backup">
+    <h2>5. สำรองข้อมูล (สำคัญ)</h2>
+    <p>ข้อมูลทั้งหมดเก็บอยู่ใน <b>เครื่องของคุณเท่านั้น</b> ทางเราไม่มีสำเนา ถ้าเครื่องหาย ล้างข้อมูลเบราว์เซอร์ หรือถอนการติดตั้ง ข้อมูลจะหายและกู้คืนให้ไม่ได้</p>
+    <ol class="steps">
+      <li>ไปที่ <span class="k">ตั้งค่า</span> หัวข้อ <b>สำรองข้อมูล</b></li>
+      <li>กดสำรองข้อมูล แล้วส่งเก็บไว้ เช่น ส่งเข้า LINE ของตัวเอง หรืออีเมลตัวเอง</li>
+      <li>ทำทุกสิ้นเดือน ถ้าเปลี่ยนเครื่อง ให้นำข้อมูลที่สำรองไว้มากู้คืนในเครื่องใหม่</li>
+    </ol>
+  </section>
+
+  <section class="card" id="faq">
+    <h2>6. คำถามที่พบบ่อย</h2>
+    <details><summary>ฟรีจริงไหม มีค่าใช้จ่ายแอบแฝงหรือเปล่า</summary><p>ฟรีจริง ฟีเจอร์ที่อยู่ในแอปตอนนี้ใช้ฟรีไม่มีค่ารายเดือน ฟีเจอร์ที่เคยใช้ฟรีจะฟรีตลอด ถ้าในอนาคตมีบริการเสริมแบบเสียเงิน จะเป็นตัวเลือกเพิ่มเติมเท่านั้น</p></details>
+    <details><summary>ข้อมูลผู้เช่าปลอดภัยไหม</summary><p>แอปไม่ได้ส่งข้อมูลหอพักหรือผู้เช่าขึ้นเซิร์ฟเวอร์ของเรา ทุกอย่างอยู่ในเครื่องของคุณ จึงควรตั้งรหัสล็อกหน้าจอโทรศัพท์ไว้ และเก็บไฟล์สำรองในที่ปลอดภัย</p></details>
+    <details><summary>ไม่มีเน็ตใช้ได้ไหม</summary><p>ติดตั้งแล้วใช้จดมิเตอร์ ออกบิล และบันทึกรับเงินได้แม้ไม่มีเน็ต ส่วนการส่งบิลทาง LINE ต้องใช้เน็ต</p></details>
+    <details><summary>ใช้หลายคนในหอเดียวกันได้ไหม</summary><p>ตอนนี้ข้อมูลอยู่ในเครื่องเดียว ถ้าหลายคนใช้คนละเครื่อง ข้อมูลจะไม่ตรงกัน แนะนำให้มีคนจัดการหลักหนึ่งคน</p></details>
+    <details><summary>แอปอัปเดตยังไง ข้อมูลจะหายไหม</summary><p>เมื่อมีเวอร์ชันใหม่ แอปจะอัปเดตเองตอนเปิดขณะมีเน็ต ข้อมูลที่บันทึกไว้ยังอยู่ แต่ก็ควรสำรองข้อมูลเป็นประจำ</p></details>
+    <details><summary>ค่าน้ำค่าไฟคิดเท่าไรถึงจะถูกต้อง</summary><p>แอปคิดตามอัตราที่คุณตั้งเอง ประกาศ สคบ. ปี 2568 กำหนดให้หอที่ให้เช่าตั้งแต่ 5 ห้องขึ้นไป คิดค่าน้ำค่าไฟไม่เกินอัตราที่การประปาและการไฟฟ้าเรียกเก็บ ควรตรวจรายละเอียดกับ สคบ. (สายด่วน 1166)</p></details>
+  </section>
+
+  <section class="card terms" id="terms">
+    <h2>ข้อตกลงการใช้งาน</h2>
+    <p>การใช้ JOE หอพัก ถือว่าคุณรับทราบข้อตกลงต่อไปนี้</p>
+    <ol>
+      <li><b>ใช้ฟรีตามสภาพ</b> — JOE หอพักให้ใช้ฟรี ในสภาพที่เป็นอยู่ ผู้พัฒนาพยายามให้ทำงานถูกต้อง แต่ไม่รับประกันว่าจะไม่มีข้อผิดพลาดหรือใช้งานได้ตลอดเวลา ฟีเจอร์ที่ใช้ฟรีอยู่จะฟรีตลอด หากมีการเปลี่ยนแปลงเงื่อนไขจะแจ้งในแอปล่วงหน้าอย่างน้อย 30 วัน</li>
+      <li><b>ผู้ใช้ตรวจสอบเอง</b> — ตัวเลขในบิล ใบเสร็จ ยอดค้าง และยอดคืนเงินประกัน คำนวณจากข้อมูลที่ผู้ใช้กรอก ผู้ใช้ควรตรวจสอบก่อนส่งให้ผู้เช่าหรือนำไปใช้</li>
+      <li><b>เป็นเครื่องมือช่วยความสะดวก ไม่ใช่คำปรึกษาทางกฎหมายหรือภาษี</b> — ร่างสัญญา ข้อความเตือนเรื่องกฎ สคบ. และข้อมูลด้านภาษีในแอป มีไว้ช่วยความสะดวกเท่านั้น ผู้ใช้ควรตรวจกับหน่วยงานที่เกี่ยวข้องหรือผู้เชี่ยวชาญ ผู้พัฒนาไม่ได้เป็นทนายความหรือนักบัญชี และไม่มีส่วนเกี่ยวข้องกับ สคบ. หรือหน่วยงานรัฐใด</li>
+      <li><b>ข้อมูลอยู่ในเครื่องผู้ใช้</b> — แอปไม่ได้ส่งข้อมูลหอพักหรือผู้เช่าไปยังผู้พัฒนา ผู้ใช้มีหน้าที่สำรองข้อมูลเอง และเป็นผู้ดูแลข้อมูลส่วนบุคคลของผู้เช่าที่ตนบันทึก ควรเก็บและใช้ตามความจำเป็นและตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล</li>
+      <li><b>ข้อจำกัดความรับผิด</b> — เท่าที่กฎหมายอนุญาต ผู้พัฒนาไม่ต้องรับผิดต่อความเสียหายที่เกิดจากการใช้หรือไม่สามารถใช้แอป เช่น ข้อมูลสูญหาย หรือการคำนวณที่ผิดจากข้อมูลที่กรอกผิด</li>
+      <li><b>การใช้งานที่เหมาะสม</b> — ห้ามนำแอปไปใช้ในทางที่ผิดกฎหมาย หรือแอบอ้างว่าเป็นของตนเพื่อขาย ชื่อและโลโก้ JOE เป็นของผู้พัฒนา</li>
+    </ol>
+    <p class="lead">ปรับปรุงล่าสุด: 17 พฤศจิกายน 2569 · หากมีการแก้ไขข้อตกลง จะแสดงไว้ที่หน้านี้</p>
+  </section>
+
+  <section class="card">
+    <h2>แจ้งปัญหา / เสนอแนะ</h2>
+    <p>เจอปัญหาหรืออยากได้ฟีเจอร์อะไรเพิ่ม คอมเมนต์ใต้โพสต์ที่คุณได้รับลิงก์นี้ หรือส่งข้อความหาผู้พัฒนาได้เลย ทุกความเห็นถูกนำไปปรับแอปจริง</p>
+  </section>
+  <a class="btn" href="./">เปิดแอป JOE หอพัก</a>
+</main>
+<footer>JOE หอพัก · ช่วยให้งานประจำวันง่าย ถูกต้อง ปลอดภัย และรวดเร็ว<br><a href="#terms">ข้อตกลงการใช้งาน</a></footer>
+<script>
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('on',p.id==='p-'+b.dataset.p));
+});
+(function(){var ua=navigator.userAgent||'';var t=/iPhone|iPad|iPod/.test(ua)?'iphone':/Android/.test(ua)?'android':/Windows|Macintosh|Linux/.test(ua)?'pc':null;
+  if(t){var b=document.querySelector('.tabs button[data-p="'+t+'"]');if(b)b.click()}})();
+</script>
+</body>
+</html>
